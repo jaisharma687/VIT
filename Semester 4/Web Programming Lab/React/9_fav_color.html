@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReactJS in HTML for Events</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        const {useState} = React
+
+        const FavouriteColor = () =>{
+            const[color,setColor] = useState("");
+            return(
+                <>
+                <h1>My Favourite Color is {color}!</h1>
+                <button onClick={()=>setColor("blue")}>Blue</button>
+                <button onClick={()=>setColor("red")}>Red</button>
+                <button onClick={()=>setColor("pink")}>Pink</button>
+                <button onClick={()=>setColor("orange")}>Orange</button>
+                </>
+            );
+        }
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<FavouriteColor />)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,4 @@
+".\Objects\STARTUP.obj",
+".\Objects\td.obj" 
+TO ".\Objects\timerduty" 
+PRINT(".\Listings\timerduty.m51") RAMSIZE(256) 

@@ -1,0 +1,42 @@
+A51 MACRO ASSEMBLER  MAIN2                                                                03/10/2024 13:24:47 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\main2.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE main2.asm SET(SMALL) DEBUG PRINT(.\Listings\main2.lst) OBJECT(.\Objects
+                      \main2.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 758009            2     MOV P0,#09H
+0003 E580              3     MOV A,P0
+0005 F5F0              4     MOV B,A
+0007 A4                5     MUL AB
+0008 F5A0              6     MOV P2,A
+000A E4                7     CLR A
+000B E580              8     MOV A,P0
+000D 75F004            9     MOV B,#4
+0010 A4               10     MUL AB
+0011 F5B0             11     MOV P3,A
+0013 80FE             12     HERE: SJMP HERE
+                      13     END
+A51 MACRO ASSEMBLER  MAIN2                                                                03/10/2024 13:24:47 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+HERE . . . . . . .  C ADDR   0013H   A   
+P0 . . . . . . . .  D ADDR   0080H   A   
+P2 . . . . . . . .  D ADDR   00A0H   A   
+P3 . . . . . . . .  D ADDR   00B0H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

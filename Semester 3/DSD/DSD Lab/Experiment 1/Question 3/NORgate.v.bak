@@ -1,0 +1,11 @@
+module NorGate(x,y,z,F);
+input x,y,z;
+output F;
+wire xn,nz,nxz,nxy,nf;
+nor n1(xn,x,x);
+nor n2(nz,z,z);
+nor n3(nxz,x,nz);
+nor n4(nxy,xn,y);
+nor n5(nf,nxy,nxz);
+nor n6(F,nf,nf);
+endmodule;

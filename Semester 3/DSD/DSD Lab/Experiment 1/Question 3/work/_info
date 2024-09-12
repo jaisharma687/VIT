@@ -1,0 +1,135 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/DSD Lab/Experiment 1/Question 2
+vNANDGate
+Z0 !s110 1696816097
+!i10b 1
+!s100 >b5ESjjjjP_=GkiAEnP3P3
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IOnenI[ODm<iHlVMo[VF8g3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dD:/DSD Lab/Experiment 1/Question 3
+Z4 w1696790676
+Z5 8D:/DSD Lab/Experiment 1/Question 3/NANDgate.v
+Z6 FD:/DSD Lab/Experiment 1/Question 3/NANDgate.v
+!i122 11
+L0 1 10
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1696816092.000000
+!s107 D:/DSD Lab/Experiment 1/Question 3/NANDgate.v|
+Z9 !s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Experiment 1/Question 3/NANDgate.v|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+n@n@a@n@d@gate
+XNANDgate_v_unit
+Z12 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+R0
+V<Ba=^0@]oM`FDg:d=B`?L0
+r1
+!s85 0
+!i10b 1
+!s100 SP<:PcUjRgkH`L01ogBea0
+I<Ba=^0@]oM`FDg:d=B`?L0
+!i103 1
+S1
+R3
+R4
+R5
+R6
+!i122 11
+L0 10 0
+R7
+31
+R8
+Z13 !s107 D:/DSD Lab/Experiment 1/Question 3/NANDgate.v|
+R9
+!i113 1
+R10
+R11
+n@n@a@n@dgate_v_unit
+vNORGate
+Z14 !s110 1696816084
+!i10b 1
+!s100 R:De^Gh92n=>042nc<X^c0
+R1
+IDnV1Y9FTC4HnWbn[1_HNd3
+R2
+R3
+Z15 w1696790650
+Z16 8D:/DSD Lab/Experiment 1/Question 3/NORgate.v
+Z17 FD:/DSD Lab/Experiment 1/Question 3/NORgate.v
+!i122 10
+L0 1 11
+R7
+r1
+!s85 0
+31
+Z18 !s108 1696816084.000000
+Z19 !s107 D:/DSD Lab/Experiment 1/Question 3/NORgate.v|
+Z20 !s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Experiment 1/Question 3/NORgate.v|
+!i113 1
+R10
+R11
+n@n@o@r@gate
+XNORgate_v_unit
+R12
+R14
+VND5f=6V>IORCB8>LS2FfO0
+r1
+!s85 0
+!i10b 1
+!s100 S]lZKbz9SKd^0Jf<1M`dd2
+IND5f=6V>IORCB8>LS2FfO0
+!i103 1
+S1
+R3
+R15
+R16
+R17
+!i122 10
+L0 11 0
+R7
+31
+R18
+R19
+R20
+!i113 1
+R10
+R11
+n@n@o@rgate_v_unit
+vtestbenchE1Q3
+R14
+!i10b 1
+!s100 7komL0TjjzM2DMGnXLoE:2
+R1
+I<a_z`d0O;EMlVKQWX;3WM3
+R2
+R3
+w1696816055
+8D:/DSD Lab/Experiment 1/Question 3/testbenchE1Q3.v
+FD:/DSD Lab/Experiment 1/Question 3/testbenchE1Q3.v
+!i122 9
+L0 1 17
+R7
+r1
+!s85 0
+31
+R18
+!s107 D:/DSD Lab/Experiment 1/Question 3/testbenchE1Q3.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Experiment 1/Question 3/testbenchE1Q3.v|
+!i113 1
+R10
+R11
+ntestbench@e1@q3

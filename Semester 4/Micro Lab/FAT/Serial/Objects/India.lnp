@@ -1,0 +1,4 @@
+".\Objects\STARTUP.obj",
+".\Objects\ind.obj" 
+TO ".\Objects\India" 
+PRINT(".\Listings\India.m51") RAMSIZE(256) 

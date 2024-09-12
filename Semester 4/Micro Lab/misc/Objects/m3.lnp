@@ -1,0 +1,4 @@
+".\Objects\STARTUP.obj",
+".\Objects\main3.obj" 
+TO ".\Objects\m3" 
+PRINT(".\Listings\m3.m51") RAMSIZE(256) 

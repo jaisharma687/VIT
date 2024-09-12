@@ -1,0 +1,20 @@
+module multi(x,y,z);
+input [3:0] x,y;
+output reg [7:0]z;
+always @(x or y)
+begin
+z = x*y;
+end
+endmodule
+
+module tb;
+reg [3:0] x,y;
+wire [7:0] z;
+multi test(x,y,z);
+initial begin
+$monitor($time,": x=%d, y=%b, z=%b",x,y,z);
+x=0;y=0;
+#10 x=10; y=5;
+#10 x=4; y=11;
+end
+endmodule

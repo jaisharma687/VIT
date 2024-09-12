@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add Two Values</title>
+    <script>
+    function addValues() {
+        var value1 = parseFloat(document.getElementById('input1').value);
+        var value2 = parseFloat(document.getElementById('input2').value);
+        if (isNaN(value1) || isNaN(value2)) {
+            alert('Please enter valid numbers');
+            return;
+        }
+        var result = value1 + value2;
+        document.getElementById('result').innerText = 'Result: ' + result;
+    }
+    </script>
+</head>
+<body>
+    <h1>Add Two Values</h1>
+    <p>
+        <label for="input1">Value 1:</label>
+        <input type="text" id="input1" placeholder="Enter value 1" autofocus>
+    </p>
+    <p>
+        <label for="input2">Value 2:</label>
+        <input type="text" id="input2" placeholder="Enter value 2">
+    </p>
+    <button onclick="addValues()">Add Values</button>
+    <p>
+        <div id="result"></div>
+    </p>
+</body>
+</html>

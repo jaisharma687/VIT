@@ -1,0 +1,103 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/DSD Lab/Experiment 5/Question 3
+vmulti
+Z0 !s110 1700397245
+!i10b 1
+!s100 ^OUSDJ0FXYBo^HmZ8@2W62
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IY9^L[6>Ai4120BN8_=Z5L3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dD:/DSD Lab/Practice/Problems
+Z4 w1700397230
+Z5 8D:/DSD Lab/Practice/Problems/Multiplication.v
+Z6 FD:/DSD Lab/Practice/Problems/Multiplication.v
+!i122 16
+L0 1 8
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1700397245.000000
+!s107 D:/DSD Lab/Practice/Problems/Multiplication.v|
+Z9 !s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Practice/Problems/Multiplication.v|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vsrff
+R0
+!i10b 1
+!s100 ;Bj[LM;c9QDQ4=>IoW>KP2
+R1
+I<Ld:eATc:oEoQ:5?mlIhd1
+R2
+R3
+Z12 w1700379575
+Z13 8D:/DSD Lab/Practice/Problems/SRFlipFlop.v
+Z14 FD:/DSD Lab/Practice/Problems/SRFlipFlop.v
+!i122 15
+L0 1 22
+R7
+r1
+!s85 0
+31
+Z15 !s108 1700397244.000000
+Z16 !s107 D:/DSD Lab/Practice/Problems/SRFlipFlop.v|
+Z17 !s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Practice/Problems/SRFlipFlop.v|
+!i113 1
+R10
+R11
+vsrtb
+R0
+!i10b 1
+!s100 2Km[z;;5AY8M23WlQVFWc2
+R1
+INSonOZkH5_B2mb_@XgENI1
+R2
+R3
+R12
+R13
+R14
+!i122 15
+L0 25 15
+R7
+r1
+!s85 0
+31
+R15
+R16
+R17
+!i113 1
+R10
+R11
+vtb
+R0
+!i10b 1
+!s100 ZY_@9oHKO<Gk7aXIU^Vm?3
+R1
+IOgUKIfMDn;`;g7;<AaNCE1
+R2
+R3
+R4
+R5
+R6
+!i122 16
+L0 10 11
+R7
+r1
+!s85 0
+31
+R8
+Z18 !s107 D:/DSD Lab/Practice/Problems/Multiplication.v|
+R9
+!i113 1
+R10
+R11

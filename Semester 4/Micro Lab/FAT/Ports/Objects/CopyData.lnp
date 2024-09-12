@@ -1,0 +1,4 @@
+".\Objects\STARTUP.obj",
+".\Objects\copy.obj" 
+TO ".\Objects\CopyData" 
+PRINT(".\Listings\CopyData.m51") RAMSIZE(256) 

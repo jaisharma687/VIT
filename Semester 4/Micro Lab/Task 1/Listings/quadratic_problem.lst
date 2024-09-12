@@ -1,0 +1,43 @@
+A51 MACRO ASSEMBLER  QUADRATIC_PROBLEM                                                    01/27/2024 23:32:48 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\quadratic_problem.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE quadratic_problem.asm SET(SMALL) DEBUG PRINT(.\Listings\quadratic_probl
+                      em.lst) OBJECT(.\Objects\quadratic_problem.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 000H
+0000 900200            2     MOV DPTR, #200H
+0003 7403              3     MOV A, #03H
+0005 F9                4     MOV R1, A
+0006 F8                5     MOV R0,A
+0007 29                6     ADD A, R1
+0008 F9                7     MOV R1, A
+0009 E8                8     MOV A, R0
+000A 93                9     MOVC A, @A+DPTR
+000B 2409             10     ADD A,#09H
+000D 29               11     ADD A, R1
+000E FA               12     MOV R2, A
+000F 80FE             13     HERE: SJMP HERE
+0200                  14     ORG 200H
+0200 00010409         15     DB 00H,01H,04H,09H,10H,19H,24H,31H,40H,51H
+0204 10192431                
+0208 4051                    
+                      16     END
+A51 MACRO ASSEMBLER  QUADRATIC_PROBLEM                                                    01/27/2024 23:32:48 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+HERE . . . . . . .  C ADDR   000FH   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

@@ -1,0 +1,53 @@
+A51 MACRO ASSEMBLER  HELLO                                                                05/02/2024 04:34:22 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\hello.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE hello.asm SET(SMALL) DEBUG PRINT(.\Listings\hello.lst) OBJECT(.\Objects
+                      \hello.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 7806              2     DRIVER: MOV R0,#06H
+0002 900200            3     MOV DPTR,#0200H
+0005 758920            4     MOV TMOD,#20H
+0008 759850            5     MOV SCON,#50H
+000B 758DFD            6     MOV TH1,#-3
+000E D28E              7     SETB TR1
+0010 E4                8     MAIN: CLR A
+0011 93                9     MOVC A,@A+DPTR
+0012 F599             10     MOV SBUF,A
+0014 3099FD           11     NEXT: JNB TI,NEXT
+0017 C299             12     CLR TI
+0019 A3               13     INC DPTR
+001A D8F4             14     DJNZ R0,MAIN
+001C 80E2             15     SJMP DRIVER
+                      16     
+0200                  17     ORG 0200H
+0200 48454C4C         18     DB "HELLO "
+0204 4F20                    
+                      19     END
+A51 MACRO ASSEMBLER  HELLO                                                                05/02/2024 04:34:22 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+DRIVER . . . . . .  C ADDR   0000H   A   
+MAIN . . . . . . .  C ADDR   0010H   A   
+NEXT . . . . . . .  C ADDR   0014H   A   
+SBUF . . . . . . .  D ADDR   0099H   A   
+SCON . . . . . . .  D ADDR   0098H   A   
+TH1. . . . . . . .  D ADDR   008DH   A   
+TI . . . . . . . .  B ADDR   0098H.1 A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+TR1. . . . . . . .  B ADDR   0088H.6 A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

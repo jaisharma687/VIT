@@ -1,0 +1,4 @@
+".\Objects\STARTUP.obj",
+".\Objects\pa.obj" 
+TO ".\Objects\PerimeterArea" 
+PRINT(".\Listings\PerimeterArea.m51") RAMSIZE(256) 

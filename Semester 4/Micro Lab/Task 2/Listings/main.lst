@@ -1,0 +1,44 @@
+A51 MACRO ASSEMBLER  MAIN                                                                 02/05/2024 18:31:30 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\main.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE main.asm SET(SMALL) DEBUG PRINT(.\Listings\main.lst) OBJECT(.\Objects\m
+                      ain.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 000H
+0000 900200            2     MOV DPTR,#200H
+0003 780A              3     MOV R0,#10
+0005 E4                4     LOOP:CLR A
+0006 93                5     MOVC A,@A+DPTR
+0007 2A                6     ADD A,R2
+0008 5001              7     JNC NEXT
+000A 0B                8     INC R3
+000B A3                9     NEXT:INC DPTR
+000C FA               10     MOV R2,A
+000D D8F6             11     DJNZ R0,LOOP
+000F 80FE             12     HERE:SJMP HERE 
+0200                  13     ORG 200H
+0200 22432334         14     DB 22H,43H,23H,34H,31H,77H,91H,33H,43H,7H
+0204 31779133                
+0208 4307                    
+                      15     END
+A51 MACRO ASSEMBLER  MAIN                                                                 02/05/2024 18:31:30 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+HERE . . . . . . .  C ADDR   000FH   A   
+LOOP . . . . . . .  C ADDR   0005H   A   
+NEXT . . . . . . .  C ADDR   000BH   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

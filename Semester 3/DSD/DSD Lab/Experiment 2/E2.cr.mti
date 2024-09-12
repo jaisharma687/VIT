@@ -1,0 +1,64 @@
+{D:/DSD Lab/Experiment 2/HalfAdderDFL.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Experiment 2/HalfAdderDFL.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module haDFL
+
+Top level modules:
+	haDFL
+
+} {} {}} {D:/DSD Lab/Experiment 2/HalfAdderBL.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Experiment 2/HalfAdderBL.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module haBL
+
+Top level modules:
+	haBL
+
+} {} {}} {D:/DSD Lab/Experiment 2/FullAdderDFL.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Experiment 2/FullAdderDFL.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module faDFL
+
+Top level modules:
+	faDFL
+
+} {} {}} {D:/DSD Lab/Experiment 2/FullAdderBL.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Experiment 2/FullAdderBL.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module faBL
+
+Top level modules:
+	faBL
+
+} {} {}} {D:/DSD Lab/Experiment 2/HalfAdderSL.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Experiment 2/HalfAdderSL.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module haSL
+
+Top level modules:
+	haSL
+
+} {} {}} {D:/DSD Lab/Experiment 2/FullAdderSL.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Experiment 2/FullAdderSL.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module faSL
+
+Top level modules:
+	faSL
+
+} {} {}} {D:/DSD Lab/Experiment 2/FullAdderHalfAdder.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Experiment 2/FullAdderHalfAdder.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module faha
+
+Top level modules:
+	faha
+
+} {} {}} {D:/DSD Lab/Experiment 2/HalfAdderTestbench.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Experiment 2/HalfAdderTestbench.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module hatestbench
+
+Top level modules:
+	hatestbench
+
+} {} {}} {D:/DSD Lab/Experiment 2/FullAdderTestbench.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Experiment 2/FullAdderTestbench.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module fatestbench
+
+Top level modules:
+	fatestbench
+
+} {} {}}

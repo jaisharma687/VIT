@@ -1,0 +1,42 @@
+A51 MACRO ASSEMBLER  DATA                                                                 05/02/2024 01:13:54 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\data.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE data.asm SET(SMALL) DEBUG PRINT(.\Listings\data.lst) OBJECT(.\Objects\d
+                      ata.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 7840              2     MOV R0,#40H
+0002 790E              3     MOV R1,#0EH
+0004 900200            4     MOV DPTR,#0200H
+0007 E4                5     MAIN: CLR A
+0008 93                6     MOVC A,@A+DPTR
+0009 F6                7     MOV @R0,A
+000A 08                8     INC R0
+000B A3                9     INC DPTR
+000C D9F9             10     DJNZ R1,MAIN
+000E 80FE             11     SJMP $
+0200                  12     ORG 0200H
+0200 56495420         13     DB "VIT UNIVERSITY"
+0204 554E4956                
+0208 45525349                
+020C 5459                    
+                      14     END
+A51 MACRO ASSEMBLER  DATA                                                                 05/02/2024 01:13:54 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+MAIN . . . . . . .  C ADDR   0007H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

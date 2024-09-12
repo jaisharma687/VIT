@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/DSD Lab/Experiment 5/Question 1
+vtestbenchE5Q2
+Z0 !s110 1700410805
+!i10b 1
+!s100 ^>g0j2^oQMJE:Xoe_;?I_0
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I;@lD6a2;h<U4moi3Y[fn]3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dD:/DSD Lab/Experiment 5/Question 2
+w1699633557
+8D:/DSD Lab/Experiment 5/Question 2/testbenchE5Q2.v
+FD:/DSD Lab/Experiment 5/Question 2/testbenchE5Q2.v
+!i122 15
+L0 1 43
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1700410804.000000
+!s107 D:/DSD Lab/Experiment 5/Question 2/testbenchE5Q2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Experiment 5/Question 2/testbenchE5Q2.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+ntestbench@e5@q2
+vVendingMachine
+R0
+!i10b 1
+!s100 RU7:f2_G8m4BAc0GAlFcN1
+R1
+IB4_Z3CUj=W[:8Mm<hU0b<1
+R2
+R3
+w1699632723
+8D:/DSD Lab/Experiment 5/Question 2/VendingMachine.v
+FD:/DSD Lab/Experiment 5/Question 2/VendingMachine.v
+!i122 16
+L0 1 75
+R4
+r1
+!s85 0
+31
+!s108 1700410805.000000
+!s107 D:/DSD Lab/Experiment 5/Question 2/VendingMachine.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Experiment 5/Question 2/VendingMachine.v|
+!i113 1
+R5
+R6
+n@vending@machine

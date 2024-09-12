@@ -1,0 +1,36 @@
+{D:/DSD Lab/Experiment 5/Question 3/Mooretype.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Experiment 5/Question 3/Mooretype.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Mooretype
+
+Top level modules:
+	Mooretype
+
+} {} {}} {D:/DSD Lab/Experiment 5/Question 3/DFF.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Experiment 5/Question 3/DFF.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module DFF
+
+Top level modules:
+	DFF
+
+} {} {}} {D:/DSD Lab/Experiment 5/Question 3/testbenchDFF.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Experiment 5/Question 3/testbenchDFF.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module testbenchDFF
+
+Top level modules:
+	testbenchDFF
+
+} {} {}} {D:/DSD Lab/Experiment 5/Question 3/MooreByDFF.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Experiment 5/Question 3/MooreByDFF.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module MooreByDFF
+
+Top level modules:
+	MooreByDFF
+
+} {} {}} {D:/DSD Lab/Experiment 5/Question 3/testbenchE5Q3.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Experiment 5/Question 3/testbenchE5Q3.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module testbenchE5Q3
+
+Top level modules:
+	testbenchE5Q3
+
+} {} {}}

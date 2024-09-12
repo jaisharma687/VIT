@@ -1,0 +1,32 @@
+module NorGate(x,y,z,F);
+input x,y,z;
+output F;
+wire xn1,xn2,nz,nxz,yn1,yn2,nxy,nf;
+nor n1(xn1,x,x);
+nor n2(xn2,xn1,xn1);
+nor n3(nz,z,z);
+nor n4(nxz,xn2,nz);
+nor n5(yn1,y,y);
+nor n6(yn2,yn1,yn1);
+nor n7(nxy,xn1,yn2);
+nor n8(nf,nxz,nxy);
+nor n9(F,nf,nf);
+endmodule;
+
+module tst();
+reg x,y,z;
+wire F;
+NorGate tst(x,y,z,F);
+initial
+begin
+$monitor($time,"x=%b, y=%b, z=%b, F=%b",x,y,z,F);
+    x=1'b0;y=1'b0;z=1'b0; //1
+#50 x=1'b0;y=1'b0;z=1'b1; //2
+#50 x=1'b0;y=1'b1;z=1'b0; //3
+#50 x=1'b0;y=1'b1;z=1'b1; //4
+#50 x=1'b1;y=1'b0;z=1'b0; //5
+#50 x=1'b1;y=1'b0;z=1'b1; //6
+#50 x=1'b1;y=1'b1;z=1'b0; //7
+#50 x=1'b1;y=1'b1;z=1'b1; //8
+end
+endmodule

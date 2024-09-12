@@ -1,0 +1,22 @@
+# Compile of UniversalShiftReg.v was successful.
+# Compile of testbenchE4Q7.v was successful.
+# 2 compiles, 0 failed with no errors.
+# Load canceled
+# Compile of UniversalShiftReg.v was successful.
+# Compile of testbenchE4Q7.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.testbenchE4Q7
+# vsim -gui work.testbenchE4Q7 
+# Start time: 08:58:04 on Oct 29,2023
+# Loading work.testbenchE4Q7
+# Loading work.UniversalShiftReg
+add wave -position insertpoint sim:/testbenchE4Q7/*
+run
+# parin = 1011, sel = 01, out = 1101
+# parin = 1011, sel = 10, out = 0111
+run
+# parin = 1011, sel = 11, out = 1011
+run
+quit -sim
+# End time: 08:59:13 on Oct 29,2023, Elapsed time: 0:01:09
+# Errors: 0, Warnings: 3

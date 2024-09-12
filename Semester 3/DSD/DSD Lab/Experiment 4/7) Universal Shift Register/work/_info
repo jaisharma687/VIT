@@ -1,0 +1,82 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/DSD Lab/Experiment 4/6) T Flip Flop
+vtestbenchE4Q7
+Z0 !s110 1698550075
+!i10b 1
+!s100 mR5_j?COfINEIBad8lH9j0
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IZCM0cXD]m>Ajj?B^PhfzH3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dD:/DSD Lab/Experiment 4/7) Universal Shift Register
+w1698550072
+Z4 8D:/DSD Lab/Experiment 4/7) Universal Shift Register/testbenchE4Q7.v
+Z5 FD:/DSD Lab/Experiment 4/7) Universal Shift Register/testbenchE4Q7.v
+!i122 3
+Z6 L0 1 29
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1698550075.000000
+Z9 !s107 D:/DSD Lab/Experiment 4/7) Universal Shift Register/testbenchE4Q7.v|
+Z10 !s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Experiment 4/7) Universal Shift Register/testbenchE4Q7.v|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+ntestbench@e4@q7
+vUniversalShiftReg
+R0
+!i10b 1
+!s100 07BTDgXMEYRaozC_XQGm50
+R1
+I6P9dKNU8mWf0V4[jCLBoz0
+R2
+R3
+w1698549920
+8D:/DSD Lab/Experiment 4/7) Universal Shift Register/UniversalShiftReg.v
+FD:/DSD Lab/Experiment 4/7) Universal Shift Register/UniversalShiftReg.v
+!i122 2
+L0 1 20
+R7
+r1
+!s85 0
+31
+R8
+!s107 D:/DSD Lab/Experiment 4/7) Universal Shift Register/UniversalShiftReg.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Experiment 4/7) Universal Shift Register/UniversalShiftReg.v|
+!i113 1
+R11
+R12
+n@universal@shift@reg
+vunsrtb
+!s110 1698550050
+!i10b 1
+!s100 J_GfN>46oj1OB9b]AK:IC3
+R1
+I`FzcERR;GYAO^HPW`QN4k0
+R2
+R3
+w1698550045
+R4
+R5
+!i122 1
+R6
+R7
+r1
+!s85 0
+31
+!s108 1698550050.000000
+R9
+R10
+!i113 1
+R11
+R12

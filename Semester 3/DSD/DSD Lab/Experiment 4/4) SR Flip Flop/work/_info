@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/DSD Lab/Experiment 4/3) D Flip Flop
+vSRFlipFlop
+!s110 1698510447
+!i10b 1
+!s100 GI6hVWoKc_P=EE^9^:Wo[2
+Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I<W6e_iiWi?dRAX<LO76aY3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/DSD Lab/Experiment 4/4) SR Flip Flop
+w1698510176
+8D:/DSD Lab/Experiment 4/4) SR Flip Flop/SRFlipFlop.v
+FD:/DSD Lab/Experiment 4/4) SR Flip Flop/SRFlipFlop.v
+!i122 2
+L0 1 23
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1698510447.000000
+!s107 D:/DSD Lab/Experiment 4/4) SR Flip Flop/SRFlipFlop.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Experiment 4/4) SR Flip Flop/SRFlipFlop.v|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+n@s@r@flip@flop
+vtestbenchE4Q4
+!s110 1698510446
+!i10b 1
+!s100 KTE3kAz_FSA[N3@jd<HCV2
+R0
+Il48AkXim`>PIZJ<KNCb`m1
+R1
+R2
+w1698510442
+8D:/DSD Lab/Experiment 4/4) SR Flip Flop/testbenchE4Q4.v
+FD:/DSD Lab/Experiment 4/4) SR Flip Flop/testbenchE4Q4.v
+!i122 1
+L0 1 18
+R3
+r1
+!s85 0
+31
+!s108 1698510446.000000
+!s107 D:/DSD Lab/Experiment 4/4) SR Flip Flop/testbenchE4Q4.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Experiment 4/4) SR Flip Flop/testbenchE4Q4.v|
+!i113 1
+R4
+R5
+ntestbench@e4@q4

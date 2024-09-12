@@ -1,0 +1,48 @@
+A51 MACRO ASSEMBLER  NADD                                                                 05/02/2024 02:28:40 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\nadd.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE nadd.asm SET(SMALL) DEBUG PRINT(.\Listings\nadd.lst) OBJECT(.\Objects\n
+                      add.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 7810              2     MOV R0,#10H
+0002 7A00              3     MOV R2,#00H
+0004 7B00              4     MOV R3,#00H
+0006 900200            5     MOV DPTR,#MYDATA
+0009 E4                6     MAIN: CLR A
+000A 93                7     MOVC A,@A+DPTR
+000B 2A                8     ADD A,R2
+000C FA                9     MOV R2,A
+000D 5003             10     JNC NEXT
+000F 0B               11     INC R3
+0010 C2D7             12     CLR PSW.7
+0012 A3               13     NEXT: INC DPTR
+0013 D8F4             14     DJNZ R0,MAIN
+0015 80FE             15     SJMP $
+0200                  16     ORG 0200H
+0200 5C225481         17     MYDATA: DB 92,34,84,129,47,33,21,05,69,17
+0204 2F211505                
+0208 4511                    
+                      18     END
+A51 MACRO ASSEMBLER  NADD                                                                 05/02/2024 02:28:40 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+MAIN . . . . . . .  C ADDR   0009H   A   
+MYDATA . . . . . .  C ADDR   0200H   A   
+NEXT . . . . . . .  C ADDR   0012H   A   
+PSW. . . . . . . .  D ADDR   00D0H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

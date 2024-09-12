@@ -1,0 +1,132 @@
+<html>
+    <head>
+        <title>
+            Quiz
+        </title>
+        <style>
+            .error{
+                color: red;
+                font-size: small;
+                font-weight: 800;
+            }
+            .correct{
+                color: green;
+            }
+            .container{
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Quiz</h1>
+        <form>
+            <div class="container">
+                <label for="fq1">
+                    When did Manchester City won the Treble?
+                </label>
+                <div class="options" id="fq1">
+                    <input type="radio" name="treble" value="22" id="22"><label for="22">22/23 Season</label>
+                    <input type="radio" name="treble" value="18" id="18"><label for="18">18/19 Season</label>
+                    <input type="radio" name="treble" value="20" id="20"><label for="20">20/21 Season</label>
+                    <input type="radio" name="treble" value="21" id="21"><label for="21">21/22 Season</label>
+                </div>
+                <div class="error treble"></div>
+            </div>
+            <div class="container">
+                <label for="fq2">
+                    Who was Manchester City Captain when they won the Treble?
+                </label>
+                <div class="options" id="fq2">
+                    <input type="radio" name="captain" value="kdb" id="kdb"><label for="kdb">De Bruyne</label>
+                    <input type="radio" name="captain" value="rodri" id="rodri"><label for="rodri">Rodri</label>
+                    <input type="radio" name="captain" value="gundo" id="gundo"><label for="gundo">Gundogan</label>
+                    <input type="radio" name="captain" value="walker" id="walker"><label for="walker">Walker</label>
+                </div>
+                <div class="error captain"></div>
+            </div>
+            <div class="container">
+                <label for="fq3">
+                    How many goals did Haaland scored in the Treble season?
+                </label>
+                <div class="options" id="fq3">
+                    <input type="radio" name="goals" value="54" id="54"><label for="54">54 goals</label>
+                    <input type="radio" name="goals" value="51" id="51"><label for="51">51 goals</label>
+                    <input type="radio" name="goals" value="52" id="52"><label for="52">52 goals</label>
+                    <input type="radio" name="goals" value="53" id="53"><label for="53">53 goals</label>
+                </div>
+                <div class="error goals"></div>
+            </div>
+            <div class="container">
+                <label for="fq4">
+                    Aggreate score line of Manchester City and Real Madrid tie in the Treble season?
+                </label>
+                <div class="options" id="fq4">
+                    <input type="radio" name="madrid" value="6-2" id="6-2"><label for="6-2">6-2</label>
+                    <input type="radio" name="madrid" value="5-1" id="5-1"><label for="5-1">5-1</label>
+                    <input type="radio" name="madrid" value="4-3" id="4-3"><label for="4-3">4-3</label>
+                    <input type="radio" name="madrid" value="5-6" id="5-6"><label for="5-6">5-6</label>
+                </div>
+                <div class="error madrid"></div>
+            </div>
+            <div class="container">
+                <label for="fq5">
+                    Who started vs Inter Milan in UCL Final in Istanbul?
+                </label>
+                <div class="options" id="fq5">
+                    <input type="radio" name="istanbul" value="foden" id="foden"><label for="foden">Foden</label>
+                    <input type="radio" name="istanbul" value="akanji" id="akanji"><label for="akanji">Akanji</label>
+                    <input type="radio" name="istanbul" value="laporte" id="laporte"><label for="laporte">Laporte</label>
+                    <input type="radio" name="istanbul" value="mahrez" id="mahrez"><label for="mahrez">Mahrez</label>
+                </div>
+                <div class="error istanbul"></div>
+            </div>
+            <div class="container">
+                <input type="submit">
+                <input type="reset">
+            </div>
+        </form>
+        <script type="text/javascript">
+            function clearErrors(){
+                errors = document.querySelectorAll(".error");
+                for(var i=0;i<errors.length;i++){
+                    errors[i].innerHTML = "";
+                    errors[i].classList.remove("correct");
+                }
+            }
+
+            function setError(ids,names){
+                for(var i=0;i<ids.length;i++){
+                    var n = names[i];
+                    var c = ids[i];
+                    options = document.querySelectorAll('input[name='+n+']');
+                    found = false;
+                    for(var j=0;j<options.length;j++){
+                        if(options[j].checked && options[j].value == c){
+                            found = true;
+                            break;
+                        }
+                    }
+                    if(!found){
+                        document.querySelector("."+n).innerHTML = "Incorrect";
+                    }
+                    else{
+                        document.querySelector("."+n).innerHTML = "Correct";
+                        document.querySelector("."+n).classList.add("correct");
+                    }
+                }
+            }
+
+            function validateForm(event){
+                returnval = true;
+                clearErrors();
+                event.preventDefault();
+                setError(["22","gundo","52","5-1","akanji"],["treble","captain","goals","madrid","istanbul"]);
+
+            }
+
+            document.addEventListener('submit',validateForm);
+            document.addEventListener('reset',clearErrors);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+A51 MACRO ASSEMBLER  REPEATED_ADDITION                                                    01/27/2024 22:49:22 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\repeated_addition.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE repeated_addition.asm SET(SMALL) DEBUG PRINT(.\Listings\repeated_additi
+                      on.lst) OBJECT(.\Objects\repeated_addition.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 00H
+0000 7400              2     MOV A,#00H
+0002 7814              3     MOV R0,#14H
+0004 7F00              4     MOV R7,#00H
+0006 242B              5     LOOP : ADD A,#2BH
+0008 5001              6     JNC L
+000A 0F                7     INC R7
+000B D8F9              8     L: DJNZ R0,LOOP
+000D F9                9     MOV R1,A
+                      10     END
+A51 MACRO ASSEMBLER  REPEATED_ADDITION                                                    01/27/2024 22:49:22 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+L. . . . . . . . .  C ADDR   000BH   A   
+LOOP . . . . . . .  C ADDR   0006H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

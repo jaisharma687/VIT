@@ -1,0 +1,131 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/DSD Lab/Experiment 5/Question 2
+vDFF
+Z0 !s110 1700379461
+!i10b 1
+!s100 3M1B2N<HY67n[>`YRfV6z1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IHzAXBjJRO0A4YCRW5CVTd2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dD:/DSD Lab/Experiment 5/Question 3
+w1699629777
+8D:/DSD Lab/Experiment 5/Question 3/DFF.v
+FD:/DSD Lab/Experiment 5/Question 3/DFF.v
+!i122 47
+L0 1 15
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1700379461.000000
+!s107 D:/DSD Lab/Experiment 5/Question 3/DFF.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Experiment 5/Question 3/DFF.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+n@d@f@f
+vMooreByDFF
+R0
+!i10b 1
+!s100 @W1@AzIa;5DS7]?XEAIIG3
+R1
+IaVg``F`f`AHzONQBOC>1]1
+R2
+R3
+w1699630306
+8D:/DSD Lab/Experiment 5/Question 3/MooreByDFF.v
+FD:/DSD Lab/Experiment 5/Question 3/MooreByDFF.v
+!i122 46
+L0 1 12
+R4
+r1
+!s85 0
+31
+Z8 !s108 1700379460.000000
+!s107 D:/DSD Lab/Experiment 5/Question 3/MooreByDFF.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Experiment 5/Question 3/MooreByDFF.v|
+!i113 1
+R6
+R7
+n@moore@by@d@f@f
+vMooretype
+Z9 !s110 1700379460
+!i10b 1
+!s100 MR<YEXEN0<0<OCgj8oR^Q1
+R1
+I:U:8YAAV1hU3La8biLb:j0
+R2
+R3
+w1700330448
+8D:/DSD Lab/Experiment 5/Question 3/Mooretype.v
+FD:/DSD Lab/Experiment 5/Question 3/Mooretype.v
+!i122 45
+L0 1 69
+R4
+r1
+!s85 0
+31
+R8
+!s107 D:/DSD Lab/Experiment 5/Question 3/Mooretype.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Experiment 5/Question 3/Mooretype.v|
+!i113 1
+R6
+R7
+n@mooretype
+vtestbenchDFF
+R0
+!i10b 1
+!s100 mUN;=eZQ@W2j`e;iY`mbA2
+R1
+IE9OYXHC<b6Xa=1d5K<RZ;2
+R2
+R3
+w1699631150
+8D:/DSD Lab/Experiment 5/Question 3/testbenchDFF.v
+FD:/DSD Lab/Experiment 5/Question 3/testbenchDFF.v
+!i122 48
+Z10 L0 1 32
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/DSD Lab/Experiment 5/Question 3/testbenchDFF.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Experiment 5/Question 3/testbenchDFF.v|
+!i113 1
+R6
+R7
+ntestbench@d@f@f
+vtestbenchE5Q3
+R9
+!i10b 1
+!s100 6Uj1k1aWIVm]Wf@1208WV3
+R1
+II?hO46z7ZACd0c2]Y9W]^0
+R2
+R3
+w1699628713
+8D:/DSD Lab/Experiment 5/Question 3/testbenchE5Q3.v
+FD:/DSD Lab/Experiment 5/Question 3/testbenchE5Q3.v
+!i122 44
+R10
+R4
+r1
+!s85 0
+31
+R8
+!s107 D:/DSD Lab/Experiment 5/Question 3/testbenchE5Q3.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Experiment 5/Question 3/testbenchE5Q3.v|
+!i113 1
+R6
+R7
+ntestbench@e5@q3

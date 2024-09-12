@@ -1,0 +1,77 @@
+A51 MACRO ASSEMBLER  MAIN1                                                                03/26/2024 21:02:19 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\main1.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE main1.asm SET(SMALL) DEBUG PRINT(.\Listings\main1.lst) OBJECT(.\Objects
+                      \main1.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000                   2     MAIN: 
+0000 758920            3                     MOV TMOD,#20H; timer 1 mode 3
+0003 759850            4                     MOV SCON,#50H; serial port
+0006 790E              5                     MOV R1,#14; ;length of string
+0008 D28E              6                     SETB TR1; start timer 1
+000A 20900A            7                     JB P1.0,CHANCE; check SW
+000D                   8     PLACE:                                  ;SW = 0         
+000D 900200            9                     MOV DPTR,#Learn ; DPTR = 200H
+0010 758DFD           10                     MOV TH1,#-3 ;9600 baud rate
+0013 1121             11                     ACALL LOOP ; call loop
+0015 80E9             12                     SJMP MAIN
+0017                  13     CHANCE:                                 ;SW = 1
+0017 900400           14                     MOV DPTR,#Grow ; DPTR = 400H
+001A 758DFA           15                     MOV TH1,#-6 ;4800 baud rate
+001D 1121             16                     ACALL LOOP ; call loop
+001F 80DF             17                     SJMP MAIN
+0021                  18     LOOP: 
+0021 E4               19                     CLR A
+0022 93               20                     MOVC A,@A+DPTR
+0023 F599             21                     MOV SBUF,A
+0025                  22     HERE: 
+0025 3099FD           23                     JNB TI,HERE
+0028 C299             24                     CLR TI
+002A A3               25                     INC DPTR
+002B D9F4             26                     DJNZ R1,LOOP
+002D 22               27                     RET
+                      28                     
+0200                  29     ORG 0200H
+0200 504C4143         30     Learn: DB "PLACE TO LEARN"
+0204 4520544F                
+0208 204C4541                
+020C 524E                    
+0400                  31     ORG 0400H
+0400 4348414E         32     Grow: DB "CHANCE TO GROW" 
+0404 43452054                
+0408 4F204752                
+040C 4F57                    
+                      33     END
+A51 MACRO ASSEMBLER  MAIN1                                                                03/26/2024 21:02:19 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+CHANCE . . . . . .  C ADDR   0017H   A   
+GROW . . . . . . .  C ADDR   0400H   A   
+HERE . . . . . . .  C ADDR   0025H   A   
+LEARN. . . . . . .  C ADDR   0200H   A   
+LOOP . . . . . . .  C ADDR   0021H   A   
+MAIN . . . . . . .  C ADDR   0000H   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+PLACE. . . . . . .  C ADDR   000DH   A   
+SBUF . . . . . . .  D ADDR   0099H   A   
+SCON . . . . . . .  D ADDR   0098H   A   
+TH1. . . . . . . .  D ADDR   008DH   A   
+TI . . . . . . . .  B ADDR   0098H.1 A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+TR1. . . . . . . .  B ADDR   0088H.6 A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

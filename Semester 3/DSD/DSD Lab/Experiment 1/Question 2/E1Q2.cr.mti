@@ -1,0 +1,71 @@
+{D:/DSD Lab/Experiment 1/Question 2/SOPdata.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Experiment 1/Question 2/SOPdata.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module SOPdata
+
+Top level modules:
+	SOPdata
+
+} {} {}} {D:/DSD Lab/Experiment 1/Question 2/POSdata.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Experiment 1/Question 2/POSdata.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module POSdata
+
+Top level modules:
+	POSdata
+
+} {} {}} {D:/DSD Lab/Experiment 1/Question 2/threeinputgate.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Experiment 1/Question 2/threeinputgate.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module threeinputgate
+
+Top level modules:
+	threeinputgate
+
+} {} {}} {D:/DSD Lab/Experiment 1/Question 2/threeinputbehavioral.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Experiment 1/Question 2/threeinputbehavioral.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module threeinputbehavioural
+
+Top level modules:
+	threeinputbehavioural
+
+} {} {}} {D:/DSD Lab/Experiment 1/Question 2/testbenchE1Q2.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Experiment 1/Question 2/testbenchE1Q2.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module testbenchE1Q2
+
+Top level modules:
+	testbenchE1Q2
+
+} {} {}} {D:/DSD Lab/Experiment 1/Question 2/threeinputdata.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Experiment 1/Question 2/threeinputdata.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module threeinputdata
+
+Top level modules:
+	threeinputdata
+
+} {} {}} {D:/DSD Lab/Experiment 1/Question 2/SOPbehaviroal.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Experiment 1/Question 2/SOPbehaviroal.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module SOPbehavioral
+
+Top level modules:
+	SOPbehavioral
+
+} {} {}} {D:/DSD Lab/Experiment 1/Question 2/SOPgate.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Experiment 1/Question 2/SOPgate.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module SOPgate
+
+Top level modules:
+	SOPgate
+
+} {} {}} {D:/DSD Lab/Experiment 1/Question 2/POSbehavioral.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Experiment 1/Question 2/POSbehavioral.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module POSbehavioral
+
+Top level modules:
+	POSbehavioral
+
+} {} {}} {D:/DSD Lab/Experiment 1/Question 2/POSgate.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Experiment 1/Question 2/POSgate.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module POSgate
+
+Top level modules:
+	POSgate
+
+} {} {}}

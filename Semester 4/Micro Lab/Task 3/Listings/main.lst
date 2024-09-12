@@ -1,0 +1,53 @@
+A51 MACRO ASSEMBLER  MAIN                                                                 03/08/2024 18:45:10 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\main.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE main.asm SET(SMALL) DEBUG PRINT(.\Listings\main.lst) OBJECT(.\Objects\m
+                      ain.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 758901            2     MOV TMOD,#01H
+0003 758A47            3     HERE: MOV TL0,#47H
+0006 758CFF            4     MOV TH0,#0FFH
+0009 D290              5     SETB P1.0
+000B 5100              6     ACALL DELAY
+000D 758A1E            7     MOV TL0,#1EH
+0010 758CFD            8     MOV TH0,#0FDH
+0013 C290              9     CLR P1.0
+0015 5100             10     ACALL DELAY
+0017 80EA             11     SJMP HERE
+                      12     
+0200                  13     ORG 0200H
+0200 D28C             14     DELAY: SETB TR0
+0202 308DFD           15     AGAIN: JNB TF0,AGAIN
+0205 C28C             16     CLR TR0
+0207 C28D             17     CLR TF0
+0209 22               18     RET
+                      19     
+                      20     END
+A51 MACRO ASSEMBLER  MAIN                                                                 03/08/2024 18:45:10 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+AGAIN. . . . . . .  C ADDR   0202H   A   
+DELAY. . . . . . .  C ADDR   0200H   A   
+HERE . . . . . . .  C ADDR   0003H   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+TF0. . . . . . . .  B ADDR   0088H.5 A   
+TH0. . . . . . . .  D ADDR   008CH   A   
+TL0. . . . . . . .  D ADDR   008AH   A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+TR0. . . . . . . .  B ADDR   0088H.4 A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

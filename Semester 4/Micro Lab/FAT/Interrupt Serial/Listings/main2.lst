@@ -1,0 +1,55 @@
+A51 MACRO ASSEMBLER  MAIN2                                                                05/02/2024 09:44:54 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\main2.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE main2.asm SET(SMALL) DEBUG PRINT(.\Listings\main2.lst) OBJECT(.\Objects
+                      \main2.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 020030            2     LJMP MAIN
+0023                   3     ORG 23H
+0023 E599              4     MOV A,SBUF
+0025 F580              5     MOV P0,A
+0027 C298              6     CLR RI
+0029 32                7     RETI
+0030                   8     ORG 30H
+0030 7590FF            9     MAIN: MOV P1,#0FFH
+0033 758920           10     MOV TMOD,#20H
+0036 759850           11     MOV SCON,#50H
+0039 758DFD           12     MOV TH1,#0FDH
+003C 75A890           13     MOV IE,#10010000B
+003F D28E             14     SETB TR1
+0041 E590             15     LOOP: MOV A,P1
+0043 F5A0             16     MOV P2,A
+0045 80FA             17     SJMP LOOP
+0047 32               18     RETI
+                      19     END
+A51 MACRO ASSEMBLER  MAIN2                                                                05/02/2024 09:44:54 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+IE . . . . . . . .  D ADDR   00A8H   A   
+LOOP . . . . . . .  C ADDR   0041H   A   
+MAIN . . . . . . .  C ADDR   0030H   A   
+P0 . . . . . . . .  D ADDR   0080H   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+P2 . . . . . . . .  D ADDR   00A0H   A   
+RI . . . . . . . .  B ADDR   0098H.0 A   
+SBUF . . . . . . .  D ADDR   0099H   A   
+SCON . . . . . . .  D ADDR   0098H   A   
+TH1. . . . . . . .  D ADDR   008DH   A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+TR1. . . . . . . .  B ADDR   0088H.6 A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

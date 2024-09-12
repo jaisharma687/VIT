@@ -1,0 +1,281 @@
+<html>
+    <head>
+        <title>
+            PAT Registration
+        </title>
+        <style>
+            .container{
+                display: flex;
+                margin: 10px;
+            }
+            label {
+                width: 10em;
+            }
+            .inputs{
+                width: 250px;
+            }
+            .box{
+                display: flex;
+                justify-content: space-evenly;
+            }
+            .gen{
+                float: left;
+            }
+            form input[type="radio"]{
+                float: left;
+                margin-right: 10px;
+            }
+            .error{
+                width: 400px;
+                margin-left: 20px;
+                color: red;
+                font-weight: 800;
+                font-size: small;
+            }
+            .cg{
+                color:green;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>PAT Registration</h1>
+        </div>
+        <div class="container">
+            <form method="push">
+                <div class="container">
+                    <label for="fname">
+                        Name
+                    </label>
+                    <input type="text" id="fname" placeholder="Full Name" class="inputs">
+                    <div class="error name"></div>
+                </div>
+                <div class="container">
+                    <label for="freg">
+                        Registration Number
+                    </label>
+                    <input type="text" id="freg" placeholder="Registration Number" class="inputs">
+                    <div class="error reg"></div>
+                </div>
+                <div class="container">
+                    <label for="fpass">
+                        Password
+                    </label>
+                    <input type="password" id="fpass" class="inputs" placeholder="Password">
+                    <div class="error pass"></div>
+                </div>
+                <div class="container">
+                    <label for="fcpass">
+                        Confirm Password
+                    </label>
+                    <input type="password" id="fcpass" class="inputs" placeholder="Confirm Password">
+                    <div class="error cpass"></div>
+                </div>
+                <div class="container">
+                    <label for="fdob">
+                        Date Of Birth
+                    </label>
+                    <input type="text" id="fdob" class="inputs" placeholder="DD/MM/YYYY">
+                    <div class="error dob"></div>
+                </div>
+                <div class="container">
+                    <label for="fage">
+                        Age
+                    </label>
+                    <input type="text" id="fage" class="inputs" placeholder="Age">
+                    <div class="error age"></div>
+                </div>
+                <div class="container">
+                    <label for="fgender">
+                        Gender
+                    </label>
+                    <div class="inputs box">
+                        <input type="radio" id="male" name="gender"><label class="gen" for="male">Male</label>
+                        <input type="radio" id="female" name="gender"><label class="gen" for="female">Female</label>
+                        <input type="radio" id="others" name="gender"><label class="gen" for="others">Others</label>
+                    </div>
+                    <div class="error gender"></div>
+                </div>
+                <div class="container">
+                    <label for="fprog">
+                        Programme
+                    </label>
+                    <input type="text" id="fprog" class="inputs" placeholder="Programme">
+                    <div class="error prog"></div>
+                </div>
+                <div class="container">
+                    <label for="fyear">
+                        Year
+                    </label>
+                    <input type="text" id="fyear" class="inputs" placeholder="Year">
+                    <div class="error year"></div>
+                </div>
+                <div class="container">
+                    <label for="fsem">
+                        Semester
+                    </label>
+                    <select name="semseters" class="inputs">
+                        <option selected>Semester 1</option>
+                        <option>Semester 2</option>
+                        <option>Semester 3</option>
+                        <option>Semester 4</option>
+                        <option>Semester 5</option>
+                        <option>Semester 6</option>
+                        <option>Semester 7</option>
+                        <option>Semester 8</option>
+                    </select>
+                    <div class="error sem"></div>
+                </div>
+                <div class="container">
+                    <label for="femail">
+                        Email ID
+                    </label>
+                    <input type="text" id="femail" class="inputs" placeholder="Email Address">
+                    <div class="error email"></div>
+                </div>
+                <div class="container">
+                    <label for="finterest">
+                        Area of Interest
+                    </label>
+                    <input type="text" id="finterest" class="inputs" placeholder="Area of Interest">
+                    <div class="error interest"></div>
+                </div>
+                <div class="container">
+                    <label for="fcgpa">
+                        CGPA
+                    </label>
+                    <input type="text" id="fcgpa" class="inputs" placeholder="CGPA">
+                    <div class="error cgpa"></div>
+                </div>
+                <div class="container">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+        <script type="text/javascript">
+            function clearErrors(){
+                errors = document.querySelectorAll(".error");
+                for(var i = 0; i < errors.length ; i++){
+                    errors[i].innerHTML = "";
+                }
+            }
+
+            function setError(id,error){
+                document.querySelector("."+id).innerHTML = error;
+            }
+
+            function validateForm(event){
+                event.preventDefault();
+                returnval = true;
+                clearErrors();
+                
+                name = document.getElementById("fname").value;
+                if(name.length == 0){
+                    setError("name","*Can't be left empty");
+                    returnval = false;
+                }
+
+                reg = document.getElementById("freg").value;
+                if(reg.length == 0){
+                    setError("reg","*Can't be left empty");
+                    returnval = false;
+                }
+
+                pass = document.getElementById("fpass").value;
+                if(pass.length == 0){
+                    setError("pass","*Can't be left empty");
+                    returnval = false;
+                }
+
+                cpass = document.getElementById("fcpass").value;
+                if(cpass != pass){
+                    setError("cpass","*Both Confirmed Password and Password should be equal");
+                    returnval = false;
+                }
+
+                dob = document.getElementById("fdob").value;
+                regex_dob = /^[0-3][0-9]\/[0-1][0-9]\/[0-9]{4}$/;
+                if(dob.length == 0){
+                    setError("dob","*Can't be left empty");
+                    returnval = false;
+                }
+                else if(regex_dob.test(dob)==false){
+                    setError("dob","*Incorrect date format");
+                    returnval = false;
+                }
+
+                age = document.getElementById("fage").value;
+                if(age.length == 0){
+                    setError("age","*Can't be left empty");
+                    returnval = false;
+                }
+
+                gender = document.querySelectorAll('input[type="radio"]');
+                var check = false;
+                for(var i=0;i<gender.length;i++){
+                    if(gender[i].checked){
+                        check = true;
+                        break;
+                    }
+                }
+                if(!check){
+                    setError("gender","*Select one of the genders")
+                    returnval = false;
+                }
+
+                prog = document.getElementById("fprog").value;
+                if(prog.length == 0){
+                    setError("prog","*Can't be left empty");
+                    returnval = false;
+                }
+
+                year = document.getElementById("fyear").value;
+                if(year.length == 0){
+                    setError("year","*Can't be left empty");
+                    returnval = false;
+                }
+
+                email = document.getElementById("femail").value;
+                regex_email = /^2[0-3][BM][A-Z][A-Z][0-9]{4}@vitstudent.ac.in$/;
+                if(email.length == 0){
+                    setError("email","*Can't be left empty");
+                    returnval = false;
+                }
+                else if(regex_email.test(email) == false){
+                    setError("email","*Email should be of format RegisterNumber@vitdtudent.ac.in");
+                    returnval = false;
+                }
+
+                interest = document.getElementById("finterest").value;
+                if(interest.length == 0){
+                    setError("interest","*Can't be left empty");
+                    returnval = false;
+                }
+
+                cgpa_string = document.getElementById("fcgpa").value;
+                cgpa = parseFloat(cgpa_string);
+                if(cgpa_string.length == 0){
+                    setError("cgpa","*Can't be left empty");
+                    returnval = false;
+                }
+                else if(isNaN(cgpa)){
+                    setError("cgpa","*Enter valid CGPA");
+                    console.log(cgpa);
+                    returnval = false;
+                }
+
+                if (!returnval) {
+                    event.preventDefault();
+                } else {
+                    if (cgpa >= 8) {
+                        window.location.href = "redirect1.html";
+                    } else {
+                        window.location.href = "https://www.google.com";
+                    }
+                }
+            }
+
+            document.addEventListener('submit',validateForm);
+        </script>
+    </body>
+</html>

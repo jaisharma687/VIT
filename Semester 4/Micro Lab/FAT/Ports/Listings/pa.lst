@@ -1,0 +1,40 @@
+A51 MACRO ASSEMBLER  PA                                                                   05/02/2024 06:06:48 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\pa.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE pa.asm SET(SMALL) DEBUG PRINT(.\Listings\pa.lst) OBJECT(.\Objects\pa.ob
+                      j) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 E580              2     MAIN: MOV A,P0
+0002 75F004            3     MOV B,#4
+0005 A4                4     MUL AB
+0006 F5A0              5     MOV P2,A
+0008 E580              6     MOV A,P0
+000A 8580F0            7     MOV B,P0
+000D A4                8     MUL AB
+000E F5B0              9     MOV P3,A
+0010 80EE             10     SJMP MAIN
+                      11     END
+A51 MACRO ASSEMBLER  PA                                                                   05/02/2024 06:06:48 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+MAIN . . . . . . .  C ADDR   0000H   A   
+P0 . . . . . . . .  D ADDR   0080H   A   
+P2 . . . . . . . .  D ADDR   00A0H   A   
+P3 . . . . . . . .  D ADDR   00B0H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

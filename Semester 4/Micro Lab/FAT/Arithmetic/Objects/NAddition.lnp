@@ -1,0 +1,4 @@
+".\Objects\STARTUP.obj",
+".\Objects\nadd.obj" 
+TO ".\Objects\NAddition" 
+PRINT(".\Listings\NAddition.m51") RAMSIZE(256) 

@@ -1,0 +1,55 @@
+A51 MACRO ASSEMBLER  ADD                                                                  05/02/2024 01:06:09 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\add.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE add.asm SET(SMALL) DEBUG PRINT(.\Listings\add.lst) OBJECT(.\Objects\add
+                      .obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 7805              2     MOV R0,#05H
+0002 7900              3     MOV R1,#00H
+0004 7A00              4     MOV R2,#00H
+0006 C2D7              5     CLR PSW.7
+0008 900200            6     MOV DPTR,#0200H
+000B E4                7     MAIN: CLR A
+000C 93                8     MOVC A,@A+DPTR
+000D 29                9     ADD A,R1
+000E F9               10     MOV R1,A
+000F 5003             11     JNC NEXT
+0011 0A               12     INC R2
+0012 C2D7             13     CLR PSW.7
+0014 A3               14     NEXT: INC DPTR
+0015 D8F4             15     DJNZ R0,MAIN
+0017 E4               16     CLR A
+0018 7840             17     MOV R0,#40H
+001A EA               18     MOV A,R2
+001B F6               19     MOV @R0,A
+001C 08               20     INC R0
+001D E9               21     MOV A,R1
+001E F6               22     MOV @R0,A
+001F 80FE             23     HERE: SJMP HERE
+0200                  24     ORG 0200H
+0200 92236687         25     DB 92H,23H,66H,87H,0F5H
+0204 F5                      
+                      26     END
+A51 MACRO ASSEMBLER  ADD                                                                  05/02/2024 01:06:09 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+HERE . . . . . . .  C ADDR   001FH   A   
+MAIN . . . . . . .  C ADDR   000BH   A   
+NEXT . . . . . . .  C ADDR   0014H   A   
+PSW. . . . . . . .  D ADDR   00D0H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

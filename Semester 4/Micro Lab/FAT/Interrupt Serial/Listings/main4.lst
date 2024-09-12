@@ -1,0 +1,57 @@
+A51 MACRO ASSEMBLER  MAIN4                                                                05/02/2024 10:36:44 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\main4.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE main4.asm SET(SMALL) DEBUG PRINT(.\Listings\main4.lst) OBJECT(.\Objects
+                      \main4.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 020300            2     LJMP MAIN
+000B                   3     ORG 000BH
+000B B2A1              4     CPL P2.1
+000D 758CD1            5     MOV TH0,#-47
+0010 32                6     RETI
+0013                   7     ORG 0013H
+0013 058B              8     INC TL1
+0015 E58B              9     MOV A,TL1
+0017 F580             10     MOV P0,A
+0019 32               11     RETI 
+0300                  12     ORG 0300H
+0300                  13     MAIN:
+0300 758962           14     MOV TMOD,#62H
+0303 758CD1           15     MOV TH0,#-47
+0306 758D00           16     MOV TH1,#00H
+0309 758B00           17     MOV TL1,#00H
+030C 75A886           18     MOV IE,#10000110B
+030F D28C             19     SETB TR0
+0311 D28E             20     SETB TR1
+0313 80FE             21     LOOP: SJMP LOOP
+                      22     END
+A51 MACRO ASSEMBLER  MAIN4                                                                05/02/2024 10:36:44 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+IE . . . . . . . .  D ADDR   00A8H   A   
+LOOP . . . . . . .  C ADDR   0313H   A   
+MAIN . . . . . . .  C ADDR   0300H   A   
+P0 . . . . . . . .  D ADDR   0080H   A   
+P2 . . . . . . . .  D ADDR   00A0H   A   
+TH0. . . . . . . .  D ADDR   008CH   A   
+TH1. . . . . . . .  D ADDR   008DH   A   
+TL1. . . . . . . .  D ADDR   008BH   A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+TR0. . . . . . . .  B ADDR   0088H.4 A   
+TR1. . . . . . . .  B ADDR   0088H.6 A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

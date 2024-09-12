@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/DSD Lab/Practice/Booth Multiplier
+vALUunit
+Z0 !s110 1699459699
+!i10b 1
+!s100 O:]4DSdPHLLPd4b6nghbX1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IBo=R:XVnl`@emPSNX2F8H1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dD:/DSD Lab/Experiment 5/Question 1
+w1699459580
+8D:/DSD Lab/Experiment 5/Question 1/ALUunit.v
+FD:/DSD Lab/Experiment 5/Question 1/ALUunit.v
+!i122 30
+L0 1 38
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1699459699.000000
+!s107 D:/DSD Lab/Experiment 5/Question 1/ALUunit.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Experiment 5/Question 1/ALUunit.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@a@l@uunit
+vtestbenchE5Q1
+R0
+!i10b 1
+!s100 o9mP8T<kX0mf?ocbHY^O<1
+R1
+Iz]IjF9GH5>z[8BBJjBfOQ2
+R2
+R3
+w1699459686
+8D:/DSD Lab/Experiment 5/Question 1/testbenchE5Q1.v
+FD:/DSD Lab/Experiment 5/Question 1/testbenchE5Q1.v
+!i122 29
+L0 1 16
+R4
+r1
+!s85 0
+31
+!s108 1699459698.000000
+!s107 D:/DSD Lab/Experiment 5/Question 1/testbenchE5Q1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Experiment 5/Question 1/testbenchE5Q1.v|
+!i113 1
+R5
+R6
+ntestbench@e5@q1

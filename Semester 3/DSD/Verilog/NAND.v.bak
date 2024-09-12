@@ -1,0 +1,32 @@
+module NandGate(x,y,z,F);
+input x,y,z;
+output F;
+wire xn,nxz1,nxz2,nxz3,yn,nxy1,nxy2,nxy3;
+nand n1(xn,x,x);
+nand n2(nxz1,xn,z);
+nand n3(nxz2,nxz1,nxz1);
+nand n4(nxz3,nxz2,nxz2);
+nand n5(yn,y,y);
+nand n6(nxy1,x,yn);
+nand n7(nxy2,nxy1,nxy1);
+nand n8(nxy3,nxy2,nxy2);
+nand n9(F,nxz3,nxy3);
+endmodule;
+
+module test();
+reg x,y,z;
+wire F;
+NandGate tst(x,y,z,F);
+initial
+begin
+$monitor($time,"x=%b, y=%b, z=%b, F=%b",x,y,z,F);
+    x=1'b0;y=1'b0;z=1'b0; //1
+#50 x=1'b0;y=1'b0;z=1'b1; //2
+#50 x=1'b0;y=1'b1;z=1'b0; //3
+#50 x=1'b0;y=1'b1;z=1'b1; //4
+#50 x=1'b1;y=1'b0;z=1'b0; //5
+#50 x=1'b1;y=1'b0;z=1'b1; //6
+#50 x=1'b1;y=1'b1;z=1'b0; //7
+#50 x=1'b1;y=1'b1;z=1'b1; //8
+end
+endmodule

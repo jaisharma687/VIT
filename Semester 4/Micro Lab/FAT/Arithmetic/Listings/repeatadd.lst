@@ -1,0 +1,44 @@
+A51 MACRO ASSEMBLER  REPEATADD                                                            05/02/2024 01:24:11 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\repeatadd.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE repeatadd.asm SET(SMALL) DEBUG PRINT(.\Listings\repeatadd.lst) OBJECT(.
+                      \Objects\repeatadd.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 7840              2     MOV R0,#40H
+0002 7A23              3     MOV R2,#23H
+0004 7F00              4     MOV R7,#00H
+0006 2447              5     MAIN: ADD A,#47H
+0008 5003              6     JNC NEXT
+000A 0F                7     INC R7
+000B C2D7              8     CLR PSW.7
+000D DAF7              9     NEXT: DJNZ R2,MAIN
+000F FE               10     MOV R6,A
+0010 EF               11     MOV A,R7
+0011 F6               12     MOV @R0,A
+0012 EE               13     MOV A,R6
+0013 08               14     INC R0
+0014 F6               15     MOV @R0,A
+0015 80FE             16     SJMP $
+                      17     END
+A51 MACRO ASSEMBLER  REPEATADD                                                            05/02/2024 01:24:11 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+MAIN . . . . . . .  C ADDR   0006H   A   
+NEXT . . . . . . .  C ADDR   000DH   A   
+PSW. . . . . . . .  D ADDR   00D0H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

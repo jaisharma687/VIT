@@ -1,0 +1,15 @@
+{D:/DSD Lab/Experiment 4/7) Universal Shift Register/testbenchE4Q7.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Experiment 4/7) Universal Shift Register/testbenchE4Q7.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module testbenchE4Q7
+
+Top level modules:
+	testbenchE4Q7
+
+} {} {}} {D:/DSD Lab/Experiment 4/7) Universal Shift Register/UniversalShiftReg.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Experiment 4/7) Universal Shift Register/UniversalShiftReg.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module UniversalShiftReg
+
+Top level modules:
+	UniversalShiftReg
+
+} {} {}}

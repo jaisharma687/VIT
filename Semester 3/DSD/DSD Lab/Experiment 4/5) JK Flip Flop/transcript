@@ -1,0 +1,172 @@
+# Compile of JKFlipFlop.v was successful.
+# Compile of testbenchE4Q5.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.testbenchE4Q5
+# vsim -gui work.testbenchE4Q5 
+# Start time: 22:21:09 on Oct 28,2023
+# Loading work.testbenchE4Q5
+# Loading work.JKFlipFlop
+add wave -position insertpoint sim:/testbenchE4Q5/*
+run
+#                    0: Clk = 0 , JK = xx , Q = x , Qbar = x
+#                    2: Clk = 1 , JK = xx , Q = z , Qbar = x
+#                    3: Clk = 1 , JK = 10 , Q = z , Qbar = x
+#                    4: Clk = 0 , JK = 10 , Q = z , Qbar = x
+#                    6: Clk = 1 , JK = 10 , Q = 0 , Qbar = x
+#                    7: Clk = 1 , JK = 11 , Q = 0 , Qbar = x
+#                    8: Clk = 0 , JK = 11 , Q = 0 , Qbar = x
+#                   10: Clk = 1 , JK = 11 , Q = x , Qbar = x
+#                   12: Clk = 0 , JK = 11 , Q = x , Qbar = x
+#                   14: Clk = 1 , JK = 11 , Q = x , Qbar = x
+#                   15: Clk = 1 , JK = 01 , Q = x , Qbar = x
+#                   16: Clk = 0 , JK = 01 , Q = x , Qbar = x
+#                   17: Clk = 0 , JK = 00 , Q = x , Qbar = x
+#                   18: Clk = 1 , JK = 00 , Q = x , Qbar = x
+# ** Note: $finish    : D:/DSD Lab/Experiment 4/5) JK Flip Flop/testbenchE4Q5.v(15)
+#    Time: 19 ps  Iteration: 0  Instance: /testbenchE4Q5
+# 1
+# Break in Module testbenchE4Q5 at D:/DSD Lab/Experiment 4/5) JK Flip Flop/testbenchE4Q5.v line 15
+quit -sim
+# End time: 22:22:25 on Oct 28,2023, Elapsed time: 0:01:16
+# Errors: 0, Warnings: 2
+# Compile of JKFlipFlop.v was successful.
+# Compile of testbenchE4Q5.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of JKFlipFlop.v was successful.
+# Compile of testbenchE4Q5.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of JKFlipFlop.v was successful.
+# Compile of testbenchE4Q5.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.testbenchE4Q5
+# vsim -gui work.testbenchE4Q5 
+# Start time: 22:24:30 on Oct 28,2023
+# Loading work.testbenchE4Q5
+# Loading work.JKFlipFlop
+add wave -position insertpoint sim:/testbenchE4Q5/*
+run
+#                    0: Clk = 0 , JK = xx , Q = x , Qbar = x
+#                    2: Clk = 1 , JK = xx , Q = z , Qbar = x
+#                    3: Clk = 1 , JK = 10 , Q = z , Qbar = x
+#                    4: Clk = 0 , JK = 10 , Q = z , Qbar = x
+#                    6: Clk = 1 , JK = 10 , Q = 0 , Qbar = x
+#                    7: Clk = 1 , JK = 11 , Q = 0 , Qbar = x
+#                    8: Clk = 0 , JK = 11 , Q = 0 , Qbar = x
+#                   10: Clk = 1 , JK = 11 , Q = x , Qbar = x
+#                   12: Clk = 0 , JK = 11 , Q = x , Qbar = x
+#                   14: Clk = 1 , JK = 11 , Q = x , Qbar = x
+#                   15: Clk = 1 , JK = 01 , Q = x , Qbar = x
+#                   16: Clk = 0 , JK = 01 , Q = x , Qbar = x
+#                   17: Clk = 0 , JK = 00 , Q = x , Qbar = x
+#                   18: Clk = 1 , JK = 00 , Q = x , Qbar = x
+# ** Note: $stop    : D:/DSD Lab/Experiment 4/5) JK Flip Flop/testbenchE4Q5.v(15)
+#    Time: 19 ps  Iteration: 0  Instance: /testbenchE4Q5
+# Break in Module testbenchE4Q5 at D:/DSD Lab/Experiment 4/5) JK Flip Flop/testbenchE4Q5.v line 15
+quit -sim
+# End time: 22:25:56 on Oct 28,2023, Elapsed time: 0:01:26
+# Errors: 0, Warnings: 4
+# Compile of JKFlipFlop.v was successful.
+# Compile of testbenchE4Q5.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.testbenchE4Q5
+# vsim -gui work.testbenchE4Q5 
+# Start time: 22:27:10 on Oct 28,2023
+# Loading work.testbenchE4Q5
+# Loading work.JKFlipFlop
+add wave -position insertpoint sim:/testbenchE4Q5/*
+run
+#                    0: Clk = 0 , JK = xx , Q = x , Qbar = x
+#                    2: Clk = 1 , JK = xx , Q = z , Qbar = x
+#                    3: Clk = 1 , JK = 10 , Q = z , Qbar = x
+#                    4: Clk = 0 , JK = 10 , Q = z , Qbar = x
+#                    6: Clk = 1 , JK = 10 , Q = 0 , Qbar = x
+#                    7: Clk = 1 , JK = 11 , Q = 0 , Qbar = x
+#                    8: Clk = 0 , JK = 11 , Q = 0 , Qbar = x
+#                   10: Clk = 1 , JK = 11 , Q = x , Qbar = x
+#                   12: Clk = 0 , JK = 11 , Q = x , Qbar = x
+#                   14: Clk = 1 , JK = 11 , Q = x , Qbar = x
+#                   15: Clk = 1 , JK = 01 , Q = x , Qbar = x
+#                   16: Clk = 0 , JK = 01 , Q = x , Qbar = x
+#                   17: Clk = 0 , JK = 00 , Q = x , Qbar = x
+#                   18: Clk = 1 , JK = 00 , Q = x , Qbar = x
+# ** Note: $stop    : D:/DSD Lab/Experiment 4/5) JK Flip Flop/testbenchE4Q5.v(15)
+#    Time: 19 ps  Iteration: 0  Instance: /testbenchE4Q5
+# Break in Module testbenchE4Q5 at D:/DSD Lab/Experiment 4/5) JK Flip Flop/testbenchE4Q5.v line 15
+quit -sim
+# End time: 22:27:54 on Oct 28,2023, Elapsed time: 0:00:44
+# Errors: 0, Warnings: 2
+# Compile of JKFlipFlop.v was successful.
+# Compile of testbenchE4Q5.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of JKFlipFlop.v was successful.
+# Compile of testbenchE4Q5.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.testbenchE4Q5
+# vsim -gui work.testbenchE4Q5 
+# Start time: 22:39:29 on Oct 28,2023
+# Loading work.testbenchE4Q5
+# Loading work.JKFlipFlop
+add wave -position insertpoint sim:/testbenchE4Q5/*
+run
+#                    0: Clk = 0 , J = x, K = x , Q = x , Qbar = x
+#                    5: Clk = 1 , J = x, K = x , Q = x , Qbar = x
+#                   10: Clk = 0 , J = x, K = x , Q = x , Qbar = x
+#                   15: Clk = 1 , J = x, K = x , Q = x , Qbar = x
+#                   20: Clk = 0 , J = 0, K = 0 , Q = x , Qbar = x
+#                   25: Clk = 1 , J = 0, K = 0 , Q = x , Qbar = x
+#                   30: Clk = 0 , J = 0, K = 0 , Q = x , Qbar = x
+#                   35: Clk = 1 , J = 0, K = 0 , Q = x , Qbar = x
+#                   40: Clk = 0 , J = 0, K = 1 , Q = x , Qbar = x
+#                   45: Clk = 1 , J = 0, K = 1 , Q = 1 , Qbar = x
+#                   50: Clk = 0 , J = 0, K = 1 , Q = 1 , Qbar = x
+#                   55: Clk = 1 , J = 0, K = 1 , Q = 1 , Qbar = x
+#                   60: Clk = 0 , J = 1, K = 0 , Q = 1 , Qbar = x
+#                   65: Clk = 1 , J = 1, K = 0 , Q = 0 , Qbar = x
+#                   70: Clk = 0 , J = 1, K = 0 , Q = 0 , Qbar = x
+#                   75: Clk = 1 , J = 1, K = 0 , Q = 0 , Qbar = x
+#                   80: Clk = 0 , J = 1, K = 1 , Q = 0 , Qbar = x
+#                   85: Clk = 1 , J = 1, K = 1 , Q = x , Qbar = x
+#                   90: Clk = 0 , J = 1, K = 1 , Q = x , Qbar = x
+#                   95: Clk = 1 , J = 1, K = 1 , Q = x , Qbar = x
+# ** Note: $stop    : D:/DSD Lab/Experiment 4/5) JK Flip Flop/testbenchE4Q5.v(17)
+#    Time: 100 ps  Iteration: 0  Instance: /testbenchE4Q5
+# Break in Module testbenchE4Q5 at D:/DSD Lab/Experiment 4/5) JK Flip Flop/testbenchE4Q5.v line 17
+quit -sim
+# End time: 22:40:41 on Oct 28,2023, Elapsed time: 0:01:12
+# Errors: 0, Warnings: 3
+# Compile of JKFlipFlop.v was successful.
+# Compile of testbenchE4Q5.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.testbenchE4Q5
+# vsim -gui work.testbenchE4Q5 
+# Start time: 22:42:23 on Oct 28,2023
+# Loading work.testbenchE4Q5
+# Loading work.JKFlipFlop
+add wave -position insertpoint sim:/testbenchE4Q5/*
+run
+#                    0: Clk = 0 , J = x, K = x , Q = x , Qbar = x
+#                    5: Clk = 1 , J = x, K = x , Q = x , Qbar = x
+#                   10: Clk = 0 , J = x, K = x , Q = x , Qbar = x
+#                   15: Clk = 1 , J = x, K = x , Q = x , Qbar = x
+#                   20: Clk = 0 , J = 0, K = 0 , Q = x , Qbar = x
+#                   25: Clk = 1 , J = 0, K = 0 , Q = x , Qbar = x
+#                   30: Clk = 0 , J = 0, K = 0 , Q = x , Qbar = x
+#                   35: Clk = 1 , J = 0, K = 0 , Q = x , Qbar = x
+#                   40: Clk = 0 , J = 0, K = 1 , Q = x , Qbar = x
+#                   45: Clk = 1 , J = 0, K = 1 , Q = 0 , Qbar = 1
+#                   50: Clk = 0 , J = 0, K = 1 , Q = 0 , Qbar = 1
+#                   55: Clk = 1 , J = 0, K = 1 , Q = 0 , Qbar = 1
+#                   60: Clk = 0 , J = 1, K = 0 , Q = 0 , Qbar = 1
+#                   65: Clk = 1 , J = 1, K = 0 , Q = 1 , Qbar = 0
+#                   70: Clk = 0 , J = 1, K = 0 , Q = 1 , Qbar = 0
+#                   75: Clk = 1 , J = 1, K = 0 , Q = 1 , Qbar = 0
+#                   80: Clk = 0 , J = 1, K = 1 , Q = 1 , Qbar = 0
+#                   85: Clk = 1 , J = 1, K = 1 , Q = 0 , Qbar = 1
+#                   90: Clk = 0 , J = 1, K = 1 , Q = 0 , Qbar = 1
+#                   95: Clk = 1 , J = 1, K = 1 , Q = 1 , Qbar = 0
+# ** Note: $stop    : D:/DSD Lab/Experiment 4/5) JK Flip Flop/testbenchE4Q5.v(17)
+#    Time: 100 ps  Iteration: 0  Instance: /testbenchE4Q5
+# Break in Module testbenchE4Q5 at D:/DSD Lab/Experiment 4/5) JK Flip Flop/testbenchE4Q5.v line 17
+quit -sim
+# End time: 22:43:19 on Oct 28,2023, Elapsed time: 0:00:56
+# Errors: 0, Warnings: 2

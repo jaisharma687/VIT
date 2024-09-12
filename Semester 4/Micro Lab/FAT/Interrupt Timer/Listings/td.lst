@@ -1,0 +1,92 @@
+A51 MACRO ASSEMBLER  TD                                                                   05/01/2024 22:14:17 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\td.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE td.asm SET(SMALL) DEBUG PRINT(.\Listings\td.lst) OBJECT(.\Objects\td.ob
+                      j) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 020030            2     LJMP MAIN
+                       3     
+000B                   4     ORG 000BH
+000B D2A3              5     SETB P2.3
+000D 1149              6     ACALL DELAY0
+000F 1149              7     ACALL DELAY0
+0011 1149              8     ACALL DELAY0
+0013 1149              9     ACALL DELAY0
+0015 1149             10     ACALL DELAY0
+0017 1149             11     ACALL DELAY0
+0019 1149             12     ACALL DELAY0
+001B C2A3             13     CLR P2.3
+001D 1149             14     ACALL DELAY0
+001F 1149             15     ACALL DELAY0
+0021 1149             16     ACALL DELAY0
+0023 32               17     RETI
+                      18     
+001B                  19     ORG 001BH
+001B D2A3             20     SETB P2.3
+001D 1152             21     ACALL DELAY1
+001F 1152             22     ACALL DELAY1
+0021 C2A3             23     CLR P2.3
+0023 1152             24     ACALL DELAY1
+0025 1152             25     ACALL DELAY1
+0027 1152             26     ACALL DELAY1
+0029 32               27     RETI
+                      28     
+0030                  29     ORG 30H
+0030                  30     MAIN:
+0030 75A88A           31     MOV IE,#10001010B
+0033 758902           32     MOV TMOD,#02H
+0036 758CD8           33     MOV TH0,#-40
+0039 758DD8           34     MOV TH1,#-40
+003C C2A3             35     CLR P2.3
+003E 30A204           36     HERE: JNB P2.2, OFF
+0041 D28C             37     ON: SETB TR0
+0043 80F9             38     SJMP HERE
+0045 D28E             39     OFF: SETB TR1
+0047 80F5             40     SJMP HERE
+                      41     
+0049 758CD8           42     DELAY0: MOV TH0,#-40
+004C 308DFD           43     LOOP0: JNB TF0,LOOP0
+004F C28D             44     CLR TF0
+0051 22               45     RET
+                      46     
+0052 758DD8           47     DELAY1: MOV TH1,#-40
+0055 308FFD           48     LOOP1: JNB TF1,LOOP1
+0058 C28F             49     CLR TF1
+005A 22               50     RET
+                      51     END
+A51 MACRO ASSEMBLER  TD                                                                   05/01/2024 22:14:17 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+DELAY0 . . . . . .  C ADDR   0049H   A   
+DELAY1 . . . . . .  C ADDR   0052H   A   
+HERE . . . . . . .  C ADDR   003EH   A   
+IE . . . . . . . .  D ADDR   00A8H   A   
+LOOP0. . . . . . .  C ADDR   004CH   A   
+LOOP1. . . . . . .  C ADDR   0055H   A   
+MAIN . . . . . . .  C ADDR   0030H   A   
+OFF. . . . . . . .  C ADDR   0045H   A   
+ON . . . . . . . .  C ADDR   0041H   A   
+P2 . . . . . . . .  D ADDR   00A0H   A   
+TF0. . . . . . . .  B ADDR   0088H.5 A   
+TF1. . . . . . . .  B ADDR   0088H.7 A   
+TH0. . . . . . . .  D ADDR   008CH   A   
+TH1. . . . . . . .  D ADDR   008DH   A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+TR0. . . . . . . .  B ADDR   0088H.4 A   
+TR1. . . . . . . .  B ADDR   0088H.6 A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

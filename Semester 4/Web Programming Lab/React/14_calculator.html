@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReactJS in HTML for Events</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        const {useState,useEffect} = React;
+        const Calculator = ()=>{
+            const[currentSum,setSum] = useState(0);
+            const[clear,setClear] = useState(false);
+            useEffect(()=>{
+                document.getElementById('result').value="";
+            },[]);
+            useEffect(()=>{
+                if(clear)
+                    document.getElementById('result').value="";
+            },[clear])
+            const Add = (e) =>{
+                e.preventDefault();
+                if(clear) setClear(false);
+                let currentNum = document.getElementById('num').value;
+                if(currentNum === '') return;
+                let sum = currentSum + parseInt(currentNum);
+                setSum(sum);
+                document.getElementById('num').value = "";
+            }
+            const Clear = (e) =>{
+                e.preventDefault();
+                document.querySelector('form').reset();
+                setClear(true);
+                setCurrentSum(0);
+            }
+            return(
+                <>
+                <h1>Addition Calculator</h1>
+                <form>
+                    <input type="text" id="result" value={currentSum} readOnly />
+                    <input type="text" id="num" placeholder="Enter a Number" />
+                    <button onClick={Add}>Add</button>
+                    <button onClick={Clear}>Clear</button>
+                </form>
+                </>
+            );
+        }
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<Calculator />)
+    </script>
+</body>
+
+</html>

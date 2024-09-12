@@ -1,0 +1,18 @@
+module testbenchE4Q4;
+reg S,R,Clk;
+wire Q,Qbar;
+SRFlipFlop test(S,R,Clk,Q,Qbar);
+initial begin
+Clk=0;
+end
+always #10 Clk=~Clk;
+initial begin
+$monitor($time,": Clk = %d , SR = %d%d , Q = %d , Qbar = %d",Clk,S,R,Q,Qbar);
+#20 R=0;S=1;
+#20 R=1;S=0;
+#20 R=0;S=0;
+#20 R=1;S=1;
+#20;
+$stop
+end
+endmodule

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class = "flex-box">
+        <h1 id="heading">Forms Practice</h1>
+    </div>
+    <div class="flex-box">
+        <form action="backend.php" method="get" name="myform">
+            <table>
+                <th colspan="2">Personal Details</th>
+                <tr>
+                    <div class="formdesign" id="name">
+                        <td class="col1">
+                            <label for="fname" class = "question-tag">Name<span class="astriks">*</span></label>
+                        </td>
+                        <td class="col2">
+                            <div class="inputs">
+                                <input type="text" id="fname" class="input-text borders"  placeholder="Full Name">
+                                <b><span class="form_error" id= "form_error_name"></span></b>
+                            </div>
+                        </td>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="formdesign" id="pass">
+                        <td class="col1">
+                            <label for="fpass" class = "question-tag">Password<span class="astriks">*</span></label>
+                        </td>
+                        <td class="col2">
+                            <div class="inputs">
+                                <input type="password" id="fpass" class="input-text borders"  placeholder="Password">
+                                <b><span class="form_error" id= "form_error_pass"></span></b>
+                            </div>
+                        </td>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="formdesign" id="cpass">
+                        <td class="col1">
+                            <label for="fcpass" class = "question-tag">Confirm Password<span class="astriks">*</span></label>
+                        </td>
+                        <td class="col2">
+                            <div class="inputs">
+                                <input type="password" id="fcpass" class="input-text borders"  placeholder="Confirm Password">
+                                <b><span class="form_error" id= "form_error_cpass"></span></b>
+                            </div>
+                        </td>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="formdesign" id="phone">
+                        <td class="col1">
+                            <label for="fphone" class = "question-tag">Phone Number<span class="astriks">*</span></label>
+                        </td>
+                        <td class="col2">
+                            <div class="inputs">
+                                <input type="text" id="fphone" class="input-text borders"  placeholder="10 digit Number">
+                                <b><span class="form_error" id= "form_error_phone"></span></b>
+                            </div>
+                        </td>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="formdesign" id="email">
+                        <td class="col1">
+                            <label for="femail" class = "question-tag">Email<span class="astriks">*</span></label>
+                        </td>
+                        <td class="col2">
+                            <div class="inputs">
+                                <input type="email" id="femail" class="input-text borders"  placeholder="Email ID">
+                                <b><span class="form_error" id= "form_error_email"></span></b>
+                            </div>
+                        </td>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="formdesign" id="dob">
+                        <td class="col1">
+                            <label for="fdob" class = "question-tag">Date of Birth<span class="astriks">*</span></label>
+                        </td>
+                        <td class="col2">
+                            <div class="inputs">
+                                <input type="date" id="fdob" class="input-date borders" >
+                                <b><span class="form_error" id= "form_error_dob"></span></b>
+                            </div>
+                        </td>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="formdesign" id="designation">
+                        <td class="col1">
+                            <label for="fdes" class = "question-tag">Designation</label>
+                        </td>
+                        <td class="col2">
+                            <div class="inputs">
+                                <select name="designations" id="fdes" class="input-select borders">
+                                    <optgroup label="Managment">
+                                        <option>Head of Recruitment</option>
+                                        <option>Head of Managment</option>
+                                    </optgroup>
+                                    <optgroup label="Technical">
+                                        <option>Web Developer</option>
+                                        <option>DevOps</option>
+                                        <option>Machine Learning Engineer</option>
+                                        <option>Data Analyzer</option>
+                                        <option>Software Engineer</option>
+                                    </optgroup>
+                                    <optgroup label="Marketing">
+                                        <option>Head of Events</option>
+                                        <option>Head of Outreach</option>
+                                        <option>Head of Research</option>
+                                    </optgroup>
+                                    <option selected>None</option>
+                                </select>
+                            </div>
+                        </td>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="formdesign" id="football-club">
+                        <td class="col1">
+                            <label for="fclub" class = "question-tag">Favourite Football Club(s)</label>
+                        </td>
+                        <td class="col2">
+                            <div class="inputs">
+                                <select name="football-clubs" id="fclubs" multiple size="5" class="input-select-fc borders">
+                                    <option selected>Manchester City</option>
+                                    <option>Manchester United</option>
+                                    <option>Liverpool</option>
+                                    <option>Chelsea</option>
+                                    <option>Arsenal</option>
+                                    <option>Real Madrid</option>
+                                    <option>Barcelona</option>
+                                    <option>Bayern Munich</option>
+                                    <option>Borussia Dortmund</option>
+                                    <option>Paris Saint Germain</option>
+                                    <option>Inter Milan</option>
+                                    <option>AC Milan</option>
+                                    <option>Juventus</option>
+                                    <option>AFC Roma</option>
+                                </select>
+                            </div>
+                        </td>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="formdesign" id="about">
+                        <td class="col1">
+                            <label for="fabout" class = "question-tag">About me<span class="astriks">*</span></label>
+                        </td>
+                        <td class="col2">
+                            <div class="inputs">
+                                <textarea id = "fabout" rows = "5" class="borders txt-area" placeholder="I am ..." ></textarea>
+                                <b><span class="form_error" id= "form_error_about"></span></b>
+                            </div>
+                        </td>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="formdesign" id="sex">
+                        <td class="col1">
+                            <label for="fsexothers" class = "question-tag">Sex<span class="astriks">*</span></label>
+                        </td>
+                        <td class="col2">
+                            <div class="opt flex-box">
+                                <div>
+                                    <input type="radio" id="fsexmale" name="applicant-sex" ><label for="fsexmale" class="options fsex">Male</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="fsexfemale" name="applicant-sex" ><label for="fsexfemale" class="options fsex">Female</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="fsexothers" name="applicant-sex" ><label for="fsexothers" class="options fsex">Others</label>
+                                </div>
+                                <b><span class="form_error" id= "form_error_sex"></span></b>
+                            </div>
+                        </td>
+                    </div>
+                </tr>
+            </table>
+            <div class="horizontal-flex">
+                <input type="checkbox" id="fname" checked>
+                <label for="folicy" class = "consent">You hereby give your consent to us to contact you in future.</label>
+            </div>
+            <hr>
+            <div class="flex-box footer">
+                <input type="submit" value="Submit Form" class="button" id="submit">
+                <input type="reset" value="Reset Form" class="button" id="reset">
+            </div>
+        </form>
+    </div>
+    <script src="./index.js" charset="utf-8"></script>
+</body>
+</html>

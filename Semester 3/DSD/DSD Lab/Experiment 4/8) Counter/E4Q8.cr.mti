@@ -1,0 +1,15 @@
+{D:/DSD Lab/Experiment 4/8) Counter/testbenchE4Q8.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Experiment 4/8) Counter/testbenchE4Q8.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module testbenchE4Q8
+
+Top level modules:
+	testbenchE4Q8
+
+} {} {}} {D:/DSD Lab/Experiment 4/8) Counter/Counter013570.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Experiment 4/8) Counter/Counter013570.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Counter013570
+
+Top level modules:
+	Counter013570
+
+} {} {}}

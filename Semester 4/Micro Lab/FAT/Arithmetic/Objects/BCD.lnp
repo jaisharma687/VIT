@@ -1,0 +1,4 @@
+".\Objects\STARTUP.obj",
+".\Objects\bcd.obj" 
+TO ".\Objects\BCD" 
+PRINT(".\Listings\BCD.m51") RAMSIZE(256) 

@@ -1,0 +1,4 @@
+".\Objects\STARTUP.obj",
+".\Objects\s3.obj" 
+TO ".\Objects\Stack3" 
+PRINT(".\Listings\Stack3.m51") RAMSIZE(256) 

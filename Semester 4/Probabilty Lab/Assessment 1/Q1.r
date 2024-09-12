@@ -1,0 +1,5 @@
+sno <- c(1,2,3,4,5,6,7,8,9,10,11,12)
+temp <- c(53,62,57,71,78,66,84,87,96,91,94,96)
+chirps <- c(20,32,40,60,80,100,120,140,160,180,200,220)
+table <- data.frame(sno,temp,chirps)
+correlation <- cor(temp,chirps)

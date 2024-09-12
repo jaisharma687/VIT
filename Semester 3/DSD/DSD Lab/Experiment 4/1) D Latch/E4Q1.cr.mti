@@ -1,0 +1,15 @@
+{D:/DSD Lab/Experiment 4/1) D Latch/testbenchE4Q1.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Experiment 4/1) D Latch/testbenchE4Q1.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module testbenchE4Q1
+
+Top level modules:
+	testbenchE4Q1
+
+} {} {}} {D:/DSD Lab/Experiment 4/1) D Latch/DLatch.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Experiment 4/1) D Latch/DLatch.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module DLatch
+
+Top level modules:
+	DLatch
+
+} {} {}}

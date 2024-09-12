@@ -1,0 +1,53 @@
+A51 MACRO ASSEMBLER  TOG                                                                  05/02/2024 02:45:36 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\tog.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE tog.asm SET(SMALL) DEBUG PRINT(.\Listings\tog.lst) OBJECT(.\Objects\tog
+                      .obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000                   2     MAIN:
+0000 758055            3     MOV P0,#55H
+0003 759055            4     MOV P1,#55H
+0006 75A055            5     MOV P2,#55H
+0009 1118              6     ACALL DELAY
+000B 7580AA            7     MOV P0,#0AAH
+000E 7590AA            8     MOV P1,#0AAH
+0011 75A0AA            9     MOV P2,#0AAH
+0014 1118             10     ACALL DELAY
+0016 80E8             11     SJMP MAIN
+                      12     
+0018 78FF             13     DELAY: MOV R0,#0FFH
+001A 79FF             14     L1: MOV R1,#0FFH
+001C 7AFF             15     L2: MOV R2,#0FFH
+001E DAFE             16     L3: DJNZ R2,L3
+0020 D9FA             17     DJNZ R1,L2
+0022 D8F6             18     DJNZ R0,L1
+0024 22               19     RET
+                      20     
+                      21     END
+A51 MACRO ASSEMBLER  TOG                                                                  05/02/2024 02:45:36 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+DELAY. . . . . . .  C ADDR   0018H   A   
+L1 . . . . . . . .  C ADDR   001AH   A   
+L2 . . . . . . . .  C ADDR   001CH   A   
+L3 . . . . . . . .  C ADDR   001EH   A   
+MAIN . . . . . . .  C ADDR   0000H   A   
+P0 . . . . . . . .  D ADDR   0080H   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+P2 . . . . . . . .  D ADDR   00A0H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

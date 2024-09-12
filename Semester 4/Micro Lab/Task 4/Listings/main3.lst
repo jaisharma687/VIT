@@ -1,0 +1,57 @@
+A51 MACRO ASSEMBLER  MAIN3                                                                05/02/2024 10:29:15 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\main3.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE main3.asm SET(SMALL) DEBUG PRINT(.\Listings\main3.lst) OBJECT(.\Objects
+                      \main3.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H 
+0000 020100            2     LJMP MAIN 
+000B                   3     ORG 000BH
+000B B2A1              4     CPL P2.1
+000D 758CD1            5     MOV TH0,#-47
+0010 32                6     RETI
+0013                   7     ORG 0013H
+0013 058B              8     INC TL1 
+0015 E58B              9     MOV A,TL1
+0017 F580             10     MOV P0,A
+0019 32               11     RETI 
+0100                  12     ORG 100H 
+0100                  13     MAIN: 
+0100 758962           14     MOV TMOD,#62H
+0103 758D00           15     MOV TH1,#00H
+0106 758B00           16     MOV TL1,#00H
+0109 758CD1           17     MOV TH0,#-47
+010C 75A886           18     MOV IE,#10000110B
+010F C28B             19     CLR IE1
+0111 D28C             20     SETB TR0
+0113 80FE             21     HERE: SJMP HERE
+                      22     END
+A51 MACRO ASSEMBLER  MAIN3                                                                05/02/2024 10:29:15 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+HERE . . . . . . .  C ADDR   0113H   A   
+IE . . . . . . . .  D ADDR   00A8H   A   
+IE1. . . . . . . .  B ADDR   0088H.3 A   
+MAIN . . . . . . .  C ADDR   0100H   A   
+P0 . . . . . . . .  D ADDR   0080H   A   
+P2 . . . . . . . .  D ADDR   00A0H   A   
+TH0. . . . . . . .  D ADDR   008CH   A   
+TH1. . . . . . . .  D ADDR   008DH   A   
+TL1. . . . . . . .  D ADDR   008BH   A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+TR0. . . . . . . .  B ADDR   0088H.4 A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

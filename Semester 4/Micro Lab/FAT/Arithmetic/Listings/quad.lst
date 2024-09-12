@@ -1,0 +1,47 @@
+A51 MACRO ASSEMBLER  QUAD                                                                 05/02/2024 02:03:39 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\quad.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE quad.asm SET(SMALL) DEBUG PRINT(.\Listings\quad.lst) OBJECT(.\Objects\q
+                      uad.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 7840              2     MOV R0,#40H
+0002 7908              3     MOV R1,#08H
+0004 E9                4     MOV A,R1
+0005 89F0              5     MOV B,R1
+0007 A4                6     MUL AB
+0008 F6                7     MOV @R0,A
+0009 E4                8     CLR A
+000A E9                9     MOV A,R1
+000B 29               10     ADD A,R1
+000C 2409             11     ADD A,#09H
+000E FA               12     MOV R2,A
+000F E6               13     MOV A,@R0
+0010 2A               14     ADD A,R2
+0011 F6               15     MOV @R0,A
+0012 80FE             16     SJMP $
+0200                  17     ORG 0200H
+0200 00010910         18     LOOK_UP: DB 00H,01H,09H,10H,19H,24H,31H,40H,51H
+0204 19243140                
+0208 51                      
+                      19     END
+A51 MACRO ASSEMBLER  QUAD                                                                 05/02/2024 02:03:39 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+B. . . . . . . . .  D ADDR   00F0H   A   
+LOOK_UP. . . . . .  C ADDR   0200H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

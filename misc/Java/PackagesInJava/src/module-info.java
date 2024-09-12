@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author noneofyourbusiness
+ *
+ */
+module PackagesInJava {
+}

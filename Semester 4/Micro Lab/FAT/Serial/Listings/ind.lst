@@ -1,0 +1,66 @@
+A51 MACRO ASSEMBLER  IND                                                                  05/02/2024 09:20:38 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\ind.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE ind.asm SET(SMALL) DEBUG PRINT(.\Listings\ind.lst) OBJECT(.\Objects\ind
+                      .obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 758920            2     MOV TMOD,#20H
+0003 759850            3     MOV SCON,#50H
+0006                   4     MAIN:
+0006 209202            5     JB P1.2, S1
+0009 8005              6     SJMP S2
+000B 758DFD            7     S1: MOV TH1,#-3
+000E 8005              8     SJMP COD
+0010 758DFA            9     S2: MOV TH1,#-6
+0013 8000             10     SJMP COD
+0015 D28E             11     COD: SETB TR1 
+0017 900200           12     MOV DPTR,#0200H
+001A 7815             13     MOV R0,#21
+001C E4               14     LOOP: CLR A
+001D 93               15     MOVC A,@A+DPTR
+001E F599             16     MOV SBUF,A
+0020 3099FD           17     HERE: JNB TI,HERE
+0023 C299             18     CLR TI
+0025 A3               19     INC DPTR
+0026 D8F4             20     DJNZ R0,LOOP
+0028 80DC             21     SJMP MAIN
+0200                  22     ORG 0200H
+0200 496E6469         23     DB "India is our country "
+0204 61206973                
+0208 206F7572                
+020C 20636F75                
+0210 6E747279                
+0214 20                      
+                      24     END
+A51 MACRO ASSEMBLER  IND                                                                  05/02/2024 09:20:38 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+COD. . . . . . . .  C ADDR   0015H   A   
+HERE . . . . . . .  C ADDR   0020H   A   
+LOOP . . . . . . .  C ADDR   001CH   A   
+MAIN . . . . . . .  C ADDR   0006H   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+S1 . . . . . . . .  C ADDR   000BH   A   
+S2 . . . . . . . .  C ADDR   0010H   A   
+SBUF . . . . . . .  D ADDR   0099H   A   
+SCON . . . . . . .  D ADDR   0098H   A   
+TH1. . . . . . . .  D ADDR   008DH   A   
+TI . . . . . . . .  B ADDR   0098H.1 A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+TR1. . . . . . . .  B ADDR   0088H.6 A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

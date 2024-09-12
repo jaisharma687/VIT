@@ -1,0 +1,4 @@
+".\Objects\STARTUP.obj",
+".\Objects\tog.obj" 
+TO ".\Objects\Toggle" 
+PRINT(".\Listings\Toggle.m51") RAMSIZE(256) 

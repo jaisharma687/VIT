@@ -1,0 +1,81 @@
+A51 MACRO ASSEMBLER  MAIN1                                                                03/10/2024 11:51:03 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\main1.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE main1.asm SET(SMALL) DEBUG PRINT(.\Listings\main1.lst) OBJECT(.\Objects
+                      \main1.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000                   2     MAIN:
+0000 E590              3         MOV A, P1
+0002 209202            4         JB P1.2, SEND_DATA
+0005 801E              5         SJMP RECEIVE_DATA
+0007                   6     SEND_DATA:
+0007 90003D            7         MOV DPTR, #DATA_STR
+000A 758920            8         MOV TMOD, #20H
+000D 758DFD            9         MOV TH1, #-3
+0010 759850           10         MOV SCON, #50H
+0013 D28E             11         SETB TR1
+0015 790E             12         MOV R1, #14
+0017                  13     SEND_LOOP:
+0017 E4               14         CLR A
+0018 93               15         MOVC A, @A+DPTR
+0019 F599             16         MOV SBUF, A
+001B                  17     WAIT_FOR_TX:
+001B 3099FD           18         JNB TI, WAIT_FOR_TX
+001E C299             19         CLR TI
+0020 A3               20         INC DPTR
+0021 D9F4             21         DJNZ R1, SEND_LOOP
+0023 80DB             22         SJMP MAIN
+0025                  23     RECEIVE_DATA:
+0025 758920           24         MOV TMOD, #20H
+0028 758DFA           25         MOV TH1, #-6
+002B 759850           26         MOV SCON, #50H
+002E D28E             27         SETB TR1
+0030                  28     RECEIVE_LOOP:
+0030 3098FD           29         JNB RI, RECEIVE_LOOP
+0033 E599             30         MOV A, SBUF
+0035 F5A0             31         MOV P2, A
+0037 C298             32         CLR RI
+0039 80C5             33         SJMP MAIN
+003B 80CA             34     P1_2_HIGH: SJMP SEND_DATA
+003D 56495420         35     DATA_STR: DB "VIT University"
+0041 556E6976                
+0045 65727369                
+0049 7479                    
+                      36     
+                      37     END
+A51 MACRO ASSEMBLER  MAIN1                                                                03/10/2024 11:51:03 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+DATA_STR . . . . .  C ADDR   003DH   A   
+MAIN . . . . . . .  C ADDR   0000H   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+P1_2_HIGH. . . . .  C ADDR   003BH   A   
+P2 . . . . . . . .  D ADDR   00A0H   A   
+RECEIVE_DATA . . .  C ADDR   0025H   A   
+RECEIVE_LOOP . . .  C ADDR   0030H   A   
+RI . . . . . . . .  B ADDR   0098H.0 A   
+SBUF . . . . . . .  D ADDR   0099H   A   
+SCON . . . . . . .  D ADDR   0098H   A   
+SEND_DATA. . . . .  C ADDR   0007H   A   
+SEND_LOOP. . . . .  C ADDR   0017H   A   
+TH1. . . . . . . .  D ADDR   008DH   A   
+TI . . . . . . . .  B ADDR   0098H.1 A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+TR1. . . . . . . .  B ADDR   0088H.6 A   
+WAIT_FOR_TX. . . .  C ADDR   001BH   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

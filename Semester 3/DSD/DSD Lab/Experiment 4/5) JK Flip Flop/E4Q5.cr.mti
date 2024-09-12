@@ -1,0 +1,15 @@
+{D:/DSD Lab/Experiment 4/5) JK Flip Flop/JKFlipFlop.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Experiment 4/5) JK Flip Flop/JKFlipFlop.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module JKFlipFlop
+
+Top level modules:
+	JKFlipFlop
+
+} {} {}} {D:/DSD Lab/Experiment 4/5) JK Flip Flop/testbenchE4Q5.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Experiment 4/5) JK Flip Flop/testbenchE4Q5.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module testbenchE4Q5
+
+Top level modules:
+	testbenchE4Q5
+
+} {} {}}

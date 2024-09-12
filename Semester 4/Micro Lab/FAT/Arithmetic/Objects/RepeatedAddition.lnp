@@ -1,0 +1,4 @@
+".\Objects\STARTUP.obj",
+".\Objects\repeatadd.obj" 
+TO ".\Objects\RepeatedAddition" 
+PRINT(".\Listings\RepeatedAddition.m51") RAMSIZE(256) 

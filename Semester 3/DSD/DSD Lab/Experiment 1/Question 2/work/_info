@@ -1,0 +1,320 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/DSD Lab/Experiment 1/Question 1
+XDataFlowLevel_v_unit
+DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z0 !s110 1696791332
+V_zlmi^:hdDkL0hIT6mo1i0
+r1
+!s85 0
+!i10b 1
+!s100 BVMD84=IYB1G<FXBcn<UX3
+I_zlmi^:hdDkL0hIT6mo1i0
+!i103 1
+S1
+Z1 dD:/DSD Lab/Experiment 1/Question 2
+Z2 w1696789108
+Z3 8D:/DSD Lab/Experiment 1/Question 1/DataFlowLevel.v
+Z4 FD:/DSD Lab/Experiment 1/Question 1/DataFlowLevel.v
+!i122 17
+L0 6 0
+Z5 OV;L;2020.1;71
+31
+Z6 !s108 1696791332.000000
+Z7 !s107 D:/DSD Lab/Experiment 1/Question 1/DataFlowLevel.v|
+Z8 !s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Experiment 1/Question 1/DataFlowLevel.v|
+!i113 1
+Z9 o-work work
+Z10 tCvgOpt 0
+n@data@flow@level_v_unit
+vPOSbehavioral
+Z11 !s110 1696815468
+!i10b 1
+!s100 5c6daRQ`Vj9kFMGU<ChmL0
+Z12 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I:ZXbEkk:GAWJ7dN40HN493
+Z13 VDg1SIo80bB@j0V0VzS_@n1
+R1
+w1696789934
+8D:/DSD Lab/Experiment 1/Question 2/POSbehavioral.v
+FD:/DSD Lab/Experiment 1/Question 2/POSbehavioral.v
+!i122 48
+Z14 L0 1 19
+R5
+r1
+!s85 0
+31
+Z15 !s108 1696815468.000000
+!s107 D:/DSD Lab/Experiment 1/Question 2/POSbehavioral.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Experiment 1/Question 2/POSbehavioral.v|
+!i113 1
+R9
+R10
+n@p@o@sbehavioral
+vPOSdata
+R11
+!i10b 1
+!s100 TS`POVHaV8>7M]04b7cWC0
+R12
+I@FeWi=M:oiAm=>RKDBa=<2
+R13
+R1
+w1696791325
+8D:/DSD Lab/Experiment 1/Question 2/POSdata.v
+FD:/DSD Lab/Experiment 1/Question 2/POSdata.v
+!i122 47
+Z16 L0 1 6
+R5
+r1
+!s85 0
+31
+R15
+!s107 D:/DSD Lab/Experiment 1/Question 2/POSdata.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Experiment 1/Question 2/POSdata.v|
+!i113 1
+R9
+R10
+n@p@o@sdata
+vPOSgate
+R11
+!i10b 1
+!s100 Wf=[AgaF0RcV03KLnRVB51
+R12
+IN?1X8fMKLD=QBTInaH<R:2
+R13
+R1
+w1696789774
+8D:/DSD Lab/Experiment 1/Question 2/POSgate.v
+FD:/DSD Lab/Experiment 1/Question 2/POSgate.v
+!i122 46
+Z17 L0 1 11
+R5
+r1
+!s85 0
+31
+R15
+!s107 D:/DSD Lab/Experiment 1/Question 2/POSgate.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Experiment 1/Question 2/POSgate.v|
+!i113 1
+R9
+R10
+n@p@o@sgate
+vSOPbehavioral
+Z18 !s110 1696815469
+!i10b 1
+!s100 QiJ<SVF9[3AUBDdbC4l8J2
+R12
+I2ealE;ekU]VIzDeOU28E=3
+R13
+R1
+w1696790080
+8D:/DSD Lab/Experiment 1/Question 2/SOPbehaviroal.v
+FD:/DSD Lab/Experiment 1/Question 2/SOPbehaviroal.v
+!i122 51
+R14
+R5
+r1
+!s85 0
+31
+Z19 !s108 1696815469.000000
+!s107 D:/DSD Lab/Experiment 1/Question 2/SOPbehaviroal.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Experiment 1/Question 2/SOPbehaviroal.v|
+!i113 1
+R9
+R10
+n@s@o@pbehavioral
+vSOPdata
+R18
+!i10b 1
+!s100 I@F@[jVmzL]fce9OzBeeV0
+R12
+ICYG3gYF2IeI6f@ozDoAiT3
+R13
+R1
+w1696791329
+8D:/DSD Lab/Experiment 1/Question 2/SOPdata.v
+FD:/DSD Lab/Experiment 1/Question 2/SOPdata.v
+!i122 50
+R16
+R5
+r1
+!s85 0
+31
+R19
+!s107 D:/DSD Lab/Experiment 1/Question 2/SOPdata.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Experiment 1/Question 2/SOPdata.v|
+!i113 1
+R9
+R10
+n@s@o@pdata
+vSOPgate
+R11
+!i10b 1
+!s100 5BVW3R8eTk`[ZTFRZ4Ihi2
+R12
+IDIiVBY=]f9Wh61`2?RX[e1
+R13
+R1
+w1696789489
+8D:/DSD Lab/Experiment 1/Question 2/SOPgate.v
+FD:/DSD Lab/Experiment 1/Question 2/SOPgate.v
+!i122 49
+R17
+R5
+r1
+!s85 0
+31
+R15
+!s107 D:/DSD Lab/Experiment 1/Question 2/SOPgate.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Experiment 1/Question 2/SOPgate.v|
+!i113 1
+R9
+R10
+n@s@o@pgate
+vtestbenchE1Q2
+R18
+!i10b 1
+!s100 nf=j>QWQM`0jYFWNEiZn>3
+R12
+IaD9cWiDC_cCT0:2GDH^C70
+R13
+R1
+w1696815465
+8D:/DSD Lab/Experiment 1/Question 2/testbenchE1Q2.v
+FD:/DSD Lab/Experiment 1/Question 2/testbenchE1Q2.v
+!i122 52
+Z20 L0 1 17
+R5
+r1
+!s85 0
+31
+R19
+!s107 D:/DSD Lab/Experiment 1/Question 2/testbenchE1Q2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Experiment 1/Question 2/testbenchE1Q2.v|
+!i113 1
+R9
+R10
+ntestbench@e1@q2
+vthreeinputbehavioural
+R18
+!i10b 1
+!s100 Yjc;<Ch1NNDlC@><m8CaZ1
+R12
+IcPfIMS59j7Eai9URH1:jT0
+R13
+R1
+w1696814490
+8D:/DSD Lab/Experiment 1/Question 2/threeinputbehavioral.v
+FD:/DSD Lab/Experiment 1/Question 2/threeinputbehavioral.v
+!i122 53
+L0 1 23
+R5
+r1
+!s85 0
+31
+R19
+!s107 D:/DSD Lab/Experiment 1/Question 2/threeinputbehavioral.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Experiment 1/Question 2/threeinputbehavioral.v|
+!i113 1
+R9
+R10
+vthreeinputdata
+!s110 1696815470
+!i10b 1
+!s100 UMSj?N;IES>MG=Y9^P]@Z0
+R12
+I1JY6aGeZZEhCo6XSI=loj0
+R13
+R1
+w1696814703
+8D:/DSD Lab/Experiment 1/Question 2/threeinputdata.v
+FD:/DSD Lab/Experiment 1/Question 2/threeinputdata.v
+!i122 55
+R16
+R5
+r1
+!s85 0
+31
+!s108 1696815470.000000
+!s107 D:/DSD Lab/Experiment 1/Question 2/threeinputdata.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Experiment 1/Question 2/threeinputdata.v|
+!i113 1
+R9
+R10
+vthreeinputdataflowlevel
+R0
+!i10b 1
+!s100 Z]^^TmCLE119aUP84606`3
+R12
+IAzB3X>I5mB1aefzN?Wg=90
+R13
+R1
+R2
+R3
+R4
+!i122 17
+R16
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+vthreeinputgate
+R18
+!i10b 1
+!s100 me?MBnUOPNk4e[K:MVRZ?2
+R12
+IDb8Dl`eVcUj<YFO<W5aoG3
+R13
+R1
+w1696814609
+8D:/DSD Lab/Experiment 1/Question 2/threeinputgate.v
+FD:/DSD Lab/Experiment 1/Question 2/threeinputgate.v
+!i122 54
+R20
+R5
+r1
+!s85 0
+31
+R19
+!s107 D:/DSD Lab/Experiment 1/Question 2/threeinputgate.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Experiment 1/Question 2/threeinputgate.v|
+!i113 1
+R9
+R10
+vthreeinputgatelevel
+R0
+!i10b 1
+!s100 P1kD5?nRK]5@Ke6:iC4K:0
+R12
+I>MGaR0;O0D]>>00A:fniC1
+R13
+R1
+w1696789053
+8D:/DSD Lab/Experiment 1/Question 1/GateLevel.v
+FD:/DSD Lab/Experiment 1/Question 1/GateLevel.v
+!i122 16
+R20
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/DSD Lab/Experiment 1/Question 1/GateLevel.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Experiment 1/Question 1/GateLevel.v|
+!i113 1
+R9
+R10

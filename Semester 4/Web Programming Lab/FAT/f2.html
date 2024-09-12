@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .boxes{
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+        .labels{
+            width: 150px;
+            text-align: right;
+            margin-right: 15px;
+        }
+        span{
+            margin-left: 20px;
+        }
+        .inputs{
+            width: 300px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .btns{
+            display: flex;
+            justify-content: space-around;
+            margin: 10px;
+        }
+        .btn{
+            padding: 10px;
+            border: 0 solid black;
+            background-color: blue;
+            color: white;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1  class="container">Forms</h1>
+    <div class="container">
+        <fieldset>
+            <legend>Hello</legend>
+        <form>
+            <div class="boxes">
+                <label for="username" class="labels">Username</label>
+                <input type="text" id="username" class="inputs">
+                <span id="name-error">hello</span>
+            </div>
+            <div class="boxes">
+                <label for="age" class="labels">Age</label>
+                <input type="text" id="age" class="inputs">
+                <span id="age-error"></span>
+            </div>
+            <div class="boxes">
+                <label for="email" class="labels">Email</label>
+                <input type="text" id="email" class="inputs">
+                <span id="email-error"></span>
+            </div>
+            <div class="boxes">
+                <label for="gender" class="labels">Gender</label>
+                <div class="inputs">
+                    <div>
+                        <input type="radio" name="gender" id="male"><label for="male">Male</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="gender" id="female"><label for="female">Female</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="gender" id="others"><label for="others">Others</label>
+                    </div>
+                </div>
+                <span id="gender-error"></span>
+            </div>
+            <div class="boxes">
+                <label for="Club" class="labels">Club</label>
+                <select size="2" class="inputs">
+                    <option selected>Manchester City</option>
+                    <option>Manchester United</option>
+                    <option>Liverpool</option>
+                    <option>Chelsea</option>
+                    <option>Arsenal</option>
+                    <option>Real Madrid</option>
+                    <option>Barcelona</option>
+                </select>
+                <span id="club-error"></span>
+            </div>
+            <div class="boxes" >
+                <label for="pass" class="labels">Password</label>
+                <input type="password" id="pass" class="inputs">
+                <span id="pass-error"></span>
+            </div>
+            <div class="boxes">
+                <label for="cpass" class="labels">Confirm Password</label>
+                <input type="password" id="cpass" class="inputs">
+                <span id="cpass-error"></span>
+            </div>
+            <div class="btns">
+                <input type="submit" class="btn" value="Submit">
+                <input type="reset" class="btn" value="Reset">
+            </div>
+            <div class="btns">
+                <p id="output-error"></p>
+            </div>
+        </form>
+    </fieldset>
+    </div>
+</body>
+<script type="text/javascript">
+    const setError = (id,message) =>{
+        document.getElementById(id+"-error").innerHTML = message;
+    }
+    const clearErrors = ()=>{
+        setError("name","")
+        setError("age","")
+        setError("email","")
+        setError("gender","")
+        setError("pass","")
+        setError("cpass","")
+        setError("output","")
+    }
+
+    const validateForm = (event) =>{
+        event.preventDefault();
+        clearErrors();
+        let returnval = true;
+        let name = document.getElementById("username").value;
+        let age = document.getElementById("age").value;
+        let email = document.getElementById("email").value;
+        let gender = document.querySelectorAll('input[name="gender"]:checked');
+        let pass = document.getElementById("pass").value;
+        let cpass = document.getElementById("cpass").value;
+        let name_regex = /^([a-zA-Z]+)$/;
+        if(name.length == 0){
+            returnval = false;
+            setError("name","Can't be empty")
+        }
+        else if(!name_regex.test(name)){
+            returnval = false;
+            setError("name","Not Valid")
+        }
+        let age_regex = /^[(0-9)+]$/;
+        if(age.length == 0 || age.length > 3){
+            returnval = false;
+            setError("age","Not valid")
+        }
+        else if(!age_regex.test(age)){
+            returnval = false;
+            setError("age","Invalid format")
+        }
+        let email_regex = /^([a-zA-Z0-9-]+)@([a-zA-Z-]+).([a-zA-Z]{2,})(.?)([a-zA-Z]{2,})$/
+        if(email.length == 0){
+            returnval = false;
+            setError("email","Can't be empty")
+        }
+        else if(!email_regex.test(email)){
+            returnval = false;
+            setError("email","Not valid")
+        }
+        if(gender.length == 0){
+            returnval = false
+            setError("gender","None selected")
+        }
+        let pass_regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@.#$!%*?&^])[a-zA-Z0-9@.#$!%*?&^]{8,}$/;
+        if(pass.length<8){
+            returnval = true;
+            setError("pass","Too short")
+        }
+        else if(!pass_regex.test(pass)){
+            returnval = false;
+            setError("pass","Not valid")
+        }
+        if(returnval){
+            setError("output","Success")
+        }
+    }
+
+    document.addEventListener('submit',validateForm);
+    document.addEventListener('reset',clearErrors);
+</script>
+</html>

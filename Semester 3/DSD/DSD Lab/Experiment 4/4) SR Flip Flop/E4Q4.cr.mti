@@ -1,0 +1,15 @@
+{D:/DSD Lab/Experiment 4/4) SR Flip Flop/SRFlipFlop.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Experiment 4/4) SR Flip Flop/SRFlipFlop.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module SRFlipFlop
+
+Top level modules:
+	SRFlipFlop
+
+} {} {}} {D:/DSD Lab/Experiment 4/4) SR Flip Flop/testbenchE4Q4.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Experiment 4/4) SR Flip Flop/testbenchE4Q4.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module testbenchE4Q4
+
+Top level modules:
+	testbenchE4Q4
+
+} {} {}}

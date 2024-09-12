@@ -1,0 +1,75 @@
+A51 MACRO ASSEMBLER  MAIN2                                                                03/26/2024 21:42:01 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\main2.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE main2.asm SET(SMALL) DEBUG PRINT(.\Listings\main2.lst) OBJECT(.\Objects
+                      \main2.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 758901            2     MOV TMOD,#01H
+0003                   3     MAIN:
+0003 B294              4     CPL P1.4
+0005 209017            5     JB P1.0, LSB_One
+0008                   6     LSB_Zero:
+0008 20970A            7     JB P1.7, One_Zero
+000B                   8     Zero_Zero:
+000B 758A9A            9     MOV TL0,#9AH
+000E 758C03           10     MOV TH0,#03H
+0011 1136             11     ACALL DELAY
+0013 80EE             12     SJMP MAIN
+0015                  13     One_Zero:
+0015 758A67           14     MOV TL0,#67H
+0018 758C02           15     MOV TH0,#02H
+001B 1136             16     ACALL DELAY
+001D 80E4             17     SJMP MAIN
+001F                  18     LSB_One:
+001F 20970A           19     JB P1.7, One_One
+0022                  20     Zero_One:
+0022 758A20           21     MOV TL0,#20H
+0025 758C01           22     MOV TH0,#01H
+0028 1136             23     ACALL DELAY
+002A 80D7             24     SJMP MAIN
+002C                  25     One_One:
+002C 758AE7           26     MOV TL0,#0E7H
+002F 758C00           27     MOV TH0,#00H
+0032 1136             28     ACALL DELAY
+0034 80CD             29     SJMP MAIN
+                      30     
+0036 D28C             31     DELAY: SETB TR0
+0038 308DFD           32     AGAIN: JNB TF0,AGAIN
+003B C28C             33     CLR TR0
+003D C28D             34     CLR TF0
+003F 22               35     RET
+                      36     END
+A51 MACRO ASSEMBLER  MAIN2                                                                03/26/2024 21:42:01 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+AGAIN. . . . . . .  C ADDR   0038H   A   
+DELAY. . . . . . .  C ADDR   0036H   A   
+LSB_ONE. . . . . .  C ADDR   001FH   A   
+LSB_ZERO . . . . .  C ADDR   0008H   A   
+MAIN . . . . . . .  C ADDR   0003H   A   
+ONE_ONE. . . . . .  C ADDR   002CH   A   
+ONE_ZERO . . . . .  C ADDR   0015H   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+TF0. . . . . . . .  B ADDR   0088H.5 A   
+TH0. . . . . . . .  D ADDR   008CH   A   
+TL0. . . . . . . .  D ADDR   008AH   A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+TR0. . . . . . . .  B ADDR   0088H.4 A   
+ZERO_ONE . . . . .  C ADDR   0022H   A   
+ZERO_ZERO. . . . .  C ADDR   000BH   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

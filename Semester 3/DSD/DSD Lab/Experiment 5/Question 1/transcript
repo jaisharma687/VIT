@@ -1,0 +1,307 @@
+# Compile of testbenchE5Q1.v was successful.
+# Compile of ALUunit.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.testbenchE5Q1
+# vsim -gui work.testbenchE5Q1 
+# Start time: 21:21:57 on Nov 08,2023
+# Loading work.testbenchE5Q1
+# Loading work.ALUunit
+# ** Error: (vsim-3043) Unresolved reference to 'ALU_Sel'.
+#    Time: 0 ps  Iteration: 0  Instance: /testbenchE5Q1 File: D:/DSD Lab/Experiment 5/Question 1/testbenchE5Q1.v Line: 9
+# Error loading design
+# End time: 21:22:04 on Nov 08,2023, Elapsed time: 0:00:07
+# Errors: 1, Warnings: 2
+# Compile of testbenchE5Q1.v was successful.
+# Compile of ALUunit.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.testbenchE5Q1
+# vsim -gui work.testbenchE5Q1 
+# Start time: 21:22:59 on Nov 08,2023
+# Loading work.testbenchE5Q1
+# Loading work.ALUunit
+add wave -position insertpoint sim:/testbenchE5Q1/*
+run
+#                    0 : A = 10101111 , B = 01001011 , ALU_Out = xxxxxxxx
+#                    5 : A = 10101111 , B = 01001011 , ALU_Out = 10110000
+#                   15 : A = 10101111 , B = 01001011 , ALU_Out = 11111010
+#                   25 : A = 10101111 , B = 01001011 , ALU_Out = 10101110
+#                   35 : A = 10101111 , B = 01001011 , ALU_Out = 01100100
+#                   45 : A = 10101111 , B = 01001011 , ALU_Out = 01000101
+# ** Note: $stop    : D:/DSD Lab/Experiment 5/Question 1/testbenchE5Q1.v(13)
+#    Time: 50 ps  Iteration: 0  Instance: /testbenchE5Q1
+# Break in Module testbenchE5Q1 at D:/DSD Lab/Experiment 5/Question 1/testbenchE5Q1.v line 13
+# Compile of testbenchE5Q1.v was successful.
+# Compile of ALUunit.v was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of testbenchE5Q1.v was successful.
+# Compile of ALUunit.v was successful.
+# 2 compiles, 0 failed with no errors.
+quit -sim
+# End time: 21:25:02 on Nov 08,2023, Elapsed time: 0:02:03
+# Errors: 0, Warnings: 4
+vsim -gui work.testbenchE5Q1
+# vsim -gui work.testbenchE5Q1 
+# Start time: 21:25:11 on Nov 08,2023
+# Loading work.testbenchE5Q1
+# Loading work.ALUunit
+add wave -position insertpoint sim:/testbenchE5Q1/*
+run
+#                    0 : A = 10101111 , B = 01001011 , ALU_Out = xxxxxxxx
+#                    5 : A = 10101111 , B = 01001011 , ALU_Out = 10110000
+#                   15 : A = 10101111 , B = 01001011 , ALU_Out = 11111010
+#                   25 : A = 10101111 , B = 01001011 , ALU_Out = 10101110
+#                   35 : A = 10101111 , B = 01001011 , ALU_Out = 01100100
+#                   45 : A = 10101111 , B = 01001011 , ALU_Out = 01000101
+#                   55 : A = 10101111 , B = 01001011 , ALU_Out = 00000000
+#                   65 : A = 10101111 , B = 01001011 , ALU_Out = 00000001
+#                   75 : A = 10101111 , B = 01001011 , ALU_Out = 00000000
+#                   85 : A = 10101111 , B = 01001011 , ALU_Out = 01010000
+#                   95 : A = 10101111 , B = 01001011 , ALU_Out = 00001011
+run
+#                  105 : A = 10101111 , B = 01001011 , ALU_Out = 11101111
+#                  115 : A = 10101111 , B = 01001011 , ALU_Out = 11110100
+#                  125 : A = 10101111 , B = 01001011 , ALU_Out = 00010000
+#                  135 : A = 10101111 , B = 01001011 , ALU_Out = 11100100
+#                  145 : A = 10101111 , B = 01001011 , ALU_Out = 01010111
+#                  155 : A = 10101111 , B = 01001011 , ALU_Out = 01011110
+#                  165 : A = 10101111 , B = 01001011 , ALU_Out = 10110000
+#                  175 : A = 10101111 , B = 01001011 , ALU_Out = 11111010
+#                  185 : A = 10101111 , B = 01001011 , ALU_Out = 10101110
+#                  195 : A = 10101111 , B = 01001011 , ALU_Out = 01100100
+run
+#                  205 : A = 10101111 , B = 01001011 , ALU_Out = 01000101
+#                  215 : A = 10101111 , B = 01001011 , ALU_Out = 00000000
+#                  225 : A = 10101111 , B = 01001011 , ALU_Out = 00000001
+#                  235 : A = 10101111 , B = 01001011 , ALU_Out = 00000000
+#                  245 : A = 10101111 , B = 01001011 , ALU_Out = 01010000
+#                  255 : A = 10101111 , B = 01001011 , ALU_Out = 00001011
+#                  265 : A = 10101111 , B = 01001011 , ALU_Out = 11101111
+#                  275 : A = 10101111 , B = 01001011 , ALU_Out = 11110100
+#                  285 : A = 10101111 , B = 01001011 , ALU_Out = 00010000
+#                  295 : A = 10101111 , B = 01001011 , ALU_Out = 11100100
+run
+#                  305 : A = 10101111 , B = 01001011 , ALU_Out = 01010111
+#                  315 : A = 10101111 , B = 01001011 , ALU_Out = 01011110
+#                  325 : A = 10101111 , B = 01001011 , ALU_Out = 10110000
+#                  335 : A = 10101111 , B = 01001011 , ALU_Out = 11111010
+#                  345 : A = 10101111 , B = 01001011 , ALU_Out = 10101110
+#                  355 : A = 10101111 , B = 01001011 , ALU_Out = 01100100
+#                  365 : A = 10101111 , B = 01001011 , ALU_Out = 01000101
+#                  375 : A = 10101111 , B = 01001011 , ALU_Out = 00000000
+#                  385 : A = 10101111 , B = 01001011 , ALU_Out = 00000001
+#                  395 : A = 10101111 , B = 01001011 , ALU_Out = 00000000
+# ** Note: $stop    : D:/DSD Lab/Experiment 5/Question 1/testbenchE5Q1.v(13)
+#    Time: 400 ps  Iteration: 0  Instance: /testbenchE5Q1
+# Break in Module testbenchE5Q1 at D:/DSD Lab/Experiment 5/Question 1/testbenchE5Q1.v line 13
+quit -sim
+# End time: 21:27:53 on Nov 08,2023, Elapsed time: 0:02:42
+# Errors: 0, Warnings: 1
+vsim -gui work.testbenchE5Q1
+# vsim -gui work.testbenchE5Q1 
+# Start time: 21:30:18 on Nov 08,2023
+# Loading work.testbenchE5Q1
+# Loading work.ALUunit
+quit -sim
+# End time: 21:30:35 on Nov 08,2023, Elapsed time: 0:00:17
+# Errors: 0, Warnings: 1
+# Compile of testbenchE5Q1.v was successful.
+# Compile of ALUunit.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of testbenchE5Q1.v was successful.
+# Compile of ALUunit.v failed with 3 errors.
+# 2 compiles, 1 failed with 3 errors.
+# Compile of testbenchE5Q1.v was successful.
+# Compile of ALUunit.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.testbenchE5Q1
+# vsim -gui work.testbenchE5Q1 
+# Start time: 21:32:02 on Nov 08,2023
+# Loading work.testbenchE5Q1
+# Loading work.ALUunit
+add wave -position insertpoint sim:/testbenchE5Q1/*
+run
+#                    0 : A = 10101111 , B = 01001011 , ALU_Sel = 0000 , ALU_Out = xxxxxxxx
+#                    5 : A = 10101111 , B = 01001011 , ALU_Sel = 0001 , ALU_Out = 10110000
+#                   15 : A = 10101111 , B = 01001011 , ALU_Sel = 0010 , ALU_Out = 11111010
+#                   25 : A = 10101111 , B = 01001011 , ALU_Sel = 0011 , ALU_Out = 10101110
+#                   35 : A = 10101111 , B = 01001011 , ALU_Sel = 0100 , ALU_Out = 01100100
+#                   45 : A = 10101111 , B = 01001011 , ALU_Sel = 0101 , ALU_Out = 01000101
+#                   55 : A = 10101111 , B = 01001011 , ALU_Sel = 0110 , ALU_Out = 00000000
+#                   65 : A = 10101111 , B = 01001011 , ALU_Sel = 0111 , ALU_Out = 00000001
+#                   75 : A = 10101111 , B = 01001011 , ALU_Sel = 1000 , ALU_Out = 00000000
+#                   85 : A = 10101111 , B = 01001011 , ALU_Sel = 1001 , ALU_Out = 01010000
+#                   95 : A = 10101111 , B = 01001011 , ALU_Sel = 1010 , ALU_Out = 00001011
+run
+#                  105 : A = 10101111 , B = 01001011 , ALU_Sel = 1011 , ALU_Out = 11101111
+#                  115 : A = 10101111 , B = 01001011 , ALU_Sel = 1100 , ALU_Out = 11110100
+#                  125 : A = 10101111 , B = 01001011 , ALU_Sel = 1101 , ALU_Out = 00010000
+#                  135 : A = 10101111 , B = 01001011 , ALU_Sel = 1110 , ALU_Out = 11100100
+#                  145 : A = 10101111 , B = 01001011 , ALU_Sel = 1111 , ALU_Out = 01010111
+#                  155 : A = 10101111 , B = 01001011 , ALU_Sel = 0000 , ALU_Out = 01011110
+#                  165 : A = 10101111 , B = 01001011 , ALU_Sel = 0001 , ALU_Out = 10110000
+#                  175 : A = 10101111 , B = 01001011 , ALU_Sel = 0010 , ALU_Out = 11111010
+#                  185 : A = 10101111 , B = 01001011 , ALU_Sel = 0011 , ALU_Out = 10101110
+#                  195 : A = 10101111 , B = 01001011 , ALU_Sel = 0100 , ALU_Out = 01100100
+run
+#                  205 : A = 10101111 , B = 01001011 , ALU_Sel = 0101 , ALU_Out = 01000101
+#                  215 : A = 10101111 , B = 01001011 , ALU_Sel = 0110 , ALU_Out = 00000000
+#                  225 : A = 10101111 , B = 01001011 , ALU_Sel = 0111 , ALU_Out = 00000001
+#                  235 : A = 10101111 , B = 01001011 , ALU_Sel = 1000 , ALU_Out = 00000000
+#                  245 : A = 10101111 , B = 01001011 , ALU_Sel = 1001 , ALU_Out = 01010000
+#                  255 : A = 10101111 , B = 01001011 , ALU_Sel = 1010 , ALU_Out = 00001011
+#                  265 : A = 10101111 , B = 01001011 , ALU_Sel = 1011 , ALU_Out = 11101111
+#                  275 : A = 10101111 , B = 01001011 , ALU_Sel = 1100 , ALU_Out = 11110100
+#                  285 : A = 10101111 , B = 01001011 , ALU_Sel = 1101 , ALU_Out = 00010000
+#                  295 : A = 10101111 , B = 01001011 , ALU_Sel = 1110 , ALU_Out = 11100100
+run
+#                  305 : A = 10101111 , B = 01001011 , ALU_Sel = 1111 , ALU_Out = 01010111
+#                  315 : A = 10101111 , B = 01001011 , ALU_Sel = 0000 , ALU_Out = 01011110
+#                  325 : A = 10101111 , B = 01001011 , ALU_Sel = 0001 , ALU_Out = 10110000
+#                  335 : A = 10101111 , B = 01001011 , ALU_Sel = 0010 , ALU_Out = 11111010
+#                  345 : A = 10101111 , B = 01001011 , ALU_Sel = 0011 , ALU_Out = 10101110
+#                  355 : A = 10101111 , B = 01001011 , ALU_Sel = 0100 , ALU_Out = 01100100
+#                  365 : A = 10101111 , B = 01001011 , ALU_Sel = 0101 , ALU_Out = 01000101
+#                  375 : A = 10101111 , B = 01001011 , ALU_Sel = 0110 , ALU_Out = 00000000
+#                  385 : A = 10101111 , B = 01001011 , ALU_Sel = 0111 , ALU_Out = 00000001
+#                  395 : A = 10101111 , B = 01001011 , ALU_Sel = 1000 , ALU_Out = 00000000
+# ** Note: $stop    : D:/DSD Lab/Experiment 5/Question 1/testbenchE5Q1.v(14)
+#    Time: 400 ps  Iteration: 0  Instance: /testbenchE5Q1
+# Break in Module testbenchE5Q1 at D:/DSD Lab/Experiment 5/Question 1/testbenchE5Q1.v line 14
+quit -sim
+# End time: 21:33:40 on Nov 08,2023, Elapsed time: 0:01:38
+# Errors: 0, Warnings: 4
+vsim -gui work.testbenchE5Q1
+# vsim -gui work.testbenchE5Q1 
+# Start time: 21:33:54 on Nov 08,2023
+# Loading work.testbenchE5Q1
+# Loading work.ALUunit
+add wave -position insertpoint sim:/testbenchE5Q1/*
+run
+#                    0 : A = 10101111 , B = 01001011 , ALU_Sel = 0000 , ALU_Out = xxxxxxxx
+#                    5 : A = 10101111 , B = 01001011 , ALU_Sel = 0001 , ALU_Out = 10110000
+#                   15 : A = 10101111 , B = 01001011 , ALU_Sel = 0010 , ALU_Out = 11111010
+#                   25 : A = 10101111 , B = 01001011 , ALU_Sel = 0011 , ALU_Out = 10101110
+#                   35 : A = 10101111 , B = 01001011 , ALU_Sel = 0100 , ALU_Out = 01100100
+#                   45 : A = 10101111 , B = 01001011 , ALU_Sel = 0101 , ALU_Out = 01000101
+#                   55 : A = 10101111 , B = 01001011 , ALU_Sel = 0110 , ALU_Out = 00000000
+#                   65 : A = 10101111 , B = 01001011 , ALU_Sel = 0111 , ALU_Out = 00000001
+#                   75 : A = 10101111 , B = 01001011 , ALU_Sel = 1000 , ALU_Out = 00000000
+#                   85 : A = 10101111 , B = 01001011 , ALU_Sel = 1001 , ALU_Out = 01010000
+#                   95 : A = 10101111 , B = 01001011 , ALU_Sel = 1010 , ALU_Out = 00001011
+run
+#                  105 : A = 10101111 , B = 01001011 , ALU_Sel = 1011 , ALU_Out = 11101111
+#                  115 : A = 10101111 , B = 01001011 , ALU_Sel = 1100 , ALU_Out = 11110100
+#                  125 : A = 10101111 , B = 01001011 , ALU_Sel = 1101 , ALU_Out = 00010000
+#                  135 : A = 10101111 , B = 01001011 , ALU_Sel = 1110 , ALU_Out = 11100100
+#                  145 : A = 10101111 , B = 01001011 , ALU_Sel = 1111 , ALU_Out = 01010111
+#                  155 : A = 10101111 , B = 01001011 , ALU_Sel = 0000 , ALU_Out = 01011110
+#                  165 : A = 10101111 , B = 01001011 , ALU_Sel = 0001 , ALU_Out = 10110000
+#                  175 : A = 10101111 , B = 01001011 , ALU_Sel = 0010 , ALU_Out = 11111010
+#                  185 : A = 10101111 , B = 01001011 , ALU_Sel = 0011 , ALU_Out = 10101110
+#                  195 : A = 10101111 , B = 01001011 , ALU_Sel = 0100 , ALU_Out = 01100100
+run
+#                  205 : A = 10101111 , B = 01001011 , ALU_Sel = 0101 , ALU_Out = 01000101
+#                  215 : A = 10101111 , B = 01001011 , ALU_Sel = 0110 , ALU_Out = 00000000
+#                  225 : A = 10101111 , B = 01001011 , ALU_Sel = 0111 , ALU_Out = 00000001
+#                  235 : A = 10101111 , B = 01001011 , ALU_Sel = 1000 , ALU_Out = 00000000
+#                  245 : A = 10101111 , B = 01001011 , ALU_Sel = 1001 , ALU_Out = 01010000
+#                  255 : A = 10101111 , B = 01001011 , ALU_Sel = 1010 , ALU_Out = 00001011
+#                  265 : A = 10101111 , B = 01001011 , ALU_Sel = 1011 , ALU_Out = 11101111
+#                  275 : A = 10101111 , B = 01001011 , ALU_Sel = 1100 , ALU_Out = 11110100
+#                  285 : A = 10101111 , B = 01001011 , ALU_Sel = 1101 , ALU_Out = 00010000
+#                  295 : A = 10101111 , B = 01001011 , ALU_Sel = 1110 , ALU_Out = 11100100
+run
+#                  305 : A = 10101111 , B = 01001011 , ALU_Sel = 1111 , ALU_Out = 01010111
+#                  315 : A = 10101111 , B = 01001011 , ALU_Sel = 0000 , ALU_Out = 01011110
+#                  325 : A = 10101111 , B = 01001011 , ALU_Sel = 0001 , ALU_Out = 10110000
+#                  335 : A = 10101111 , B = 01001011 , ALU_Sel = 0010 , ALU_Out = 11111010
+#                  345 : A = 10101111 , B = 01001011 , ALU_Sel = 0011 , ALU_Out = 10101110
+#                  355 : A = 10101111 , B = 01001011 , ALU_Sel = 0100 , ALU_Out = 01100100
+#                  365 : A = 10101111 , B = 01001011 , ALU_Sel = 0101 , ALU_Out = 01000101
+#                  375 : A = 10101111 , B = 01001011 , ALU_Sel = 0110 , ALU_Out = 00000000
+#                  385 : A = 10101111 , B = 01001011 , ALU_Sel = 0111 , ALU_Out = 00000001
+#                  395 : A = 10101111 , B = 01001011 , ALU_Sel = 1000 , ALU_Out = 00000000
+# ** Note: $stop    : D:/DSD Lab/Experiment 5/Question 1/testbenchE5Q1.v(14)
+#    Time: 400 ps  Iteration: 0  Instance: /testbenchE5Q1
+# Break in Module testbenchE5Q1 at D:/DSD Lab/Experiment 5/Question 1/testbenchE5Q1.v line 14
+quit -sim
+# End time: 21:35:58 on Nov 08,2023, Elapsed time: 0:02:04
+# Errors: 0, Warnings: 1
+# Compile of testbenchE5Q1.v was successful.
+# Compile of ALUunit.v was successful.
+# 2 compiles, 0 failed with no errors.
+clear
+# invalid command name "clear"
+clr
+# invalid command name "clr"
+clean
+vsim -gui work.testbenchE5Q1
+# vsim -gui work.testbenchE5Q1 
+# Start time: 21:36:52 on Nov 08,2023
+# Loading work.testbenchE5Q1
+# Loading work.ALUunit
+add wave -position insertpoint sim:/testbenchE5Q1/*
+run
+#                    0 : A = 10101111 , B = 01001011 , ALU_Sel = 1111 , ALU_Out = xxxxxxxx
+#                    5 : A = 10101111 , B = 01001011 , ALU_Sel = 0000 , ALU_Out = 01011110
+#                   15 : A = 10101111 , B = 01001011 , ALU_Sel = 0001 , ALU_Out = 10110000
+#                   25 : A = 10101111 , B = 01001011 , ALU_Sel = 0010 , ALU_Out = 11111010
+#                   35 : A = 10101111 , B = 01001011 , ALU_Sel = 0011 , ALU_Out = 10101110
+#                   45 : A = 10101111 , B = 01001011 , ALU_Sel = 0100 , ALU_Out = 01100100
+#                   55 : A = 10101111 , B = 01001011 , ALU_Sel = 0101 , ALU_Out = 01000101
+#                   65 : A = 10101111 , B = 01001011 , ALU_Sel = 0110 , ALU_Out = 00000000
+#                   75 : A = 10101111 , B = 01001011 , ALU_Sel = 0111 , ALU_Out = 00000001
+#                   85 : A = 10101111 , B = 01001011 , ALU_Sel = 1000 , ALU_Out = 00000000
+#                   95 : A = 10101111 , B = 01001011 , ALU_Sel = 1001 , ALU_Out = 01010000
+run
+#                  105 : A = 10101111 , B = 01001011 , ALU_Sel = 1010 , ALU_Out = 00001011
+#                  115 : A = 10101111 , B = 01001011 , ALU_Sel = 1011 , ALU_Out = 11101111
+#                  125 : A = 10101111 , B = 01001011 , ALU_Sel = 1100 , ALU_Out = 11110100
+#                  135 : A = 10101111 , B = 01001011 , ALU_Sel = 1101 , ALU_Out = 00010000
+#                  145 : A = 10101111 , B = 01001011 , ALU_Sel = 1110 , ALU_Out = 11100100
+#                  155 : A = 10101111 , B = 01001011 , ALU_Sel = 1111 , ALU_Out = 01010111
+#                  165 : A = 10101111 , B = 01001011 , ALU_Sel = 0000 , ALU_Out = 01011110
+#                  175 : A = 10101111 , B = 01001011 , ALU_Sel = 0001 , ALU_Out = 10110000
+#                  185 : A = 10101111 , B = 01001011 , ALU_Sel = 0010 , ALU_Out = 11111010
+#                  195 : A = 10101111 , B = 01001011 , ALU_Sel = 0011 , ALU_Out = 10101110
+quit -sim
+# End time: 21:37:58 on Nov 08,2023, Elapsed time: 0:01:06
+# Errors: 0, Warnings: 2
+# Compile of testbenchE5Q1.v was successful.
+# Compile of ALUunit.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.testbenchE5Q1
+# vsim -gui work.testbenchE5Q1 
+# Start time: 21:38:40 on Nov 08,2023
+# Loading work.testbenchE5Q1
+# Loading work.ALUunit
+add wave -position insertpoint sim:/testbenchE5Q1/*
+run
+#                    0 : A = 10101111 , B = 01001011 , ALU_Sel = 1111 , ALU_Out = xxxxxxxx
+#                    5 : A = 10101111 , B = 01001011 , ALU_Sel = 0000 , ALU_Out = 01011110
+#                   15 : A = 10101111 , B = 01001011 , ALU_Sel = 0001 , ALU_Out = 10110000
+#                   25 : A = 10101111 , B = 01001011 , ALU_Sel = 0010 , ALU_Out = 11111010
+#                   35 : A = 10101111 , B = 01001011 , ALU_Sel = 0011 , ALU_Out = 10101110
+#                   45 : A = 10101111 , B = 01001011 , ALU_Sel = 0100 , ALU_Out = 01100100
+#                   55 : A = 10101111 , B = 01001011 , ALU_Sel = 0101 , ALU_Out = 01000101
+#                   65 : A = 10101111 , B = 01001011 , ALU_Sel = 0110 , ALU_Out = 00000000
+#                   75 : A = 10101111 , B = 01001011 , ALU_Sel = 0111 , ALU_Out = 00000001
+#                   85 : A = 10101111 , B = 01001011 , ALU_Sel = 1000 , ALU_Out = 00000000
+#                   95 : A = 10101111 , B = 01001011 , ALU_Sel = 1001 , ALU_Out = 01010000
+run
+#                  105 : A = 10101111 , B = 01001011 , ALU_Sel = 1010 , ALU_Out = 00001011
+#                  115 : A = 10101111 , B = 01001011 , ALU_Sel = 1011 , ALU_Out = 11101111
+#                  125 : A = 10101111 , B = 01001011 , ALU_Sel = 1100 , ALU_Out = 11110100
+#                  135 : A = 10101111 , B = 01001011 , ALU_Sel = 1101 , ALU_Out = 00010000
+#                  145 : A = 10101111 , B = 01001011 , ALU_Sel = 1110 , ALU_Out = 11100100
+#                  155 : A = 10101111 , B = 01001011 , ALU_Sel = 1111 , ALU_Out = 01010111
+#                  165 : A = 10101111 , B = 01001011 , ALU_Sel = 0000 , ALU_Out = 01011110
+#                  175 : A = 10101111 , B = 01001011 , ALU_Sel = 0001 , ALU_Out = 10110000
+#                  185 : A = 10101111 , B = 01001011 , ALU_Sel = 0010 , ALU_Out = 11111010
+#                  195 : A = 10101111 , B = 01001011 , ALU_Sel = 0011 , ALU_Out = 10101110
+# ** Note: $stop    : D:/DSD Lab/Experiment 5/Question 1/testbenchE5Q1.v(14)
+#    Time: 200 ps  Iteration: 0  Instance: /testbenchE5Q1
+# Break in Module testbenchE5Q1 at D:/DSD Lab/Experiment 5/Question 1/testbenchE5Q1.v line 14
+quit -sim
+# End time: 21:46:26 on Nov 08,2023, Elapsed time: 0:07:46
+# Errors: 0, Warnings: 2

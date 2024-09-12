@@ -1,0 +1,68 @@
+A51 MACRO ASSEMBLER  MAIN1                                                                04/10/2024 18:54:47 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\main1.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE main1.asm SET(SMALL) DEBUG PRINT(.\Listings\main1.lst) OBJECT(.\Objects
+                      \main1.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 75A000            2     MOV P2,#00H
+0003                   3     GET:
+0003 E590              4     MOV A,P1
+0005 5401              5     ANL A,#00000001B
+0007 F8                6     MOV R0,A
+0008 E590              7     MOV A,P1
+000A 5402              8     ANL A,#00000010B
+000C 03                9     RR A
+000D F9               10     MOV R1,A
+000E E590             11     MOV A,P1
+0010 5404             12     ANL A,#00000100B
+0012 03               13     RR A
+0013 03               14     RR A
+0014 FA               15     MOV R2,A
+0015 E590             16     MOV A,P1
+0017 5408             17     ANL A,#00001000B
+0019 03               18     RR A
+001A 03               19     RR A
+001B 03               20     RR A
+001C FB               21     MOV R3,A
+001D E4               22     CLR A
+                      23     
+001E                  24     OPERATION:
+001E E8               25     MOV A,R0
+001F 59               26     ANL A,R1
+0020 4A               27     ORL A,R2
+0021 F4               28     CPL A
+0022 FC               29     MOV R4,A
+0023 E4               30     CLR A
+0024 EA               31     MOV A,R2
+0025 F4               32     CPL A
+0026 5B               33     ANL A,R3
+0027 F4               34     CPL A
+0028 5C               35     ANL A,R4
+0029 5401             36     ANL A,#00000001B
+002B F5A0             37     MOV P2,A
+                      38     
+002D 80D4             39     SJMP GET
+                      40     END
+A51 MACRO ASSEMBLER  MAIN1                                                                04/10/2024 18:54:47 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+GET. . . . . . . .  C ADDR   0003H   A   
+OPERATION. . . . .  C ADDR   001EH   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+P2 . . . . . . . .  D ADDR   00A0H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

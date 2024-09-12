@@ -1,0 +1,53 @@
+project open {D:/DSD Lab/Experiment 4/1) D Latch/E4Q1}
+# reading C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project E4Q1
+# Compile of testbenchE4Q1.v was successful.
+# Compile of DLatch.v was successful.
+# 2 compiles, 0 failed with no errors.
+# Load canceled
+# Compile of testbenchE4Q1.v was successful.
+vsim -gui work.testbenchE4Q1
+# vsim -gui work.testbenchE4Q1 
+# Start time: 14:54:46 on Oct 28,2023
+# Loading work.testbenchE4Q1
+# Loading work.DLatch
+add wave -position insertpoint sim:/testbenchE4Q1/*
+run
+# Q = 0 , En = 0 , D = 0
+# Q = 0 , En = 0 , D = 1
+# Q = 0 , En = 0 , D = 0
+# Q = 0 , En = 0 , D = 1
+# Q = 1 , En = 1 , D = 1
+# Q = 0 , En = 1 , D = 0
+# Q = 1 , En = 1 , D = 1
+run
+run
+run
+run
+run
+run
+run
+quit -sim
+# End time: 18:12:27 on Oct 28,2023, Elapsed time: 3:17:41
+# Errors: 0, Warnings: 12
+vsim -gui work.testbenchE4Q1
+# vsim -gui work.testbenchE4Q1 
+# Start time: 18:13:05 on Oct 28,2023
+# Loading work.testbenchE4Q1
+# Loading work.DLatch
+add wave -position insertpoint sim:/testbenchE4Q1/*
+run
+# Q = 0 , En = 0 , D = 0
+# Q = 0 , En = 0 , D = 1
+# Q = 0 , En = 0 , D = 0
+# Q = 0 , En = 0 , D = 1
+# Q = 1 , En = 1 , D = 1
+# Q = 0 , En = 1 , D = 0
+# Q = 1 , En = 1 , D = 1
+run
+run
+run
+run
+quit -sim
+# End time: 18:16:05 on Oct 28,2023, Elapsed time: 0:03:00
+# Errors: 0, Warnings: 1

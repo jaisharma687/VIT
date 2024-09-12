@@ -1,0 +1,49 @@
+A51 MACRO ASSEMBLER  MAIN3                                                                04/10/2024 18:16:20 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\main3.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE main3.asm SET(SMALL) DEBUG PRINT(.\Listings\main3.lst) OBJECT(.\Objects
+                      \main3.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 E587              2     MOV A, PCON
+0002 D2E7              3     SETB ACC.7
+0004 F587              4     MOV PCON,A
+0006 758920            5     MOV TMOD,#20H
+0009 758DFD            6     MOV TH1,#-3
+000C 759850            7     MOV SCON,#50H
+000F 7840              8     MOV R0,#40H
+0011 D28E              9     SETB TR1
+0013 3098FD           10     MAIN: JNB RI, MAIN
+0016 E599             11     MOV A, SBUF
+0018 F6               12     MOV @R0,A
+0019 C298             13     CLR RI
+001B 08               14     INC R0
+001C 80F5             15     SJMP MAIN
+                      16     END
+A51 MACRO ASSEMBLER  MAIN3                                                                04/10/2024 18:16:20 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+ACC. . . . . . . .  D ADDR   00E0H   A   
+MAIN . . . . . . .  C ADDR   0013H   A   
+PCON . . . . . . .  D ADDR   0087H   A   
+RI . . . . . . . .  B ADDR   0098H.0 A   
+SBUF . . . . . . .  D ADDR   0099H   A   
+SCON . . . . . . .  D ADDR   0098H   A   
+TH1. . . . . . . .  D ADDR   008DH   A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+TR1. . . . . . . .  B ADDR   0088H.6 A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

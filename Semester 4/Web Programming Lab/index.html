@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Form</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/react-hook-form/dist/react-hook-form.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        const { useForm } = ReactHookForm;
+        const App = () => {
+          const { register, handleSubmit, reset } = useForm();
+          const onSubmit = (data) => {
+            console.log(data);
+          };
+          return (
+            <div className="container">
+              <h1>Book Details Form</h1>
+              <form onSubmit={handleSubmit(onSubmit)}>
+                <div className="form-group">
+                  <label htmlFor="bookTitle">Book Title:</label>
+                  <input type="text" id="bookTitle" {...register('bookTitle', { required: true })} />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="publisher">Publisher:</label>
+                  <select id="publisher" {...register('publisher', { required: true })}>
+                    <option value="">Select Publisher</option>
+                    <option value="Publisher A">Publisher A</option>
+                    <option value="Publisher B">Publisher B</option>
+                    <option value="Publisher C">Publisher C</option>
+                  </select>
+                </div>
+                <button type="submit">Submit</button>
+                <button type="button" onClick={reset}>Reset</button>
+              </form>
+              <div className="table-container">
+                <h2>Book Details</h2>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Book Title</th>
+                      <th>Publisher</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          );
+        };
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+</body>
+</html>

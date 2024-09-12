@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/DSD Lab/Experiment 3/Question 3
+vDLatch
+!s110 1698485027
+!i10b 1
+!s100 0L_G4j7_4kV61H`PZMC6?0
+Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IJ`n<U6AeiC@f<2NRWlMaC1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/DSD Lab/Experiment 4/1) D Latch
+w1698463728
+8D:/DSD Lab/Experiment 4/1) D Latch/DLatch.v
+FD:/DSD Lab/Experiment 4/1) D Latch/DLatch.v
+!i122 0
+L0 1 10
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1698485027.000000
+!s107 D:/DSD Lab/Experiment 4/1) D Latch/DLatch.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Experiment 4/1) D Latch/DLatch.v|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+n@d@latch
+vtestbenchE4Q1
+!s110 1698485072
+!i10b 1
+!s100 Rg9GmN8nkDLlCHk3PZQM^0
+R0
+IELkT3g2[>0HgT6g>:c@UU3
+R1
+R2
+w1698485069
+8D:/DSD Lab/Experiment 4/1) D Latch/testbenchE4Q1.v
+FD:/DSD Lab/Experiment 4/1) D Latch/testbenchE4Q1.v
+!i122 1
+L0 1 19
+R3
+r1
+!s85 0
+31
+!s108 1698485072.000000
+!s107 D:/DSD Lab/Experiment 4/1) D Latch/testbenchE4Q1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Experiment 4/1) D Latch/testbenchE4Q1.v|
+!i113 1
+R4
+R5
+ntestbench@e4@q1

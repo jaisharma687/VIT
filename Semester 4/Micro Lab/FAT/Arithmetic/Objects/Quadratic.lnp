@@ -1,0 +1,4 @@
+".\Objects\STARTUP.obj",
+".\Objects\quad.obj" 
+TO ".\Objects\Quadratic" 
+PRINT(".\Listings\Quadratic.m51") RAMSIZE(256) 

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReactJS in HTML for Events</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        const {useEffect,useState} = React;
+        const Timer1 = ()=>{
+            const[count1,setCount1] = useState(0);
+            useEffect(()=>{
+                setTimeout(()=>{
+                    setCount1((count1) => count1+1);
+                },1000)
+            })
+            return count1;
+        }
+        const Timer2 = ()=>{
+            const[count2,setCount2] = useState(0);
+            useEffect(()=>{
+                setTimeout(()=>{
+                    setCount2((count2) => count2+1);
+                },1000)
+            },[])
+            return count2;
+        }
+        const Timer3 = () =>{
+            const[count3,setCount3] = useState(0);
+            const[calculation,setCalculation] = useState(0);
+            useEffect(()=>{
+                setCalculation(()=>count3*2)
+            },[count3]);
+            return(
+                <>
+                <h1>Count1 is {Timer1()} , Count2 is {Timer2()} and Count3 calculation is {calculation} and Count3 is {count3}</h1>
+                <button onClick={()=>setCount3((c)=>c+1)}>+</button>
+                </>
+            );
+        }
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<Timer3 />);
+    </script>
+</body>
+
+</html>

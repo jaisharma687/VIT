@@ -1,0 +1,48 @@
+# Compile of SRFlipFlop.v was successful.
+# Compile of Multiplication.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of SRFlipFlop.v was successful.
+# Compile of Multiplication.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of SRFlipFlop.v was successful.
+# Compile of Multiplication.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of SRFlipFlop.v was successful.
+# Compile of Multiplication.v was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of SRFlipFlop.v was successful.
+# Compile of Multiplication.v failed with 1 errors.
+# 2 compiles, 1 failed with 1 error.
+# Compile of SRFlipFlop.v was successful.
+# Compile of Multiplication.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.tb
+# vsim -gui work.tb 
+# Start time: 18:01:31 on Nov 19,2023
+# Loading work.tb
+# Loading work.multi
+add wave -position insertpoint sim:/tb/*
+run -all
+#                    0: x=0000, y=0000, z=00000000
+#                   10: x=1010, y=0101, z=00110010
+#                   20: x=0100, y=1011, z=00101100
+# Compile of SRFlipFlop.v was successful.
+# Compile of Multiplication.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb
+# Loading work.multi
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+#                    0: x= 0, y=0000, z=00000000
+#                   10: x=10, y=0101, z=00110010
+#                   20: x= 4, y=1011, z=00101100
+# Compile of SRFlipFlop.v was successful.
+# Compile of Multiplication.v was successful.
+# 2 compiles, 0 failed with no errors.
+quit -sim
+# End time: 21:47:40 on Nov 19,2023, Elapsed time: 3:46:09
+# Errors: 0, Warnings: 2

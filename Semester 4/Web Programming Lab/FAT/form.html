@@ -1,0 +1,210 @@
+<html>
+    <head>
+        <title>Forms</title>
+        <style>
+            .container{
+                display: flex;
+                height: 85vh;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+            }
+            .box{
+                border: 3px solid black;
+                border-radius: 8px;
+                padding: 25px;
+            }
+            .boxes{
+                padding: 10px;
+                display: flex;
+                align-items: center;
+            }
+            h1,.buttons{
+                display: flex;
+                justify-content: center;
+            }
+            .inputs{
+                width:200px;
+            }
+            .labels{
+                width: 150px;
+            }
+            p{
+                margin: 0;
+            }
+            .error{
+                color: red;
+                margin-left: 20px;
+            }
+            input,select{
+                border: 2px solid black;
+                border-radius: 5px;
+                padding: 5px;
+                padding-left: 10px;
+            }
+            input[type='submit'],input[type='reset']{
+                padding: 10px;
+                margin: 10px;
+                width: 80px;
+                background-color: purple;
+                color: white;
+                font-weight: bolder;
+                border-width: 0px;
+                border-radius: 20px;
+            }
+            #output{
+                color: green;
+                font-weight: bolder;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Forms in HTML</h1>
+        <div class="container">
+            <form class="box">
+                <div class="boxes">
+                    <label for="uname" class="labels">Username</label>
+                    <input type="text" name="username" id="uname" class="inputs" placeholder="Username">
+                    <p class="error name">Hello</p>
+                </div>
+                <div class="boxes">
+                    <label for="email" class="labels">Emails</label>
+                    <input type="text" name="emails" id="email" class="inputs" placeholder="E-Mail">
+                    <p class="error mail">Hello</p>
+                </div>
+                <div class="boxes">
+                    <label for="phone" class="labels">Phone Number</label>
+                    <input type="text" name="ph-number" id="phone" class="inputs" placeholder="Phone Number">
+                    <p class="error ph">Hello</p>
+                </div>
+                <div class="boxes">
+                    <label for="pass" class="labels">Password</label>
+                    <input type="password" name="password" id="pass" class="inputs" placeholder="Password">
+                    <p class="error pa">Hello</p>
+                </div>
+                <div class="boxes">
+                    <label for="cpass" class="labels">Confirm Password</label>
+                    <input type="password" name="cpassword" id="cpass" class="inputs" placeholder="Confirm Password">
+                    <p class="error cpa">Hello</p>
+                </div>
+                <div class="boxes gend">
+                    <label for="gender" class="labels">Gender</label>
+                    <div class="inputs">
+                        <input type="radio" name="gender" id="male" class="gen"><label class="gender-option" for="male">Male</label>
+                        <input type="radio" name="gender" id="female" class="gen"><label class="gender-option" for="female">Female</label>
+                        <input type="radio" name="gender" id="others" class="gen"><label class="gender-option" for="others">Others</label>
+                    </div>
+                    <p class="error ge">Hello</p>
+                </div>
+                <div class="boxes">
+                    <label for="gender" class="labels">Semester</label>
+                    <select id="semesters" class="inputs">
+                        <optgroup label="Year 1">
+                            <option>Semester 1</option>
+                            <option selected>Semester 2</option>
+                        </optgroup>
+                        <optgroup label="Year 2">
+                            <option>Semester 3</option>
+                            <option>Semester 4</option>
+                        </optgroup>
+                        <optgroup label="Year 3">
+                            <option>Semester 5</option>
+                            <option>Semester 6</option>
+                        </optgroup>
+                        <optgroup label="Year 4">
+                            <option>Semester 7</option>
+                            <option>Semester 8</option>
+                        </optgroup>
+                        <option selected>None</option>
+                    </select>
+                </div>
+                <div class="buttons">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Clear">
+                </div>
+                <p id="output">Hello</p>
+            </forms>
+        </div>
+    </body>
+    <script type="text/javascript">
+        const setError = (id,msg) => {
+            document.querySelector("."+id).innerHTML = msg;
+        }
+        const clearErrors = () =>{
+            setError("name","");
+            setError("mail","");
+            setError("ph","");
+            setError("pa","");
+            setError("cpa","");
+            setError("ge","");
+            document.getElementById("output").textContent = "";
+        }
+        const validateForm = (event) => {
+            event.preventDefault();
+            let name = document.getElementById("uname").value;
+            let email = document.getElementById("email").value;
+            let phone = document.getElementById("phone").value;
+            let pass = document.getElementById("pass").value;
+            let cpass = document.getElementById("cpass").value;
+            let gender = document.querySelectorAll('input[name="gender"]');
+            let output = document.getElementById("output");
+            clearErrors();
+            let returnval = true;
+            if(name.length == 0){
+                setError("name","* Can't be Empty !")
+                returnval = false;
+            }
+            let regexEmail = /^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9-]+).([a-z]{2,})(.?)([a-z]{2,}?)$/;
+            if(email.length == 0){
+                setError("mail","* Can't be Empty !")
+                returnval = false;
+            }
+            else if(!regexEmail.test(email)){
+                setError("mail","* Not valid format !")
+                returnval = false;
+            }
+            let regexPhone = /^[5-9][0-9]{9}$/;
+            if(phone.length == 0){
+                setError("ph","* Can't be Empty !")
+                returnval = false;
+            }
+            else if(!regexPhone.test(phone)){
+                setError("ph","* Not valid format !")
+                returnval = false;
+            }
+            let regPass = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@.#$!%*?&^])[A-Za-z\d@.#$!%*?&]{8,}$/;
+            if(pass.length < 8){
+                setError("pa","* Can't be less than 8 !")
+                returnval = false;
+            }
+            else if(!regPass.test(pass)){
+                setError("pa","* Not valid format !")
+                returnval = false;
+            }
+            if(cpass.length < 8){
+                setError("cpa","* Can't be less than 8 !")
+                returnval = false;
+            }
+            else if(cpass != pass){
+                setError("cpa","* Password should be equal to Confirm Password !")
+                returnval = false;
+            }
+            let gend = false;
+            for(let i=0;i<gender.length;i++){
+                if(gender[i].checked){
+                    gend = true;
+                    break;
+                }
+            }
+            if(!gend){
+                returnval = false;
+                setError("ge","* Select a Gender !")
+            }
+            if(returnval)
+                output.textContent = "Success";
+        }
+
+        document.addEventListener('submit',validateForm);
+        document.addEventListener('reset',clearErrors);
+    </script>
+</html>

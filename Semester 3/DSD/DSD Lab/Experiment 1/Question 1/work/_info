@@ -1,0 +1,153 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Coding/Verilog/DSD Lab/Experiment 1
+XDataFlowLevel_v_unit
+DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z0 !s110 1696791347
+V_zlmi^:hdDkL0hIT6mo1i0
+r1
+!s85 0
+!i10b 1
+!s100 BVMD84=IYB1G<FXBcn<UX3
+I_zlmi^:hdDkL0hIT6mo1i0
+!i103 1
+S1
+Z1 dD:/DSD Lab/Experiment 1/Question 1
+Z2 w1696789108
+Z3 8D:/DSD Lab/Experiment 1/Question 1/DataFlowLevel.v
+Z4 FD:/DSD Lab/Experiment 1/Question 1/DataFlowLevel.v
+!i122 1
+L0 6 0
+Z5 OV;L;2020.1;71
+31
+Z6 !s108 1696791347.000000
+Z7 !s107 D:/DSD Lab/Experiment 1/Question 1/DataFlowLevel.v|
+Z8 !s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Experiment 1/Question 1/DataFlowLevel.v|
+!i113 1
+Z9 o-work work
+Z10 tCvgOpt 0
+n@data@flow@level_v_unit
+vtestbenchE1Q1
+!s110 1696815146
+!i10b 1
+!s100 nj[VFHj0nI0I@V0nZTKmK0
+Z11 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I[k8L8mIKjZban5]<Z9az@1
+Z12 VDg1SIo80bB@j0V0VzS_@n1
+R1
+w1696815140
+8D:/DSD Lab/Experiment 1/Question 1/testbenchE1Q1.v
+FD:/DSD Lab/Experiment 1/Question 1/testbenchE1Q1.v
+!i122 12
+L0 1 16
+R5
+r1
+!s85 0
+31
+Z13 !s108 1696815146.000000
+!s107 D:/DSD Lab/Experiment 1/Question 1/testbenchE1Q1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Experiment 1/Question 1/testbenchE1Q1.v|
+!i113 1
+R9
+R10
+ntestbench@e1@q1
+vthreeinputdataflowlevel
+R0
+!i10b 1
+!s100 Z]^^TmCLE119aUP84606`3
+R11
+IAzB3X>I5mB1aefzN?Wg=90
+R12
+R1
+R2
+R3
+R4
+!i122 1
+L0 1 6
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+vthreeinputgatelevel
+R0
+!i10b 1
+!s100 P1kD5?nRK]5@Ke6:iC4K:0
+R11
+I>MGaR0;O0D]>>00A:fniC1
+R12
+R1
+w1696789053
+8D:/DSD Lab/Experiment 1/Question 1/GateLevel.v
+FD:/DSD Lab/Experiment 1/Question 1/GateLevel.v
+!i122 0
+L0 1 17
+R5
+r1
+!s85 0
+31
+!s108 1696791346.000000
+!s107 D:/DSD Lab/Experiment 1/Question 1/GateLevel.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Experiment 1/Question 1/GateLevel.v|
+!i113 1
+R9
+R10
+vtwoinputdata
+Z14 !s110 1696815147
+!i10b 1
+!s100 5jD2gZH4OL?Xg;[a=cMS^1
+R11
+IoHom:HU]Rg7EPUI=90eXD1
+R12
+R1
+w1696814441
+8D:/DSD Lab/Experiment 1/Question 1/TwoInputData.v
+FD:/DSD Lab/Experiment 1/Question 1/TwoInputData.v
+!i122 14
+Z15 L0 1 11
+R5
+r1
+!s85 0
+31
+!s108 1696815147.000000
+!s107 D:/DSD Lab/Experiment 1/Question 1/TwoInputData.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Experiment 1/Question 1/TwoInputData.v|
+!i113 1
+R9
+R10
+vtwoinputgate
+R14
+!i10b 1
+!s100 [HUBD6HU407?X_E6;UL5k1
+R11
+I;P>`;hJDZO]VeH:]6eFG71
+R12
+R1
+w1696814402
+8D:/DSD Lab/Experiment 1/Question 1/TwoInputGate.v
+FD:/DSD Lab/Experiment 1/Question 1/TwoInputGate.v
+!i122 13
+R15
+R5
+r1
+!s85 0
+31
+R13
+!s107 D:/DSD Lab/Experiment 1/Question 1/TwoInputGate.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Experiment 1/Question 1/TwoInputGate.v|
+!i113 1
+R9
+R10

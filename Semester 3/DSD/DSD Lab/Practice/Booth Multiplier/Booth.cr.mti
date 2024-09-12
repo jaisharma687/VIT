@@ -1,0 +1,15 @@
+{D:/DSD Lab/Practice/Booth Multiplier/BoothTest.v} {1 {vlog -work work -stats=none {D:\DSD Lab\Practice\Booth Multiplier\BoothTest.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module BoothTB
+
+Top level modules:
+	BoothTB
+
+} {} {}} {D:/DSD Lab/Practice/Booth Multiplier/Booth.v} {1 {vlog -work work -stats=none {D:\DSD Lab\Practice\Booth Multiplier\Booth.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module BoothMulti
+
+Top level modules:
+	BoothMulti
+
+} {} {}}

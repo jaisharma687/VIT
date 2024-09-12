@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReactJS in HTML for Events</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        const max = (a,b) => {
+            if(parseInt(a) > parseInt(b))
+                return "a is greater than b";
+            else if(parseInt(a) < parseInt(b))
+                return "b is greater than a";
+            else
+                return "both are equal";
+        }
+        const a = window.prompt("Enter a");
+        const b = window.prompt("Enter b");
+        const MyApp = () => {
+            return (
+                <>
+                <h2>{max(a,b)}</h2>
+                </>
+            );
+        }
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<MyApp />);
+    </script>
+</body>
+</html>

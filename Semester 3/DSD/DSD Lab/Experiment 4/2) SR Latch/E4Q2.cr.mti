@@ -1,0 +1,15 @@
+{D:/DSD Lab/Experiment 4/1) D Latch/SRLatch.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Experiment 4/1) D Latch/SRLatch.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module SRLatch
+
+Top level modules:
+	SRLatch
+
+} {} {}} {D:/DSD Lab/Experiment 4/2) SR Latch/testbenchE4Q2.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Experiment 4/2) SR Latch/testbenchE4Q2.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module testbenchE4Q2
+
+Top level modules:
+	testbenchE4Q2
+
+} {} {}}

@@ -1,0 +1,4 @@
+".\Objects\STARTUP.obj",
+".\Objects\data.obj" 
+TO ".\Objects\DataTransfer" 
+PRINT(".\Listings\DataTransfer.m51") RAMSIZE(256) 

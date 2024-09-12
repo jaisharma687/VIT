@@ -1,0 +1,62 @@
+A51 MACRO ASSEMBLER  MAIN2                                                                04/10/2024 20:24:34 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\main2.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE main2.asm SET(SMALL) DEBUG PRINT(.\Listings\main2.lst) OBJECT(.\Objects
+                      \main2.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 75A000            2     MOV P2,#00H
+0003                   3     GET:
+0003 E590              4     MOV A,P1
+0005 5401              5     ANL A,#00000001B
+0007 F8                6     MOV R0,A
+0008 E590              7     MOV A,P1
+000A 5402              8     ANL A,#00000010B
+000C 03                9     RR A
+000D F9               10     MOV R1,A
+000E E4               11     CLR A
+                      12     
+000F                  13     OPERATION:
+000F E9               14     MOV A, R1
+0010 F4               15     CPL A
+0011 58               16     ANL A, R0
+0012 FA               17     MOV R2, A
+0013 E4               18     CLR A
+0014 E9               19     MOV A, R1
+0015 F4               20     CPL A
+0016 59               21     ANL A, R1
+0017 4A               22     ORL A, R2
+0018 5401             23     ANL A,#00000001B
+001A FB               24     MOV R3,A
+001B E4               25     CLR A
+001C E8               26     MOV A, R0
+001D 59               27     ANL A, R1
+001E 5401             28     ANL A,#00000001B
+0020 23               29     RL A
+0021 2B               30     ADD A,R3
+0022 F5A0             31     MOV P2,A
+                      32     
+0024 80DD             33     SJMP GET
+                      34     END
+A51 MACRO ASSEMBLER  MAIN2                                                                04/10/2024 20:24:34 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+GET. . . . . . . .  C ADDR   0003H   A   
+OPERATION. . . . .  C ADDR   000FH   A   
+P1 . . . . . . . .  D ADDR   0090H   A   
+P2 . . . . . . . .  D ADDR   00A0H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

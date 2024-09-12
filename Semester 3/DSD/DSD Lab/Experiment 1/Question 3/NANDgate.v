@@ -1,0 +1,10 @@
+module NANDGate(x,y,z,F);
+input x,y,z;
+output F;
+wire xn,nxz,yn,nxy;
+nand n1(xn,x,x);
+nand n2(nxz,xn,z);
+nand n3(yn,y,y);
+nand n4(nxy,x,yn);
+nand n5(F,nxy,nxz);
+endmodule;

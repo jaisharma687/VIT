@@ -1,0 +1,83 @@
+{D:/DSD Lab/Practice/Multiplexer/1x2DeMux.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Practice/Multiplexer/1x2DeMux.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module demux1to2
+-- Compiling module demux1to2tb
+
+Top level modules:
+	demux1to2tb
+
+} {} {}} {D:/DSD Lab/Practice/Multiplexer/FAT.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Practice/Multiplexer/FAT.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module program
+-- Compiling module programtb
+
+Top level modules:
+	programtb
+
+} {} {}} {D:/DSD Lab/Practice/Multiplexer/2to4decoder.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Practice/Multiplexer/2to4decoder.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module dec2to4
+-- Compiling module dec2to4tb
+
+Top level modules:
+	dec2to4tb
+
+} {} {}} {D:/DSD Lab/Practice/Multiplexer/4x1Mux.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Practice/Multiplexer/4x1Mux.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mux4x1
+-- Compiling module mux4x1tb
+
+Top level modules:
+	mux4x1tb
+
+} {} {}} {D:/DSD Lab/Practice/Multiplexer/8x1Mux.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Practice/Multiplexer/8x1Mux.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mux8x1
+-- Compiling module boolean
+-- Compiling module booleantb
+
+Top level modules:
+	booleantb
+
+} {} {}} {D:/DSD Lab/Practice/Multiplexer/1x4DeMux.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Practice/Multiplexer/1x4DeMux.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module demux1to4
+-- Compiling module demux1to4tb
+
+Top level modules:
+	demux1to4tb
+
+} {} {}} {D:/DSD Lab/Practice/Multiplexer/FA_Mux.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Practice/Multiplexer/FA_Mux.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module FAmux
+-- Compiling module FAmuxtb
+-- Compiling module mux
+
+Top level modules:
+	FAmuxtb
+
+} {} {}} {D:/DSD Lab/Practice/Multiplexer/2x1Mux.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Practice/Multiplexer/2x1Mux.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mux2x1
+-- Compiling module mux2x1tb
+
+Top level modules:
+	mux2x1tb
+
+} {} {}} {D:/DSD Lab/Practice/Multiplexer/4to2encoder.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Practice/Multiplexer/4to2encoder.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module en4to2
+-- Compiling module en4to2tb
+
+Top level modules:
+	en4to2tb
+
+} {} {}} {D:/DSD Lab/Practice/Multiplexer/SR.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Practice/Multiplexer/SR.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module srff
+-- Compiling module srfftb
+
+Top level modules:
+	srfftb
+
+} {} {}}

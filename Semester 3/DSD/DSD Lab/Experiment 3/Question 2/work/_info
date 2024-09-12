@@ -1,0 +1,106 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/DSD Lab/Experiment 3/Question 1
+vbooth_tb
+!s110 1696867209
+!i10b 1
+!s100 C4PBX]VjEceLRWLjg7D?e2
+Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Ij6>9VMPP<g_WBX75PKX^d2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/DSD Lab/Experiment 3/Question 2
+w1696867167
+Z3 8D:/DSD Lab/Experiment 3/Question 2/testbenchE3Q2.v
+Z4 FD:/DSD Lab/Experiment 3/Question 2/testbenchE3Q2.v
+!i122 8
+Z5 L0 1 24
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1696867209.000000
+Z7 !s107 D:/DSD Lab/Experiment 3/Question 2/testbenchE3Q2.v|
+Z8 !s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Experiment 3/Question 2/testbenchE3Q2.v|
+!i113 1
+Z9 o-work work
+Z10 tCvgOpt 0
+vBoothMul
+Z11 !s110 1696867255
+!i10b 1
+!s100 5NnV[<ag9oTN>nGZ;o`[70
+R0
+IM:UI7>zdz3?JT7bIAEf6^1
+R1
+R2
+w1696867205
+8D:/DSD Lab/Experiment 3/Question 2/BoothsMultiplier.v
+FD:/DSD Lab/Experiment 3/Question 2/BoothsMultiplier.v
+!i122 9
+L0 1 65
+R6
+r1
+!s85 0
+31
+Z12 !s108 1696867255.000000
+!s107 D:/DSD Lab/Experiment 3/Question 2/BoothsMultiplier.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Experiment 3/Question 2/BoothsMultiplier.v|
+!i113 1
+R9
+R10
+n@booth@mul
+vTB
+!s110 1696866911
+!i10b 1
+!s100 B6IAnf=nz5M[Ya4aE7n6K1
+R0
+I<H?<dVEo2OoIAK3PY<D`i2
+R1
+R2
+w1696866634
+R3
+R4
+!i122 5
+L0 1 14
+R6
+r1
+!s85 0
+31
+!s108 1696866911.000000
+R7
+R8
+!i113 1
+R9
+R10
+n@t@b
+vtestbenchE3Q2
+R11
+!i10b 1
+!s100 dBH0[9C@XNLDZa=V@]<@83
+R0
+IE8]KKO:0]YM:Ik[``Vl1B0
+R1
+R2
+w1696867251
+R3
+R4
+!i122 10
+R5
+R6
+r1
+!s85 0
+31
+R12
+R7
+R8
+!i113 1
+R9
+R10
+ntestbench@e3@q2

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReactJS in HTML for Events</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+    function WelcomeMsg(){
+        return (
+            <h1>Welcome to ReactJS Single Page Application</h1>
+        );
+    };
+    function MyButton(){
+        return(
+            <button onClick={()=>alert("In Button Event")}>Click Me</button>
+        );  
+    };
+    const rt=ReactDOM.createRoot(document.getElementById('root'));
+    rt.render(
+        <React.StrictMode>
+            <WelcomeMsg />
+            <MyButton />
+        </React.StrictMode>
+    );
+    </script>
+</body>
+
+</html>

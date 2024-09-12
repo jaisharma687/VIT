@@ -1,0 +1,224 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/DSD Lab/Experiment 1/Question 3
+vfaBL
+Z0 !s110 1696818847
+!i10b 1
+!s100 aIW_LcG9Z12[GoT^_=__F2
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+In`A0Tb20SN]am0j6b719G0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dD:/DSD Lab/Experiment 2
+w1696791090
+8D:/DSD Lab/Experiment 2/FullAdderBL.v
+FD:/DSD Lab/Experiment 2/FullAdderBL.v
+!i122 34
+Z4 L0 1 8
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1696818847.000000
+!s107 D:/DSD Lab/Experiment 2/FullAdderBL.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Experiment 2/FullAdderBL.v|
+!i113 1
+Z7 o-work work
+Z8 tCvgOpt 0
+nfa@b@l
+vfaDFL
+R0
+!i10b 1
+!s100 5XcX5;6RligoSOS7LZ]Ze2
+R1
+I2Q45Ai?Y^WZ>CoKdYg@of1
+R2
+R3
+w1696791079
+8D:/DSD Lab/Experiment 2/FullAdderDFL.v
+FD:/DSD Lab/Experiment 2/FullAdderDFL.v
+!i122 33
+Z9 L0 1 6
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/DSD Lab/Experiment 2/FullAdderDFL.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Experiment 2/FullAdderDFL.v|
+!i113 1
+R7
+R8
+nfa@d@f@l
+vfaha
+R0
+!i10b 1
+!s100 6>YaP7@ZfQao0GeQzDAF_3
+R1
+IZdlD1Gh<SBc>@HTd0a^`L3
+R2
+R3
+w1696791118
+8D:/DSD Lab/Experiment 2/FullAdderHalfAdder.v
+FD:/DSD Lab/Experiment 2/FullAdderHalfAdder.v
+!i122 35
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/DSD Lab/Experiment 2/FullAdderHalfAdder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Experiment 2/FullAdderHalfAdder.v|
+!i113 1
+R7
+R8
+vfaSL
+R0
+!i10b 1
+!s100 ]dQG??lG0@zQ<`Ffc[YJk1
+R1
+ID5Mi;5d]^U148L>TADHF?2
+R2
+R3
+w1696791063
+8D:/DSD Lab/Experiment 2/FullAdderSL.v
+FD:/DSD Lab/Experiment 2/FullAdderSL.v
+!i122 32
+L0 1 10
+R5
+r1
+!s85 0
+31
+Z10 !s108 1696818846.000000
+!s107 D:/DSD Lab/Experiment 2/FullAdderSL.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Experiment 2/FullAdderSL.v|
+!i113 1
+R7
+R8
+nfa@s@l
+vfatestbench
+Z11 !s110 1696818846
+!i10b 1
+!s100 AHzX:h?jif`3EEXGc_]A_3
+R1
+I67X`YT?zc8geVB@3NCjJg0
+R2
+R3
+w1696818839
+8D:/DSD Lab/Experiment 2/FullAdderTestbench.v
+FD:/DSD Lab/Experiment 2/FullAdderTestbench.v
+!i122 28
+L0 1 22
+R5
+r1
+!s85 0
+31
+R10
+!s107 D:/DSD Lab/Experiment 2/FullAdderTestbench.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Experiment 2/FullAdderTestbench.v|
+!i113 1
+R7
+R8
+vhaBL
+R11
+!i10b 1
+!s100 N034Bk[8TVU0iZd:3zLU[3
+R1
+I32;;9[k1X=@TEzU21=]cL2
+R2
+R3
+w1696791051
+8D:/DSD Lab/Experiment 2/HalfAdderBL.v
+FD:/DSD Lab/Experiment 2/HalfAdderBL.v
+!i122 31
+L0 1 17
+R5
+r1
+!s85 0
+31
+R10
+!s107 D:/DSD Lab/Experiment 2/HalfAdderBL.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Experiment 2/HalfAdderBL.v|
+!i113 1
+R7
+R8
+nha@b@l
+vhaDFL
+R11
+!i10b 1
+!s100 :Z[8TK;h?^OflS4BS6jNd1
+R1
+I@5H0V]dcDcdYRSz8EOz:m1
+R2
+R3
+w1696791036
+8D:/DSD Lab/Experiment 2/HalfAdderDFL.v
+FD:/DSD Lab/Experiment 2/HalfAdderDFL.v
+!i122 30
+R9
+R5
+r1
+!s85 0
+31
+R10
+!s107 D:/DSD Lab/Experiment 2/HalfAdderDFL.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Experiment 2/HalfAdderDFL.v|
+!i113 1
+R7
+R8
+nha@d@f@l
+vhaSL
+R11
+!i10b 1
+!s100 `g3TY@ME6beT7]ILGicBm0
+R1
+IM_YSoHR>:e;Yg08GRHB:Z2
+R2
+R3
+w1696791023
+8D:/DSD Lab/Experiment 2/HalfAdderSL.v
+FD:/DSD Lab/Experiment 2/HalfAdderSL.v
+!i122 29
+R9
+R5
+r1
+!s85 0
+31
+R10
+!s107 D:/DSD Lab/Experiment 2/HalfAdderSL.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Experiment 2/HalfAdderSL.v|
+!i113 1
+R7
+R8
+nha@s@l
+vhatestbench
+R11
+!i10b 1
+!s100 Pf@a[AWU>CE0OW<XiLfN<2
+R1
+IjkC?MJk^_Ekd5YeVo4Uc@1
+R2
+R3
+w1696818752
+8D:/DSD Lab/Experiment 2/HalfAdderTestbench.v
+FD:/DSD Lab/Experiment 2/HalfAdderTestbench.v
+!i122 27
+L0 1 20
+R5
+r1
+!s85 0
+31
+R10
+!s107 D:/DSD Lab/Experiment 2/HalfAdderTestbench.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Experiment 2/HalfAdderTestbench.v|
+!i113 1
+R7
+R8

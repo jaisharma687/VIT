@@ -1,0 +1,519 @@
+m255
+K4
+z2
+!s11f MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/DSD Lab/Experiment 5/Question 2
+vboolean
+Z0 !s110 1701279076
+!i10b 1
+!s100 i_[;8oda<J_goa@KE2ngi0
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+ISU;RaUbEd=U1QV0MH8WOT1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dD:/DSD Lab/Practice/Multiplexer
+Z4 w1700676331
+Z5 8D:/DSD Lab/Practice/Multiplexer/8x1Mux.v
+Z6 FD:/DSD Lab/Practice/Multiplexer/8x1Mux.v
+!i122 530
+L0 22 5
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1701279076.000000
+Z9 !s107 D:/DSD Lab/Practice/Multiplexer/8x1Mux.v|
+Z10 !s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Practice/Multiplexer/8x1Mux.v|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+vbooleantb
+R0
+!i10b 1
+!s100 dfJcg`>c18gG6NlMaz7kL1
+R1
+IKNgBPFBPXzU1<Nb=YnQcT2
+R2
+R3
+R4
+R5
+R6
+!i122 530
+L0 28 25
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vdec2to4
+Z13 !s110 1701279075
+!i10b 1
+!s100 Wj_[AXB<[i5W]mi52YDcO2
+R1
+IA?aKReIEV8cS7GEQogF@70
+R2
+R3
+Z14 w1700425895
+Z15 8D:/DSD Lab/Practice/Multiplexer/2to4decoder.v
+Z16 FD:/DSD Lab/Practice/Multiplexer/2to4decoder.v
+!i122 524
+Z17 L0 1 11
+R7
+r1
+!s85 0
+31
+Z18 !s108 1701279075.000000
+Z19 !s107 D:/DSD Lab/Practice/Multiplexer/2to4decoder.v|
+Z20 !s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Practice/Multiplexer/2to4decoder.v|
+!i113 1
+R11
+R12
+vdec2to4tb
+R13
+!i10b 1
+!s100 W]FF@zRLcYHCHmCT9Zc?G1
+R1
+IM6]jg7?QE8:naFnG:M4N=1
+R2
+R3
+R14
+R15
+R16
+!i122 524
+Z21 L0 13 13
+R7
+r1
+!s85 0
+31
+R18
+R19
+R20
+!i113 1
+R11
+R12
+vdemux1to2
+R13
+!i10b 1
+!s100 J<QW?UG=J?Di5nS9R`YXc3
+R1
+IZMUUY9E[Id;NgC98`_:?`0
+R2
+R3
+Z22 w1700426915
+Z23 8D:/DSD Lab/Practice/Multiplexer/1x2DeMux.v
+Z24 FD:/DSD Lab/Practice/Multiplexer/1x2DeMux.v
+!i122 526
+Z25 L0 1 9
+R7
+r1
+!s85 0
+31
+R18
+Z26 !s107 D:/DSD Lab/Practice/Multiplexer/1x2DeMux.v|
+Z27 !s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Practice/Multiplexer/1x2DeMux.v|
+!i113 1
+R11
+R12
+vdemux1to2tb
+R13
+!i10b 1
+!s100 9G7>KJzCPTRloaYe2@Uic1
+R1
+IR`:i52TKR0ChYzIF>8^]K3
+R2
+R3
+R22
+R23
+R24
+!i122 526
+Z28 L0 11 14
+R7
+r1
+!s85 0
+31
+R18
+R26
+R27
+!i113 1
+R11
+R12
+vdemux1to4
+R0
+!i10b 1
+!s100 ]QkN3z:ZnWA46AYh[F9@Y0
+R1
+I_LU5@W6_gQGC;5Fh>O41i3
+R2
+R3
+Z29 w1700427424
+Z30 8D:/DSD Lab/Practice/Multiplexer/1x4DeMux.v
+Z31 FD:/DSD Lab/Practice/Multiplexer/1x4DeMux.v
+!i122 527
+Z32 L0 1 12
+R7
+r1
+!s85 0
+31
+R8
+Z33 !s107 D:/DSD Lab/Practice/Multiplexer/1x4DeMux.v|
+Z34 !s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Practice/Multiplexer/1x4DeMux.v|
+!i113 1
+R11
+R12
+vdemux1to4tb
+R0
+!i10b 1
+!s100 I?=N@5D_;zEWjQmIkSRD_0
+R1
+I7eQg1fFTW839gZ=]EW4Bh2
+R2
+R3
+R29
+R30
+R31
+!i122 527
+L0 14 20
+R7
+r1
+!s85 0
+31
+R8
+R33
+R34
+!i113 1
+R11
+R12
+ven4to2
+R13
+!i10b 1
+!s100 QmG88la`0e6VZX`EGU<jN3
+R1
+IY>;FQn@6jBC9j9;KW53eQ0
+R2
+R3
+Z35 w1700426279
+Z36 8D:/DSD Lab/Practice/Multiplexer/4to2encoder.v
+Z37 FD:/DSD Lab/Practice/Multiplexer/4to2encoder.v
+!i122 525
+R17
+R7
+r1
+!s85 0
+31
+R18
+Z38 !s107 D:/DSD Lab/Practice/Multiplexer/4to2encoder.v|
+Z39 !s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Practice/Multiplexer/4to2encoder.v|
+!i113 1
+R11
+R12
+ven4to2tb
+R13
+!i10b 1
+!s100 5<YoDRb[?fWiNjn;:hd0Y2
+R1
+I<?Je6fAddm^KC]7iCS<g`2
+R2
+R3
+R35
+R36
+R37
+!i122 525
+R21
+R7
+r1
+!s85 0
+31
+R18
+R38
+R39
+!i113 1
+R11
+R12
+vFAmux
+R0
+!i10b 1
+!s100 W3dBFFBl?^Ag[j;hnRiLc1
+R1
+Ic]g6HYF?f:okRMWj13]G41
+R2
+R3
+Z40 w1700429723
+Z41 8D:/DSD Lab/Practice/Multiplexer/FA_Mux.v
+Z42 FD:/DSD Lab/Practice/Multiplexer/FA_Mux.v
+!i122 528
+L0 1 6
+R7
+r1
+!s85 0
+31
+R8
+Z43 !s107 D:/DSD Lab/Practice/Multiplexer/FA_Mux.v|
+Z44 !s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Practice/Multiplexer/FA_Mux.v|
+!i113 1
+R11
+R12
+n@f@amux
+vFAmuxtb
+R0
+!i10b 1
+!s100 1oWoZ9A3>:[e6G<4oH5Kk2
+R1
+I6ngnSS7YFGiBz_4::mUSk1
+R2
+R3
+R40
+R41
+R42
+!i122 528
+L0 8 17
+R7
+r1
+!s85 0
+31
+R8
+R43
+R44
+!i113 1
+R11
+R12
+n@f@amuxtb
+vmux
+R0
+!i10b 1
+!s100 V76AD3SbALXY@b=CgI:om1
+R1
+I9Tb@IPiTzDNZ=c@<EOZ7f2
+R2
+R3
+R40
+R41
+R42
+!i122 528
+L0 26 13
+R7
+r1
+!s85 0
+31
+R8
+R43
+R44
+!i113 1
+R11
+R12
+vmux2x1
+R13
+!i10b 1
+!s100 3QUlSXVQ6?i:J;<RNDFkE0
+R1
+Ia:IM5a6l]Q17a7L^CFZhM2
+R2
+R3
+Z45 w1700426460
+Z46 8D:/DSD Lab/Practice/Multiplexer/2x1Mux.v
+Z47 FD:/DSD Lab/Practice/Multiplexer/2x1Mux.v
+!i122 522
+R32
+R7
+r1
+!s85 0
+31
+Z48 !s108 1701279074.000000
+Z49 !s107 D:/DSD Lab/Practice/Multiplexer/2x1Mux.v|
+Z50 !s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Practice/Multiplexer/2x1Mux.v|
+!i113 1
+R11
+R12
+vmux2x1tb
+R13
+!i10b 1
+!s100 QecC8MnIFjOREAmScFBdG0
+R1
+IlK^9?fc?MEOeUMC5mAQS43
+R2
+R3
+R45
+R46
+R47
+!i122 522
+L0 14 15
+R7
+r1
+!s85 0
+31
+R48
+R49
+R50
+!i113 1
+R11
+R12
+vmux4x1
+R13
+!i10b 1
+!s100 C0`4IIze91ZFCTGMZkeD73
+R1
+IzTB5kMoMO><XnV5iV6Q8A0
+R2
+R3
+Z51 w1700420504
+Z52 8D:/DSD Lab/Practice/Multiplexer/4x1Mux.v
+Z53 FD:/DSD Lab/Practice/Multiplexer/4x1Mux.v
+!i122 523
+L0 1 14
+R7
+r1
+!s85 0
+31
+R18
+Z54 !s107 D:/DSD Lab/Practice/Multiplexer/4x1Mux.v|
+Z55 !s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Practice/Multiplexer/4x1Mux.v|
+!i113 1
+R11
+R12
+vmux4x1tb
+R13
+!i10b 1
+!s100 BXN[JjHF^>=eYC@[;6RMT2
+R1
+I<R[CIR5zdbFAQA@Ek5jz]2
+R2
+R3
+R51
+R52
+R53
+!i122 523
+L0 16 20
+R7
+r1
+!s85 0
+31
+R18
+R54
+R55
+!i113 1
+R11
+R12
+vmux8x1
+R0
+!i10b 1
+!s100 Bc6gnRz@J<Q^V8Yh:4@V02
+R1
+IdCo7ZVDjN6i2Pz2m0@2kB2
+R2
+R3
+R4
+R5
+R6
+!i122 530
+L0 1 20
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vprogram
+Z56 !s110 1701279077
+!i10b 1
+!s100 8No7dP]nKB>5GH4M>dEo@3
+R1
+IYLEk]9I^_3Wg@A[1<=2]f2
+R2
+R3
+Z57 w1701279072
+Z58 8D:/DSD Lab/Practice/Multiplexer/FAT.v
+Z59 FD:/DSD Lab/Practice/Multiplexer/FAT.v
+!i122 531
+R25
+R7
+r1
+!s85 0
+31
+Z60 !s108 1701279077.000000
+!s107 D:/DSD Lab/Practice/Multiplexer/FAT.v|
+Z61 !s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Practice/Multiplexer/FAT.v|
+!i113 1
+R11
+R12
+vprogramtb
+R56
+!i10b 1
+!s100 AODiDZgbcPA`@Z:<[Sh1W2
+R1
+IhE@9<QcW7iJCOCY0NM4KD0
+R2
+R3
+R57
+R58
+R59
+!i122 531
+R28
+R7
+r1
+!s85 0
+31
+R60
+Z62 !s107 D:/DSD Lab/Practice/Multiplexer/FAT.v|
+R61
+!i113 1
+R11
+R12
+vsrff
+R0
+!i10b 1
+!s100 a_>CTSl>B_E@dEMYEhnHD1
+R1
+IUW=;0=7BD^Nh7>;nZ@:eS0
+R2
+R3
+Z63 w1700436235
+Z64 8D:/DSD Lab/Practice/Multiplexer/SR.v
+Z65 FD:/DSD Lab/Practice/Multiplexer/SR.v
+!i122 529
+L0 1 15
+R7
+r1
+!s85 0
+31
+R8
+Z66 !s107 D:/DSD Lab/Practice/Multiplexer/SR.v|
+Z67 !s90 -reportprogress|300|-work|work|-stats=none|D:/DSD Lab/Practice/Multiplexer/SR.v|
+!i113 1
+R11
+R12
+vsrfftb
+R0
+!i10b 1
+!s100 m`6_AF:d=C4bGTHL^jDkV2
+R1
+IBlYT1J[Nlj85@z=df:f1f0
+R2
+R3
+R63
+R64
+R65
+!i122 529
+L0 17 18
+R7
+r1
+!s85 0
+31
+R8
+R66
+R67
+!i113 1
+R11
+R12

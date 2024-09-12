@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+        .question-tag{
+            font-weight: 600;
+            font-size: larger;
+            margin: 10px;
+        }
+        .options,.buttons,.question{
+            margin: 15px;
+        }
+        .form_error, .form_correct{
+            margin: 10px;
+            margin-left: 40px;
+            color: red;
+            font-weight: 600;
+            font-style: italic;
+        }
+        .form_correct{
+            color: green;
+        }
+        .result{
+            visibility: hidden;
+        }
+        .score{
+            font-size: x-large;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <form action="" target="_blank" method="post" name="quiz">
+        <div class = "question_1">
+            <label for="fq1a">
+                <div class="question-tag">Question 1:</div>
+                <div class="question">What  is the name of the home stadium of Manchester City?</div>
+            </label>
+            <div class = "options">
+                <input type="radio" id="fq1a" name="cst1" value="etihad">
+                <label for="fq1a" class="options" id="fq11">Etihad Stadium</label><br>
+                <input type="radio" id="fq1b" name="cst1" value="anfield">
+                <label for="fq1b" class="options" id="fq12">Anfield</label><br>
+                <input type="radio" id="fq1c" name="cst1" value="emirates">
+                <label for="fq1c" class="options" id="fq13">Emirates Statdium</label><br>
+                <input type="radio" id="fq1d" name="cst1" value="stamford">
+                <label for="fq1d" class="options" id="fq14">Stamford Brdige</label>
+                <div class= "form_error" id="c1"></div>
+            </div>
+        </div>
+        <div class = "question_2">
+            <label for="fq2a">
+                <div class="question-tag">Question 2:</div>
+                <div class="question">What  is the name of the home stadium of Real Madrid?</div>
+            </label>
+            <div class = "options">
+                <input type="radio" id="fq2a" name="cst2" value="camp">
+                <label for="fq2a" class="options" id="fq21">Camp Nou</label><br>
+                <input type="radio" id="fq2b" name="cst2" value="monteville">
+                <label for="fq2b" class="options" id="fq22">Montville</label><br>
+                <input type="radio" id="fq2c" name="cst2" value="bernabeau">
+                <label for="fq2c" class="options" id="fq23">Santiago Bernabeau</label><br>
+                <input type="radio" id="fq2d" name="cst2" value="wanda">
+                <label for="fq2d" class="options" id="fq24">Wanda Metrolipano</label>
+                <div>
+                    <div class= "form_error" id="c2"></div>
+                </div>
+            </div>
+        </div>
+        <div class = "question_3">
+            <label for="fq3a">
+                <div class="question-tag">Question 3:</div> 
+                <div class="question">What  is the name of the home stadium of Inter Milan?</div>
+            </label>
+            <div class = "options">
+                <input type="radio" id="fq3a" name="cst3" value="olimpico">
+                <label for="fq3a" class="options" id="fq31">Stadio Olimpico</label><br>
+                <input type="radio" id="fq3b" name="cst3" value="sansiro">
+                <label for="fq3b" class="options" id="fq32">San Siro</label><br>
+                <input type="radio" id="fq3c" name="cst3" value="diego">
+                <label for="fq3c" class="options" id="fq33">Stadio Diego Armando Maradonau</label><br>
+                <input type="radio" id="fq3d" name="cst3" value="artemio">
+                <label for="fq3d" class="options" id="fq34">Stadio Artemio Franchi</label>
+                <div>
+                    <div class= "form_error" id="c3"></div>
+                </div>
+            </div>
+        </div>
+        <div class = "question_4">
+            <label for="fq4a">
+                <div class="question-tag">Question 4:</div>
+                <div class="question">Select Manchester City Player.</div>
+            </label>
+            <div class = "options">
+                <input type="checkbox" id="fq4a" name="cply" value="haaland">
+                <label for="fq4a" class="options" id="fq41">Erling Haaland</label><br>
+                <input type="checkbox" id="fq4b" name="cply" value="kdb">
+                <label for="fq4b" class="options" id="fq42">Kevin De Bruyne</label><br>
+                <input type="checkbox" id="fq4c" name="cply" value="messi">
+                <label for="fq4c" class="options" id="fq43">Lionel Messi</label><br>
+                <input type="checkbox" id="fq4d" name="cply" value="rodri">
+                <label for="fq4d" class="options" id="fq44">Rodrigo Hernandez</label>
+                <div>
+                    <div class= "form_error" id="c4"></div>
+                </div>
+            </div>
+        </div>
+        <div class = "buttons">
+            <input type="submit" value="Submit Quiz">
+            <input type="reset" value="Reset Quiz">
+        </div>
+        <div class="result">
+            <p class="score">Total score is: <span id="tot"></span></p>
+        </div>
+    </form>
+
+    <script type="text/javascript">
+        function clearErrors(){
+            for(var i=1;i<5;i++){
+                document.querySelector(".question_" + i + " .form_error").innerHTML = "";
+                document.querySelector(".question_" + i + " .form_error").classList.remove("form_correct");
+            }
+            document.querySelector(".result").style.visibility =  "hidden";
+        }
+
+        function setError(val,index,ret){
+            var q = document.querySelector(".question_" + index).querySelectorAll("input");
+            for(var i=0; i < q.length; i++){
+                if(q[i].checked == true && q[i].value == val){
+                    ret = true;
+                    break;
+                }
+                else if(q[i].checked == true){
+                    ret = false;
+                }
+            }
+            if(ret == true){
+                document.querySelector(".question_" + index + " .form_error").classList.add("form_correct");
+                document.querySelector(".question_" + index + " .form_error").innerHTML = "Correct!";
+            }else{
+                document.querySelector(".question_" + index + " .form_error").innerHTML = "Incorrect!";
+            }
+            return ret;
+        }
+
+        function scoreCounter(ret,score){
+            if(ret == true){
+                return score += 4;
+            }
+            else{
+                return score -= 1;
+            }
+        }
+
+        function setErrorMultiple(val,index,ret,score){
+            var q = document.querySelector(".question_" + index).querySelectorAll("input");
+            var correct = 0;
+            for(var i=0; i < q.length; i++){
+                if(q[i].checked == true){
+                    var match = false;
+                    for(var j=0; j<val.length; j++) {
+                        if(q[i].value == val[j]){
+                            ret = true;
+                            match = true;
+                            correct ++;
+                            break;
+                        }
+                    }
+                    if(match == false){
+                        ret = false;
+                        correct = -1;
+                        break;
+                    }
+                }
+            }
+            if(ret == true && correct>0){
+                document.querySelector(".question_" + index + " .form_error").classList.add("form_correct");
+                document.querySelector(".question_" + index + " .form_error").innerHTML = "Correct!";
+            }
+            else if(correct == 0 && ret==true){
+            }
+            else{
+                document.querySelector(".question_" + index + " .form_error").innerHTML = "Incorrect!";
+            }
+            if(correct == val.length){
+                score += 4;
+            }
+            else if(correct==-1){
+                score -= 1
+            }
+            else{
+                score += correct;
+            }
+            return [ret,score];
+        }
+
+        function validateForm(event){
+            event.preventDefault();
+            let returntval = true;
+            var score = 0;
+            clearErrors();
+            returntval = setError("etihad",1,returntval);
+            score = scoreCounter(returntval,score);
+            returntval = setError("bernabeau",2,returntval);
+            score = scoreCounter(returntval,score);
+            returntval = setError("sansiro",3,returntval);
+            score = scoreCounter(returntval,score);
+            [returntval,score] = setErrorMultiple(["haaland","kdb","rodri"],4,returntval,score);
+            document.querySelector("#tot").innerHTML = score;
+            document.querySelector(".result").style.visibility =  "visible";
+            return returntval;
+        }
+        document.querySelector('form').addEventListener('submit', validateForm);
+        document.querySelector('form').addEventListener('reset',clearErrors);
+    </script>
+</body>
+</html>

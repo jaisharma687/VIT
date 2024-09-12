@@ -1,0 +1,42 @@
+A51 MACRO ASSEMBLER  S2                                                                   05/02/2024 02:12:54 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\s2.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE s2.asm SET(SMALL) DEBUG PRINT(.\Listings\s2.lst) OBJECT(.\Objects\s2.ob
+                      j) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 7805              2     MOV R0,#05H
+0002 7915              3     MOV R1,#15H
+0004 7A25              4     MOV R2,#25H
+0006 7B35              5     MOV R3,#35H
+0008 7C45              6     MOV R4,#45H
+000A C000              7     PUSH 0
+000C C001              8     PUSH 1
+000E C002              9     PUSH 2
+0010 C003             10     PUSH 3
+0012 C004             11     PUSH 4
+0014 D000             12     POP 0
+0016 D001             13     POP 1
+0018 D002             14     POP 2
+001A D003             15     POP 3
+001C D004             16     POP 4
+001E 80FE             17     SJMP $
+                      18     END
+A51 MACRO ASSEMBLER  S2                                                                   05/02/2024 02:12:54 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

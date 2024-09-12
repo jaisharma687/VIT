@@ -1,0 +1,191 @@
+# Compile of 2x1Mux.v was successful.
+# Compile of 4x1Mux.v was successful.
+# Compile of 2to4decoder.v was successful.
+# Compile of 4to2encoder.v was successful.
+# Compile of 1x2DeMux.v was successful.
+# Compile of 1x4DeMux.v was successful.
+# Compile of FA_Mux.v was successful.
+# Compile of SR.v was successful.
+# Compile of 8x1Mux.v was successful.
+# Compile of FAT.v was successful.
+# 10 compiles, 0 failed with no errors.
+vsim -gui work.programtb
+# vsim -gui work.programtb 
+# Start time: 22:44:50 on Nov 29,2023
+# Loading work.programtb
+# Loading work.program
+add wave -position insertpoint sim:/programtb/*
+run -all
+#                    0: a = 0000 , b = 0000 , Y = 00001
+#                   10: a = 1010 , b = 1101 , Y = 01101
+# ** Note: $stop    : D:/DSD Lab/Practice/Multiplexer/FAT.v(20)
+#    Time: 20 ps  Iteration: 0  Instance: /programtb
+# Break in Module programtb at D:/DSD Lab/Practice/Multiplexer/FAT.v line 20
+# Compile of 2x1Mux.v was successful.
+# Compile of 4x1Mux.v was successful.
+# Compile of 2to4decoder.v was successful.
+# Compile of 4to2encoder.v was successful.
+# Compile of 1x2DeMux.v was successful.
+# Compile of 1x4DeMux.v was successful.
+# Compile of FA_Mux.v was successful.
+# Compile of SR.v was successful.
+# Compile of 8x1Mux.v was successful.
+# Compile of FAT.v was successful.
+# 10 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.programtb
+# Loading work.program
+add wave -position insertpoint sim:/programtb/*
+run -all
+#                    0: a = 0000 , b = 0000 , Y = 00001
+#                   10: a = 1010 , b = 1101 , Y = 01101
+# ** Note: $stop    : D:/DSD Lab/Practice/Multiplexer/FAT.v(20)
+#    Time: 20 ps  Iteration: 0  Instance: /programtb
+# Break in Module programtb at D:/DSD Lab/Practice/Multiplexer/FAT.v line 20
+# Compile of 2x1Mux.v was successful.
+# Compile of 4x1Mux.v was successful.
+# Compile of 2to4decoder.v was successful.
+# Compile of 4to2encoder.v was successful.
+# Compile of 1x2DeMux.v was successful.
+# Compile of 1x4DeMux.v was successful.
+# Compile of FA_Mux.v was successful.
+# Compile of SR.v was successful.
+# Compile of 8x1Mux.v was successful.
+# Compile of FAT.v was successful.
+# 10 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.programtb
+# Loading work.program
+run -all
+#                    0: a = 0000 , b = 0000 , Y = 00001
+#                   10: a = 1010 , b = 1101 , Y = 01101
+# ** Note: $stop    : D:/DSD Lab/Practice/Multiplexer/FAT.v(20)
+#    Time: 20 ps  Iteration: 0  Instance: /programtb
+# Break in Module programtb at D:/DSD Lab/Practice/Multiplexer/FAT.v line 20
+# Compile of 2x1Mux.v was successful.
+# Compile of 4x1Mux.v was successful.
+# Compile of 2to4decoder.v was successful.
+# Compile of 4to2encoder.v was successful.
+# Compile of 1x2DeMux.v was successful.
+# Compile of 1x4DeMux.v was successful.
+# Compile of FA_Mux.v was successful.
+# Compile of SR.v was successful.
+# Compile of 8x1Mux.v was successful.
+# Compile of FAT.v was successful.
+# 10 compiles, 0 failed with no errors.
+vsim -gui work.programtb
+# End time: 22:52:35 on Nov 29,2023, Elapsed time: 0:07:45
+# Errors: 0, Warnings: 2
+# vsim -gui work.programtb 
+# Start time: 22:52:35 on Nov 29,2023
+# Loading work.programtb
+# Loading work.program
+add wave -position insertpoint sim:/programtb/*
+run -all
+#                    0: a = 0000 , b = 0000 , Y = 00011
+#                   10: a = 1010 , b = 1101 , Y = 11111
+# ** Note: $stop    : D:/DSD Lab/Practice/Multiplexer/FAT.v(20)
+#    Time: 20 ps  Iteration: 0  Instance: /programtb
+# Break in Module programtb at D:/DSD Lab/Practice/Multiplexer/FAT.v line 20
+# Compile of 2x1Mux.v was successful.
+# Compile of 4x1Mux.v was successful.
+# Compile of 2to4decoder.v was successful.
+# Compile of 4to2encoder.v was successful.
+# Compile of 1x2DeMux.v was successful.
+# Compile of 1x4DeMux.v was successful.
+# Compile of FA_Mux.v was successful.
+# Compile of SR.v was successful.
+# Compile of 8x1Mux.v was successful.
+# Compile of FAT.v was successful.
+# 10 compiles, 0 failed with no errors.
+vsim -gui work.programtb
+# End time: 22:53:24 on Nov 29,2023, Elapsed time: 0:00:49
+# Errors: 0, Warnings: 2
+# vsim -gui work.programtb 
+# Start time: 22:53:24 on Nov 29,2023
+# Loading work.programtb
+# Loading work.program
+add wave -position insertpoint sim:/programtb/*
+run -all
+#                    0: a = 0000 , b = 0000 , Y = 00001
+#                   10: a = 1010 , b = 1101 , Y = 01101
+# ** Note: $stop    : D:/DSD Lab/Practice/Multiplexer/FAT.v(20)
+#    Time: 20 ps  Iteration: 0  Instance: /programtb
+# Break in Module programtb at D:/DSD Lab/Practice/Multiplexer/FAT.v line 20
+# Compile of 2x1Mux.v was successful.
+# Compile of 4x1Mux.v was successful.
+# Compile of 2to4decoder.v was successful.
+# Compile of 4to2encoder.v was successful.
+# Compile of 1x2DeMux.v was successful.
+# Compile of 1x4DeMux.v was successful.
+# Compile of FA_Mux.v was successful.
+# Compile of SR.v was successful.
+# Compile of 8x1Mux.v was successful.
+# Compile of FAT.v was successful.
+# 10 compiles, 0 failed with no errors.
+vsim -gui work.programtb
+# End time: 22:58:56 on Nov 29,2023, Elapsed time: 0:05:32
+# Errors: 0, Warnings: 2
+# vsim -gui work.programtb 
+# Start time: 22:58:56 on Nov 29,2023
+# Loading work.programtb
+# Loading work.program
+add wave -position insertpoint sim:/programtb/*
+run -all
+#                    0: a = 0000 , b = 0000 , Y = 00001
+#                   10: a = 1010 , b = 1101 , Y = 01101
+# ** Note: $stop    : D:/DSD Lab/Practice/Multiplexer/FAT.v(22)
+#    Time: 20 ps  Iteration: 0  Instance: /programtb
+# Break in Module programtb at D:/DSD Lab/Practice/Multiplexer/FAT.v line 22
+# Compile of 2x1Mux.v was successful.
+# Compile of 4x1Mux.v was successful.
+# Compile of 2to4decoder.v was successful.
+# Compile of 4to2encoder.v was successful.
+# Compile of 1x2DeMux.v was successful.
+# Compile of 1x4DeMux.v was successful.
+# Compile of FA_Mux.v was successful.
+# Compile of SR.v was successful.
+# Compile of 8x1Mux.v was successful.
+# Compile of FAT.v was successful.
+# 10 compiles, 0 failed with no errors.
+vsim -gui work.programtb
+# End time: 22:59:43 on Nov 29,2023, Elapsed time: 0:00:47
+# Errors: 0, Warnings: 2
+# vsim -gui work.programtb 
+# Start time: 22:59:43 on Nov 29,2023
+# Loading work.programtb
+# Loading work.program
+run -all
+#                    0: a = 0000 , b = 0000 , Y = 00001
+#                   10: a = 1010 , b = 1101 , Y = 01001
+# ** Note: $stop    : D:/DSD Lab/Practice/Multiplexer/FAT.v(22)
+#    Time: 20 ps  Iteration: 0  Instance: /programtb
+# Break in Module programtb at D:/DSD Lab/Practice/Multiplexer/FAT.v line 22
+# Compile of 2x1Mux.v was successful.
+# Compile of 4x1Mux.v was successful.
+# Compile of 2to4decoder.v was successful.
+# Compile of 4to2encoder.v was successful.
+# Compile of 1x2DeMux.v was successful.
+# Compile of 1x4DeMux.v was successful.
+# Compile of FA_Mux.v was successful.
+# Compile of SR.v was successful.
+# Compile of 8x1Mux.v was successful.
+# Compile of FAT.v was successful.
+# 10 compiles, 0 failed with no errors.
+vsim -gui work.programtb
+# End time: 23:01:29 on Nov 29,2023, Elapsed time: 0:01:46
+# Errors: 0, Warnings: 2
+# vsim -gui work.programtb 
+# Start time: 23:01:29 on Nov 29,2023
+# Loading work.programtb
+# Loading work.program
+run -all
+#                    0: a = 0000 , b = 0000 , Y = 00101
+#                   10: a = 1010 , b = 1101 , Y = 01001
+# ** Note: $stop    : D:/DSD Lab/Practice/Multiplexer/FAT.v(22)
+#    Time: 20 ps  Iteration: 0  Instance: /programtb
+# Break in Module programtb at D:/DSD Lab/Practice/Multiplexer/FAT.v line 22
+# End time: 08:22:47 on Nov 30,2023, Elapsed time: 9:21:18
+# Errors: 0, Warnings: 1

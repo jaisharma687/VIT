@@ -1,0 +1,49 @@
+module FAmux(a, b, c, sum, carry);
+  input a, b, c;
+  output sum, carry;
+  
+  wire x1, x2, x3, x4;
+  
+  mux m1(a, b, c, ~c, x1);
+  mux m2(1, a, b, x1, x2);
+  mux m3(0, c, c, x1, x3);
+  mux m4(x2, x3, x3, x2, sum);
+  mux m5(0, c, c, 1, x4);
+  mux m6(0, x2, x3, x4, carry);
+  
+endmodule
+
+module FAmuxtb;
+  reg a, b, c;
+  wire sum, carry;
+  
+  FAmux test(a, b, c, sum, carry);
+  
+  initial begin 
+    $monitor($time,": a=%b, b=%b, c=%b, sum=%b, carry=%b", a, b, c, sum, carry);
+    
+    {a, b, c} = 3'b000;
+    #10 {a, b, c} = 3'b001;
+    #10 {a, b, c} = 3'b010;
+    #10 {a, b, c} = 3'b011;
+    #10 {a, b, c} = 3'b100;
+    #10 {a, b, c} = 3'b101;
+    #10 {a, b, c} = 3'b110;
+    #10 {a, b, c} = 3'b111;
+    #10 $stop;
+  end
+endmodule
+
+module mux(I0, I1, I2, I3, S1, S0, y);
+  input I0, I1, I2, I3, S1, S0;
+  output reg y;
+  
+  always @ (S1 or S0) begin
+    case({S1, S0})
+      2'b00: y <= I0;
+      2'b01: y <= I1;
+      2'b10: y <= I2;
+      2'b11: y <= I3;
+    endcase
+  end
+endmodule

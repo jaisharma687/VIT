@@ -1,0 +1,64 @@
+D:/Coding/Verilog/faDFL.v {1 {vlog -work work -stats=none D:/Coding/Verilog/faDFL.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module faDFL
+
+Top level modules:
+	faDFL
+
+} {} {}} D:/Coding/Verilog/faBL.v {1 {vlog -work work -stats=none D:/Coding/Verilog/faBL.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module faBL
+
+Top level modules:
+	faBL
+
+} {} {}} D:/Coding/Verilog/hatestbench.v {1 {vlog -work work -stats=none D:/Coding/Verilog/hatestbench.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module hatestbench
+
+Top level modules:
+	hatestbench
+
+} {} {}} D:/Coding/Verilog/faSL.v {1 {vlog -work work -stats=none D:/Coding/Verilog/faSL.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module faSL
+
+Top level modules:
+	faSL
+
+} {} {}} D:/Coding/Verilog/fatestbench.v {1 {vlog -work work -stats=none D:/Coding/Verilog/fatestbench.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module fatestbench
+
+Top level modules:
+	fatestbench
+
+} {} {}} D:/Coding/Verilog/haDFL.v {1 {vlog -work work -stats=none D:/Coding/Verilog/haDFL.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module haDFL
+
+Top level modules:
+	haDFL
+
+} {} {}} D:/Coding/Verilog/haBL.v {1 {vlog -work work -stats=none D:/Coding/Verilog/haBL.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module haBL
+
+Top level modules:
+	haBL
+
+} {} {}} D:/Coding/Verilog/faha.v {1 {vlog -work work -stats=none D:/Coding/Verilog/faha.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module faha
+
+Top level modules:
+	faha
+
+} {} {}} D:/Coding/Verilog/haSL.v {1 {vlog -work work -stats=none D:/Coding/Verilog/haSL.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module haSL
+
+Top level modules:
+	haSL
+
+} {} {}}

@@ -1,0 +1,4 @@
+".\Objects\STARTUP.obj",
+".\Objects\b16.obj" 
+TO ".\Objects\Boolean Implementation" 
+PRINT(".\Listings\Boolean Implementation.m51") RAMSIZE(256) 

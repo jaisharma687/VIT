@@ -1,0 +1,72 @@
+A51 MACRO ASSEMBLER  RANDT                                                                05/02/2024 05:41:49 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\randt.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE randt.asm SET(SMALL) DEBUG PRINT(.\Listings\randt.lst) OBJECT(.\Objects
+                      \randt.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 758920            2     MOV TMOD,#20H
+0003 758DFD            3     MOV TH1,#-3
+0006 759850            4     MOV SCON,#50H
+0009 D28E              5     SETB TR1
+000B 75A000            6     MOV P2,#00H
+000E                   7     MAIN:
+000E 209802            8     JB RI,RECIEVE
+0011 800C              9     SJMP SEND
+0013                  10     RECIEVE:
+0013 E4               11     CLR A
+0014 3098FD           12     NEXT: JNB RI,NEXT
+0017 E599             13     MOV A,SBUF
+0019 F5A0             14     MOV P2,A
+001B C298             15     CLR RI
+001D 80EF             16     SJMP MAIN
+001F                  17     SEND:
+001F 900200           18     MOV DPTR,#0200H
+0022 780F             19     MOV R0,#0FH
+0024 E4               20     LOOP: CLR A
+0025 93               21     MOVC A,@A+DPTR
+0026 F599             22     MOV SBUF,A
+0028 3099FD           23     AGAIN: JNB TI,AGAIN
+002B C299             24     CLR TI
+002D A3               25     INC DPTR
+002E D8F4             26     DJNZ R0,LOOP
+0030 80DC             27     SJMP MAIN
+                      28     
+0200                  29     ORG 0200H
+0200 56495420         30     DB "VIT UNIVERSITY "
+0204 554E4956                
+0208 45525349                
+020C 545920                  
+                      31     END
+A51 MACRO ASSEMBLER  RANDT                                                                05/02/2024 05:41:49 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+AGAIN. . . . . . .  C ADDR   0028H   A   
+LOOP . . . . . . .  C ADDR   0024H   A   
+MAIN . . . . . . .  C ADDR   000EH   A   
+NEXT . . . . . . .  C ADDR   0014H   A   
+P2 . . . . . . . .  D ADDR   00A0H   A   
+RECIEVE. . . . . .  C ADDR   0013H   A   
+RI . . . . . . . .  B ADDR   0098H.0 A   
+SBUF . . . . . . .  D ADDR   0099H   A   
+SCON . . . . . . .  D ADDR   0098H   A   
+SEND . . . . . . .  C ADDR   001FH   A   
+TH1. . . . . . . .  D ADDR   008DH   A   
+TI . . . . . . . .  B ADDR   0098H.1 A   
+TMOD . . . . . . .  D ADDR   0089H   A   
+TR1. . . . . . . .  B ADDR   0088H.6 A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

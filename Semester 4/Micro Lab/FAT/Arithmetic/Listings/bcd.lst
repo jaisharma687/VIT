@@ -1,0 +1,48 @@
+A51 MACRO ASSEMBLER  BCD                                                                  05/02/2024 02:37:45 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\bcd.obj
+ASSEMBLER INVOKED BY: C:\Keil_v5\C51\BIN\A51.EXE bcd.asm SET(SMALL) DEBUG PRINT(.\Listings\bcd.lst) OBJECT(.\Objects\bcd
+                      .obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     ORG 0000H
+0000 780A              2     MOV R0,#0AH
+0002 7A00              3     MOV R2,#00H
+0004 7B00              4     MOV R3,#00H
+0006 900200            5     MOV DPTR,#0200H
+0009 E4                6     MAIN: CLR A
+000A 93                7     MOVC A,@A+DPTR
+000B 2A                8     ADD A,R2
+000C D4                9     DA A
+000D FA               10     MOV R2,A
+000E 5003             11     JNC NEXT
+0010 0B               12     INC R3
+0011 C2D7             13     CLR PSW.7
+0013 A3               14     NEXT: INC DPTR
+0014 D8F3             15     DJNZ R0,MAIN
+0016 80FE             16     SJMP $
+0200                  17     ORG 0200H
+0200 22432334         18     DB 22H,43H,23H,34H,31H,77H,91H,33H,43H,7H
+0204 31779133                
+0208 4307                    
+                      19     END
+A51 MACRO ASSEMBLER  BCD                                                                  05/02/2024 02:37:45 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+MAIN . . . . . . .  C ADDR   0009H   A   
+NEXT . . . . . . .  C ADDR   0013H   A   
+PSW. . . . . . . .  D ADDR   00D0H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

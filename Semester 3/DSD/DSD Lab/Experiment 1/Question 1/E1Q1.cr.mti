@@ -1,0 +1,22 @@
+{D:/DSD Lab/Experiment 1/Question 1/TwoInputGate.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Experiment 1/Question 1/TwoInputGate.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module twoinputgate
+
+Top level modules:
+	twoinputgate
+
+} {} {}} {D:/DSD Lab/Experiment 1/Question 1/TwoInputData.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Experiment 1/Question 1/TwoInputData.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module twoinputdata
+
+Top level modules:
+	twoinputdata
+
+} {} {}} {D:/DSD Lab/Experiment 1/Question 1/testbenchE1Q1.v} {1 {vlog -work work -stats=none {D:/DSD Lab/Experiment 1/Question 1/testbenchE1Q1.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module testbenchE1Q1
+
+Top level modules:
+	testbenchE1Q1
+
+} {} {}}

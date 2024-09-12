@@ -1,0 +1,166 @@
+<html>
+    <head>
+        <title>
+            Forms
+        </title>
+        <style>
+            .conatiner{
+                display: flex;
+                margin-bottom: 10px;
+            }
+            label{
+                float: left;
+                width:10em;
+            }
+            .error{
+                color: red;
+                margin-left: 20px;
+                font-weight: 600;
+            }
+            h2{
+                color: green;
+                font-size: larger;
+                visibility: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            Forms
+        </h1>
+        <form action="https://www.bing.com" method="push">
+            <div class="conatiner">
+                <label for="fname">
+                    Name
+                </label>
+                <input type="text" id="fname">
+                <span class = "error name"></span>
+            </div>
+            <div class="conatiner">
+                <label for="freg">
+                    Registration Number
+                </label>
+                <input type="text" id="freg">
+                <span class = "error reg"></span>
+            </div>
+            <div class="conatiner">
+                <label for="femail">
+                    Email ID
+                </label>
+                <input type="text" id="femail">
+                <span class = "error email"></span>
+            </div>
+            <div class="conatiner">
+                <label for="fpass">
+                    Password
+                </label>
+                <input type="password" id="fpass">
+                <span class = "error pass"></span>
+            </div>
+            <div class="conatiner">
+                <label for="fcpass">
+                    Confrim Password
+                </label>
+                <input type="password" id="fcpass">
+                <span class = "error cpass"></span>
+            </div>
+            <div class="conatiner">
+                <label for="fnumber">
+                    Number
+                </label>
+                <input type="text" id="fnumber">
+                <span class = "error number"></span>
+            </div>
+            <div class="container">
+                <input type="submit">
+            </div>
+            <div class="done container">
+                <h2>Success</h2>
+            </div>
+        </form>
+        <script type="text/javascript">
+            function clearErrors(){
+                e = document.querySelectorAll(".error");
+                for(var i=0;i<e.length;i++){
+                    e[i].innerHTML = "";
+                }
+                document.querySelector("h2").style.visibility = "hidden";
+            }
+
+            function setError(id,error){
+                document.querySelector("."+id).innerHTML = error;
+            }
+
+            function validateForm(event){
+                returnval = true;
+                clearErrors();
+                event.preventDefault();
+
+                name = document.getElementById("fname").value;
+                if(name.length==0){
+                    setError("name","*Name should not be empty");
+                    returnval = false;
+                }
+
+                reg = document.getElementById("freg").value;
+                regex_reg = /^2[0-3][BM][A-Z]{2}[0-9]{4}$/;
+                if(reg.length!=9){
+                    setError("reg","*Registration Number is 9 characters long");
+                    returnval = false;
+                }
+                else if(regex_reg.test(reg)==false){
+                    setError("reg","*Registration Number dosent follow the pattern");
+                    returnval = false;
+                }
+
+                email = document.getElementById("femail").value;
+                regex_email = /^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9-]+).([a-z]{2,})(.[a-z]{2,}?)$/;
+                if(email.length==0){
+                    setError("email","*Email can't be empty");
+                    returnval = false;
+                }
+                else if(regex_email.test(email)==false){
+                    setError("email","*Email dosent follow the pattern");
+                    returnval = false;
+                } 
+                
+                pass = document.getElementById("fpass").value;
+                regex_pass = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+                if(pass.length <8){
+                    setError("pass","*Password should be 8 characters long");
+                    returnval = false;
+                }
+                else if(regex_pass.test(pass)==false){
+                    setError("pass","*Invalid format for password");
+                    returnval = false;
+                }
+
+                cpass = document.getElementById("fcpass").value;
+                if(cpass!=pass){
+                    setError("cpass","*Confrim Password and Password must be same");
+                    returnval = false;
+                }
+
+                number = document.getElementById("fnumber").value;
+                regex_num = /^[1-9][0-9]{9}$/;
+                if(number.length != 10){
+                    setError("number","*Number should be of 10 digits");
+                    returnval = false;
+                }
+                else if(regex_num.test(number)==false){
+                    setError("number","*Number should contain only digits");
+                    returnval = false;
+                }
+
+                if(returnval){
+                    document.querySelector("h2").style.visibility = "visible";
+                }
+                else{
+                    event.preventDefault();
+                }
+            }
+
+            document.addEventListener('submit',validateForm);
+        </script>
+    </body>
+</html>

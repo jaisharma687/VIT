@@ -1,0 +1,4 @@
+".\Objects\STARTUP.obj",
+".\Objects\randt.obj" 
+TO ".\Objects\RecieveAndTransmit" 
+PRINT(".\Listings\RecieveAndTransmit.m51") RAMSIZE(256) 
