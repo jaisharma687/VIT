@@ -28,6 +28,7 @@ int main() {
     for (int i = 0; i < n; i++) {
         p[i] = read(i);
     }
+    // sort on basis of arival time
     for (int i = 0; i < n - 1; i++) {
         for (int j = i + 1; j < n; j++) {
             if (p[i].a > p[j].a) {
@@ -37,7 +38,7 @@ int main() {
             }
         }
     }
-    g[0] = 0;
+    g[0] = p[0].a;
     for (int i = 0; i < n; i++) {
         g[i + 1] = g[i] + p[i].b;
         p[i].wt = g[i] - p[i].a;

@@ -41,7 +41,7 @@ int main() {
     w[0] = 0;
     for (i = 1; i < n; i++) {
         w[i] = w[i - 1] + b[i - 1];
-        s[i - 1] = w[i - 1] + b[i - 1];
+        s[i - 1] = s[i - 1] + b[i - 1];
     }
     s[n - 1] = w[n - 1] + b[n - 1];
     for (i = 0; i < n; i++) {
