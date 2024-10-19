@@ -7,13 +7,15 @@ public class longest_sequence {
         String bin = Integer.toBinaryString(n);
         int mx = 0;
         int res = 0;
+        int prev = 0;
         for(char x: bin.toCharArray()){
             if(x == '1'){
                 mx++;
                 res = Math.max(mx,res);
             }
             else{
-                res = Math.max(mx,res);
+                res = Math.max(mx+prev+1,res);
+                prev = mx;
                 mx = 0;
             }
         }
