@@ -1,19 +1,19 @@
 %{
-#include <stdio.h>
-#include "Sty.tab.h"
+    #include<stdio.h>
+    #include"Sty.tab.h"
 %}
 
 D   [0-9]
 NUM {D}+
-SO  [\n]
-PO  [()]
-ASO =
-AO  [-+*/%]
+OP  [-+/*%]
+RO  [=<>]
+ES  [\n]
+PA  [()]
 
 %%
 {NUM}   {yylval = atoi(yytext); return NUM;}
-{SO}    return *yytext;
-{PO}    return *yytext;
-{ASO}   return *yytext;
-{AO}    return *yytext;
+{OP}    return *yytext;
+{RO}    return *yytext;
+{ES}    return *yytext;
+{PA}    return *yytext;
 %%

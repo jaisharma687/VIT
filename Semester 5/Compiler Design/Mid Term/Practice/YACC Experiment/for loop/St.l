@@ -1,27 +1,25 @@
 %{
-#include <stdio.h>
-#include "Sty.tab.h"
+    #include<stdio.h>
+    #include"Sty.tab.h"
 %}
 
 L   [a-zA-Z]
 D   [0-9]
 ID  {L}({L}|{D})*
 NUM {D}+
-SO  [;\n]
-PO  [()]
-ASO =
-AO  [-+*/]
-RO  [><]
-CP  [{}]
+RO  [=<>]
+OP  [-+*/]
+PA  [()]
+CA  [{}]
+ES  [;]
 
 %%
-"for"   return(FOR);
-{ID}    return(ID);
-{NUM}   return(NUM);
-{SO}    return *yytext;
-{PO}    return *yytext;
-{ASO}   return *yytext;
-{AO}    return *yytext;
+"for"   return (FOR);
+{ID}    return (ID);
+{NUM}   return (NUM);
 {RO}    return *yytext;
-{CP}    return *yytext;
+{OP}    return *yytext;
+{PA}    return *yytext;
+{CA}    return *yytext;
+{ES}    return *yytext;
 %%

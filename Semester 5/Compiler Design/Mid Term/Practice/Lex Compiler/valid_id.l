@@ -1,21 +1,22 @@
-N 	[0-9]
-Num {N}+
-L [a-zA-Z]+
-Inval {Num}+({L}+)|({L}+{Num}+)
+%{
+    #include <stdio.h>
+%}
+
 
 %%
-{Inval} {printf("%s : Invalid and its length %d\n" , yytext, yyleng);}
-{Num} 	{printf("%s : Valid Number\n", yytext);}
-{L} 	{printf("%s : Valid name and its length %d\n", yytext, yyleng);}
-. 	    {printf("%s : Invalid and its length %d\n", yytext, yyleng);}
+^[A-Z][a-zA-Z0-9_]*$    {printf("Valid\n");}
+.*                      {printf("Invalid\n");}
 %%
-int main()
-{
-	printf("Enter to check: ");
-	yylex();
+
+int main(){
+    char id[100];
+    printf("Enter the identifier: \n");
+    scanf("%s",id);
+    yy_scan_string(id);
+    yylex();
+    return 0;
 }
 
-int yywrap()
-{
-	return 1;
+int yywrap(){
+    return 1;
 }

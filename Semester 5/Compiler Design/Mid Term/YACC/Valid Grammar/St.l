@@ -7,6 +7,6 @@ ID [a-d]
 SO [\n]
 
 %%
-{ID}    return(ID);
+{ID}    return (ID);
 {SO}    return *yytext;
 %%

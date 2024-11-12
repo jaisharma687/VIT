@@ -5,7 +5,7 @@ void yyerror(char *);
 int yylex(void);
 %}
 
-%token ID NUM
+%token ID
 
 %%
 S   : ID A B ID '\n' {printf("Valid Statement\n");}

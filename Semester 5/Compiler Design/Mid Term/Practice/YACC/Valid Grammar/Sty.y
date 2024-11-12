@@ -1,22 +1,20 @@
 %{
-#include <stdio.h>
-#include "Sty.tab.h"
-void yyerror(char *);
-int yylex(void);
+    #include<stdio.h>
+    #include"Sty.tab.h"
+    void yyerror(char *);
+    int yylex(void);
 %}
 
-%token ID NUM
-
 %%
-S   : ID A B ID '\n' {printf("Valid Statement\n");}
-A   : ID
-    | ' '
-B   : ID
-    | ' '
+S   : 'a' A B 'b'     {printf("Valid Input");}
+A   : 'c'
+    |
+B   : 'd'
+    |
 %%
 
 int main(){
-    printf("Enter the statement: ");
+    printf("Enter the input:\n");
     yyparse();
     return 0;
 }

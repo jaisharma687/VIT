@@ -1,7 +1,7 @@
 Institutional 	[a-zA-Z0-9._%+-]+@vitstudent.ac.in
 Gmail 			[a-zA-Z0-9._%+-]+@gmail.com
 Outlook 		[a-zA-Z0-9._%+-]+@outlook.com
-Unknown 		[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}
+Unknown 		[a-zA-Z0-9._%+-]+@[a-zA-Z0-9._]+\.[a-zA-Z]{2,4}
 
 %%
 {Institutional} 	{ printf("Institutional Email ID\n"); }

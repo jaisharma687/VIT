@@ -1,40 +1,40 @@
 %{
-#include <stdio.h>
-#include "Sty.tab.h"
-void yyerror(char *);
-int yylex(void);
+    #include<stdio.h>
+    #include"Sty.tab.h"
+    int yylex(void);
+    void yyerror(char *);
 %}
 
-%token ID NUM FOR
+%token FOR ID NUM
 
 %%
-S       : FOR '(' IN ';' CON ';' INC ')' '{' STAT '}' '\n' {printf("Valid Statement\n");}
-IN      : ID '=' V
-CON     : ID R V
-INC     : ID OP
-V       : ID
-        | NUM
-R       : '<'
-        | '>'
-        | '=' '='
-        | '<' '='
-        | '>' '='
-OP      : '+' '+'
-        | '-' '-'
-STAT    : ID '=' E ';'
-E       : E '+' T
-        | E '-' T
-        | T
-T       : T '*' F
-        | T '/' F
-        | F
-F       : '(' E ')'
-        | ID
-        | NUM
+S   : FOR '(' I ';' C ';' P ')' '{' E '}'     {printf("Valid Statement.");}
+I   : ID '=' F
+C   : ID RO F
+P   : ID IN
+    | ID '=' ID OP F
+IN  : '+' '+'
+    | '-' '-'
+E   : ID '=' X ';'
+X   : F OP F Y
+Y   : OP F Y
+    |
+RO  : '>'
+    | '<'
+    | '<' '='
+    | '>' '='
+    | '=' '='
+OP  : '+'
+    | '-'
+    | '*'
+    | '/'
+F   : '(' E ')'
+    | ID  
+    | NUM
 %%
 
 int main(){
-    printf("Enter the statement: ");
+    printf("Enter the code:\n");
     yyparse();
     return 0;
 }
@@ -44,5 +44,5 @@ int yywrap(){
 }
 
 void yyerror(char *err){
-    fprintf(stderr, "%s\n", err);
+    fprintf(stderr,"%s\n",err);
 }

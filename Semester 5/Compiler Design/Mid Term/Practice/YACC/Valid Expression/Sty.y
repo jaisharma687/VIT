@@ -1,27 +1,31 @@
 %{
-#include <stdio.h>
-#include "Sty.tab.h"
-void yyerror(char *);
-int yylex(void);
+    #include<stdio.h>
+    #include"Sty.tab.h"
+    void yyerror(char *);
+    int yylex(void);
 %}
 
 %token ID NUM
 
 %%
-S   : ID '=' E ';' '\n' {printf("Valid Statement\n");}
-E   : E '+' T
-    | E '-' T
-    | T
-T   : T '*' F
-    | T '/' F
-    | F
+S   : ID '=' E ';'      {printf("Valid Expression.");}
+E   : T X Y
+X   : '-' T X
+    |
+Y   : '+' T Y
+    |
+T   : F P Q
+P   : '*' F P
+    |
+Q   : '/' F Q
+    |
 F   : '(' E ')'
     | ID
     | NUM
 %%
 
 int main(){
-    printf("Enter the statement: ");
+    printf("Enter the Expression:\n");
     yyparse();
     return 0;
 }

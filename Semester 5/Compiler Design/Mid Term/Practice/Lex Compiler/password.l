@@ -1,39 +1,49 @@
 %{
-int has_upper = 0;
-int has_lower = 0;
-int has_digit = 0;
-int has_symbol = 0;
-int length = 0;
+    #include<stdio.h>
+    #include<stdbool.h>
+    bool has_upper = false;
+    bool has_lower = false;
+    bool has_symbol = false;
+    bool has_number = false;
+    int len = 0;
 %}
 
-lower [a-z]+
-Upper [A-Z]+
-Num [0-9]+
-Symbol [!@#$%^&*()_+\-=\[\]{};\\|,.<>\/?]+
+lower       [a-z]+
+upper       [A-Z]+
+num         [0-9]+
+symbol      [^a-zA-Z0-9]+
 
 %%
-{lower}		{has_lower = 1; length += yyleng;}
-{Upper} 	{has_upper = 1; length += yyleng;}
-{Num} 		{has_digit = 1; length += yyleng;}
-{Symbol} 	{has_symbol = 1; length += yyleng;}
-.|\n 		{length += yyleng;}
+{lower}     {has_lower = true; len+=yyleng;}
+{upper}     {has_upper = true; len+=yyleng;}
+{num}       {has_number = true; len+=yyleng;}
+{symbol}    {has_symbol = true; len+=yyleng;}
 %%
 
-int main() 
-{
-	char password[100];
-	printf("Enter your password: ");
-	scanf("%s", password);
+int main(){
+    char password[100];
+    printf("Enter the password:\n");
+    scanf("%s", password);
 	yy_scan_string(password);
-	yylex();
-	if (length < 6) printf("Password is too short. Minimum length is 6 characters.\n");
-	else if (has_upper && has_lower && has_digit && has_symbol) printf("Strong Password\n");
-	else if (has_upper && has_lower && has_digit) printf("Moderate Password\n");
-	else if (has_upper && has_lower) printf("Weak Password\n");
-	else printf("Password doesn't meet the minimum criteria.\n");
-	return 0;
+    yylex();
+    if(len<6){
+        printf("Password length should be at least 6 characters.\n");
+    }
+    else if(has_lower && has_upper && !has_number && !has_symbol){
+        printf("Weak Password.\n");
+    }
+    else if(has_number && !has_symbol){
+        printf("Moderate Password.\n");
+    }
+    else if(has_symbol){
+        printf("Strong Password.\n");
+    }
+    else{
+        printf("Password doesnt satisfy any condition.\n");
+    }
+    return 0;
 }
-int yywrap()
-{
-	return 1;
+
+int yywrap(){
+    return 1;
 }
