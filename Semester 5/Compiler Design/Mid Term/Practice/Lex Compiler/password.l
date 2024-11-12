@@ -33,7 +33,6 @@ int main()
 	else printf("Password doesn't meet the minimum criteria.\n");
 	return 0;
 }
-
 int yywrap()
 {
 	return 1;

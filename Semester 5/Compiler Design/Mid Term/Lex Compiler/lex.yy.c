@@ -322,6 +322,9 @@ void yyfree ( void *  );
 #define YY_AT_BOL() (YY_CURRENT_BUFFER_LVALUE->yy_at_bol)
 
 /* Begin user sect3 */
+
+#define yywrap() (/*CONSTCOND*/1)
+#define YY_SKIP_YYWRAP
 typedef flex_uint8_t YY_CHAR;
 
 FILE *yyin = NULL, *yyout = NULL;
@@ -351,8 +354,8 @@ static void yynoreturn yy_fatal_error ( const char* msg  );
 	(yy_hold_char) = *yy_cp; \
 	*yy_cp = '\0'; \
 	(yy_c_buf_p) = yy_cp;
-#define YY_NUM_RULES 6
-#define YY_END_OF_BUFFER 7
+#define YY_NUM_RULES 3
+#define YY_END_OF_BUFFER 4
 /* This struct is not used in this scanner,
    but its presence is necessary. */
 struct yy_trans_info
@@ -360,10 +363,9 @@ struct yy_trans_info
 	flex_int32_t yy_verify;
 	flex_int32_t yy_nxt;
 	};
-static const flex_int16_t yy_accept[14] =
+static const flex_int16_t yy_accept[11] =
     {   0,
-        0,    0,    7,    5,    4,    3,    2,    1,    4,    3,
-        2,    1,    0
+        2,    2,    4,    2,    3,    2,    2,    1,    2,    0
     } ;
 
 static const YY_CHAR yy_ec[256] =
@@ -371,17 +373,17 @@ static const YY_CHAR yy_ec[256] =
         1,    1,    1,    1,    1,    1,    1,    1,    1,    2,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    3,    1,    3,    3,    3,    3,    1,    3,
-        3,    3,    3,    3,    3,    3,    3,    4,    4,    4,
-        4,    4,    4,    4,    4,    4,    4,    1,    3,    3,
-        3,    3,    3,    3,    5,    5,    5,    5,    5,    5,
-        5,    5,    5,    5,    5,    5,    5,    5,    5,    5,
-        5,    5,    5,    5,    5,    5,    5,    5,    5,    5,
-        3,    3,    3,    3,    3,    1,    6,    6,    6,    6,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    3,    3,    3,
+        3,    3,    3,    3,    3,    3,    3,    1,    1,    1,
+        1,    1,    1,    1,    4,    4,    4,    4,    4,    4,
+        4,    4,    4,    4,    4,    4,    4,    4,    4,    4,
+        4,    4,    4,    4,    4,    4,    4,    4,    4,    4,
+        1,    1,    1,    1,    3,    1,    3,    3,    3,    3,
 
-        6,    6,    6,    6,    6,    6,    6,    6,    6,    6,
-        6,    6,    6,    6,    6,    6,    6,    6,    6,    6,
-        6,    6,    3,    3,    3,    1,    1,    1,    1,    1,
+        3,    3,    3,    3,    3,    3,    3,    3,    3,    3,
+        3,    3,    3,    3,    3,    3,    3,    3,    3,    3,
+        3,    3,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
@@ -398,33 +400,33 @@ static const YY_CHAR yy_ec[256] =
         1,    1,    1,    1,    1
     } ;
 
-static const YY_CHAR yy_meta[7] =
+static const YY_CHAR yy_meta[5] =
     {   0,
-        1,    1,    2,    3,    4,    5
+        1,    2,    1,    1
     } ;
 
-static const flex_int16_t yy_base[18] =
+static const flex_int16_t yy_base[13] =
     {   0,
-        0,    0,   11,   12,    0,    0,    0,    0,    0,    0,
-        0,    0,   12,    8,    6,    4,    2
+        9,    0,    3,    0,   12,    4,    0,   12,    0,   12,
+        8,    0
     } ;
 
-static const flex_int16_t yy_def[18] =
+static const flex_int16_t yy_def[13] =
     {   0,
-       13,    1,   13,   13,   14,   15,   16,   17,   14,   15,
-       16,   17,    0,   13,   13,   13,   13
+       11,   11,   10,   12,   10,   10,   12,   10,    6,    0,
+       10,   10
     } ;
 
-static const flex_int16_t yy_nxt[19] =
+static const flex_int16_t yy_nxt[17] =
     {   0,
-        4,    4,    5,    6,    7,    8,   12,   11,   10,    9,
-       13,    3,   13,   13,   13,   13,   13,   13
+        7,    5,   10,    6,    7,    8,    9,    9,    4,    4,
+        5,    3,   10,   10,   10,   10
     } ;
 
-static const flex_int16_t yy_chk[19] =
+static const flex_int16_t yy_chk[17] =
     {   0,
-        1,    1,    1,    1,    1,    1,   17,   16,   15,   14,
-        3,   13,   13,   13,   13,   13,   13,   13
+       12,    2,    3,    2,    6,    6,    6,    6,   11,   11,
+        1,   10,   10,   10,   10,   10
     } ;
 
 static yy_state_type yy_last_accepting_state;
@@ -441,15 +443,11 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "password.l"
-#line 2 "password.l"
-int has_upper = 0;
-int has_lower = 0;
-int has_digit = 0;
-int has_symbol = 0;
-int length = 0;
-#line 452 "lex.yy.c"
-#line 453 "lex.yy.c"
+#line 1 "valid_id.l"
+#line 2 "valid_id.l"
+#include <stdio.h>
+#line 450 "lex.yy.c"
+#line 451 "lex.yy.c"
 
 #define INITIAL 0
 
@@ -629,6 +627,9 @@ extern int yylex (void);
 #endif
 
 #define YY_RULE_SETUP \
+	if ( yyleng > 0 ) \
+		YY_CURRENT_BUFFER_LVALUE->yy_at_bol = \
+				(yytext[yyleng - 1] == '\n'); \
 	YY_USER_ACTION
 
 /** The main scanner function which does all the work.
@@ -666,9 +667,9 @@ YY_DECL
 		}
 
 	{
-#line 14 "password.l"
+#line 7 "valid_id.l"
 
-#line 672 "lex.yy.c"
+#line 673 "lex.yy.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -683,6 +684,7 @@ YY_DECL
 		yy_bp = yy_cp;
 
 		yy_current_state = (yy_start);
+		yy_current_state += YY_AT_BOL();
 yy_match:
 		do
 			{
@@ -695,7 +697,7 @@ yy_match:
 			while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 				{
 				yy_current_state = (int) yy_def[yy_current_state];
-				if ( yy_current_state >= 14 )
+				if ( yy_current_state >= 11 )
 					yy_c = yy_meta[yy_c];
 				}
 			yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
@@ -726,37 +728,24 @@ do_action:	/* This label is used only to access EOF actions. */
 			goto yy_find_action;
 
 case 1:
+*yy_cp = (yy_hold_char); /* undo effects of setting up yytext */
+(yy_c_buf_p) = yy_cp -= 1;
+YY_DO_BEFORE_ACTION; /* set up yytext again */
 YY_RULE_SETUP
-#line 15 "password.l"
-{has_lower = 1; length += yyleng;}
+#line 8 "valid_id.l"
+{ printf("Valid"); }
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 16 "password.l"
-{has_upper = 1; length += yyleng;}
+#line 9 "valid_id.l"
+{ printf("Invalid"); }
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 17 "password.l"
-{has_digit = 1; length += yyleng;}
-	YY_BREAK
-case 4:
-YY_RULE_SETUP
-#line 18 "password.l"
-{has_symbol = 1; length += yyleng;}
-	YY_BREAK
-case 5:
-/* rule 5 can match eol */
-YY_RULE_SETUP
-#line 19 "password.l"
-{length += yyleng;}
-	YY_BREAK
-case 6:
-YY_RULE_SETUP
-#line 20 "password.l"
+#line 10 "valid_id.l"
 ECHO;
 	YY_BREAK
-#line 760 "lex.yy.c"
+#line 749 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1041,6 +1030,7 @@ static int yy_get_next_buffer (void)
 	char *yy_cp;
     
 	yy_current_state = (yy_start);
+	yy_current_state += YY_AT_BOL();
 
 	for ( yy_cp = (yytext_ptr) + YY_MORE_ADJ; yy_cp < (yy_c_buf_p); ++yy_cp )
 		{
@@ -1053,7 +1043,7 @@ static int yy_get_next_buffer (void)
 		while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 			{
 			yy_current_state = (int) yy_def[yy_current_state];
-			if ( yy_current_state >= 14 )
+			if ( yy_current_state >= 11 )
 				yy_c = yy_meta[yy_c];
 			}
 		yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
@@ -1081,11 +1071,11 @@ static int yy_get_next_buffer (void)
 	while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 		{
 		yy_current_state = (int) yy_def[yy_current_state];
-		if ( yy_current_state >= 14 )
+		if ( yy_current_state >= 11 )
 			yy_c = yy_meta[yy_c];
 		}
 	yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
-	yy_is_jam = (yy_current_state == 13);
+	yy_is_jam = (yy_current_state == 10);
 
 		return yy_is_jam ? 0 : yy_current_state;
 }
@@ -1200,6 +1190,8 @@ static int yy_get_next_buffer (void)
 	c = *(unsigned char *) (yy_c_buf_p);	/* cast for 8-bit char's */
 	*(yy_c_buf_p) = '\0';	/* preserve yytext */
 	(yy_hold_char) = *++(yy_c_buf_p);
+
+	YY_CURRENT_BUFFER_LVALUE->yy_at_bol = (c == '\n');
 
 	return c;
 }
@@ -1761,25 +1753,11 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 20 "password.l"
+#line 10 "valid_id.l"
 
 
-int main() 
-{
-	char password[100];
-	printf("Enter your password: ");
-	scanf("%s", password);
-	yy_scan_string(password);
-	yylex();
-	if (length < 6) printf("Password is too short. Minimum length is 6 characters.\n");
-	else if (has_upper && has_lower && has_digit && has_symbol) printf("Strong Password\n");
-	else if (has_upper && has_lower && has_digit) printf("Moderate Password\n");
-	else if (has_upper && has_lower) printf("Weak Password\n");
-	else printf("Password doesn't meet the minimum criteria.\n");
-	return 0;
+int main() {
+    printf("Enter a variable name to check: ");
+    yylex();
+    return 0;
 }
-int yywrap()
-{
-	return 1;
-}
-
