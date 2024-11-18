@@ -22,17 +22,17 @@ def sender(total_frames, window_size):
     calculate_efficiency(total_frames, retransmissions)
 
 def receiver(window_end, last_ack):
-    ack_received = False
+    ack = False
     for frame in range(last_ack + 1, window_end):
         if random.random() > frame_loss_probability:
             print(f"Acknowledging frame {frame}")
             last_ack = frame
-            ack_received = True
+            ack = True
             break
         else:
             print(f"Frame {frame} lost")
     time.sleep(timeout)
-    return ack_received, last_ack
+    return ack, last_ack
 
 def calculate_efficiency(total_frames, retransmissions):
     efficiency = (total_frames / (total_frames + retransmissions)) * 100
