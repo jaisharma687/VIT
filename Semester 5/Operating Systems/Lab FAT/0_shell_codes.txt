@@ -1,0 +1,101 @@
+##Factorial
+
+echo "enter the no to find the factorial"
+read n
+f=1
+for((i=1;i<=n;i++))
+do
+f=$(expr $f \* $i)
+done
+echo "the factorial of " $n " is " $f
+
+
+##Fibonacci
+
+echo "enter the number of terms"
+read n
+a=1
+b=0
+c=0
+echo Fibonacci Series:
+for((i=1;i<=n;i++))
+do
+echo $c
+c=`expr $a + $b`
+a=$b
+b=$c
+done
+
+##Armstrong
+
+echo enter the number to check if its an armstrong number
+read n
+a=$n
+s=0
+while [ $n != 0 ]
+do
+	x=$((n % 10))
+	y=$((x * x * x))
+	s=$((s + y))
+	n=$((n / 10))
+done
+if [ $a == $s ]; then
+	echo "its an armstrong number"
+else
+	echo "its not an armstrong numbe"
+fi
+
+
+##Reverse number
+
+echo enter the number
+read n
+rev=0
+while((n>0))
+do
+	rem=`expr $n % 10`
+	temp=`expr $rev \* 10`
+	rev=`expr $rem + $temp`
+	n=`expr $n / 10`
+done
+echo result = $rev
+
+##Prime Number
+
+echo "Enter the number to check if it's a prime number"
+read n
+is_prime=1
+if [ $n -lt 2 ]; then
+    is_prime=0
+else
+    for((i=2;i*i<=n;i++))
+    do
+        if [ $((n % i)) -eq 0 ]; then
+            is_prime=0
+            break
+        fi
+    done
+fi
+if [ $is_prime -eq 1 ]; then
+    echo "$n is a prime number"
+else
+    echo "$n is not a prime number"
+fi
+
+##Palindrome
+
+echo "Enter the number to check if it's a palindrome"
+read n
+original=$n
+rev=0
+while [ $n -gt 0 ]
+do
+    rem=$((n % 10))
+    rev=$((rev * 10 + rem))
+    n=$((n / 10))
+done
+if [ $original -eq $rev ]; then
+    echo "$original is a palindrome"
+else
+    echo "$original is not a palindrome"
+fi
