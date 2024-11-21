@@ -54,7 +54,11 @@ extern int yydebug;
     YYEOF = 0,                     /* "end of file"  */
     YYerror = 256,                 /* error  */
     YYUNDEF = 257,                 /* "invalid token"  */
-    NUM = 258                      /* NUM  */
+    PLUS = 258,                    /* PLUS  */
+    MINUS = 259,                   /* MINUS  */
+    MULT = 260,                    /* MULT  */
+    DIV = 261,                     /* DIV  */
+    OPERAND = 262                  /* OPERAND  */
   };
   typedef enum yytokentype yytoken_kind_t;
 #endif
@@ -63,11 +67,11 @@ extern int yydebug;
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
 union YYSTYPE
 {
-#line 10 "./Sty.y"
+#line 38 "Sty.y"
 
-    char *str;  // Declare a string type for YYSTYPE
+    String s;
 
-#line 71 "Sty.tab.h"
+#line 75 "Sty.tab.h"
 
 };
 typedef union YYSTYPE YYSTYPE;

@@ -67,16 +67,44 @@
 
 
 /* First part of user prologue.  */
-#line 1 "./Sty.y"
+#line 1 "Sty.y"
 
-    #include <stdio.h>
-    #include <stdlib.h>
-    #include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-    void yyerror(const char *s);
-    int yylex(void);
+#define MAX 100
 
-#line 80 "Sty.tab.c"
+typedef struct {
+    char str[MAX];
+} String;
+
+String stack[MAX];
+int top = -1;
+
+void push(String s) {
+    if (top < MAX - 1) {
+        stack[++top] = s;
+    } else {
+        printf("Stack Overflow!\n");
+    }
+}
+
+String pop() {
+    if (top >= 0) {
+        return stack[top--];
+    } else {
+        printf("Stack Underflow!\n");
+        String empty = {""};
+        return empty;
+    }
+}
+
+int yylex();
+void yyerror(const char* s);
+
+
+#line 108 "Sty.tab.c"
 
 # ifndef YY_CAST
 #  ifdef __cplusplus
@@ -107,15 +135,13 @@ enum yysymbol_kind_t
   YYSYMBOL_YYEOF = 0,                      /* "end of file"  */
   YYSYMBOL_YYerror = 1,                    /* error  */
   YYSYMBOL_YYUNDEF = 2,                    /* "invalid token"  */
-  YYSYMBOL_NUM = 3,                        /* NUM  */
-  YYSYMBOL_4_n_ = 4,                       /* '\n'  */
-  YYSYMBOL_5_ = 5,                         /* '+'  */
-  YYSYMBOL_6_ = 6,                         /* '-'  */
-  YYSYMBOL_7_ = 7,                         /* '*'  */
-  YYSYMBOL_8_ = 8,                         /* '/'  */
-  YYSYMBOL_YYACCEPT = 9,                   /* $accept  */
-  YYSYMBOL_S = 10,                         /* S  */
-  YYSYMBOL_E = 11                          /* E  */
+  YYSYMBOL_PLUS = 3,                       /* PLUS  */
+  YYSYMBOL_MINUS = 4,                      /* MINUS  */
+  YYSYMBOL_MULT = 5,                       /* MULT  */
+  YYSYMBOL_DIV = 6,                        /* DIV  */
+  YYSYMBOL_OPERAND = 7,                    /* OPERAND  */
+  YYSYMBOL_YYACCEPT = 8,                   /* $accept  */
+  YYSYMBOL_expression = 9                  /* expression  */
 };
 typedef enum yysymbol_kind_t yysymbol_kind_t;
 
@@ -441,21 +467,21 @@ union yyalloc
 #endif /* !YYCOPY_NEEDED */
 
 /* YYFINAL -- State number of the termination state.  */
-#define YYFINAL  12
+#define YYFINAL  11
 /* YYLAST -- Last index in YYTABLE.  */
-#define YYLAST   15
+#define YYLAST   14
 
 /* YYNTOKENS -- Number of terminals.  */
-#define YYNTOKENS  9
+#define YYNTOKENS  8
 /* YYNNTS -- Number of nonterminals.  */
-#define YYNNTS  3
+#define YYNNTS  2
 /* YYNRULES -- Number of rules.  */
-#define YYNRULES  7
+#define YYNRULES  6
 /* YYNSTATES -- Number of states.  */
-#define YYNSTATES  18
+#define YYNSTATES  16
 
 /* YYMAXUTOK -- Last valid token kind.  */
-#define YYMAXUTOK   258
+#define YYMAXUTOK   262
 
 
 /* YYTRANSLATE(TOKEN-NUM) -- Symbol number corresponding to TOKEN-NUM
@@ -470,10 +496,6 @@ union yyalloc
 static const yytype_int8 yytranslate[] =
 {
        0,     2,     2,     2,     2,     2,     2,     2,     2,     2,
-       4,     2,     2,     2,     2,     2,     2,     2,     2,     2,
-       2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
-       2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
-       2,     2,     7,     5,     2,     6,     2,     8,     2,     2,
        2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
        2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
        2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
@@ -494,14 +516,19 @@ static const yytype_int8 yytranslate[] =
        2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
        2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
        2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
-       2,     2,     2,     2,     2,     2,     1,     2,     3
+       2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+       2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+       2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+       2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
+       2,     2,     2,     2,     2,     2,     1,     2,     3,     4,
+       5,     6,     7
 };
 
 #if YYDEBUG
 /* YYRLINE[YYN] -- Source line where rule number YYN was defined.  */
 static const yytype_int8 yyrline[] =
 {
-       0,    19,    19,    25,    36,    47,    58,    69
+       0,    48,    48,    55,    62,    69,    76
 };
 #endif
 
@@ -517,8 +544,8 @@ static const char *yysymbol_name (yysymbol_kind_t yysymbol) YY_ATTRIBUTE_UNUSED;
    First, the terminals, then, starting at YYNTOKENS, nonterminals.  */
 static const char *const yytname[] =
 {
-  "\"end of file\"", "error", "\"invalid token\"", "NUM", "'\\n'", "'+'",
-  "'-'", "'*'", "'/'", "$accept", "S", "E", YY_NULLPTR
+  "\"end of file\"", "error", "\"invalid token\"", "PLUS", "MINUS",
+  "MULT", "DIV", "OPERAND", "$accept", "expression", YY_NULLPTR
 };
 
 static const char *
@@ -528,7 +555,7 @@ yysymbol_name (yysymbol_kind_t yysymbol)
 }
 #endif
 
-#define YYPACT_NINF (-3)
+#define YYPACT_NINF (-2)
 
 #define yypact_value_is_default(Yyn) \
   ((Yyn) == YYPACT_NINF)
@@ -542,8 +569,8 @@ yysymbol_name (yysymbol_kind_t yysymbol)
    STATE-NUM.  */
 static const yytype_int8 yypact[] =
 {
-       7,    -3,     7,     7,     7,     7,     4,     1,     7,     7,
-       7,     7,    -3,    -3,    -3,    -3,    -3,    -3
+       7,     7,     7,     7,     7,    -2,     4,     7,     7,     7,
+       7,    -2,    -2,    -2,    -2,    -2
 };
 
 /* YYDEFACT[STATE-NUM] -- Default reduction number in state STATE-NUM.
@@ -551,20 +578,20 @@ static const yytype_int8 yypact[] =
    means the default is an error.  */
 static const yytype_int8 yydefact[] =
 {
-       0,     7,     0,     0,     0,     0,     0,     0,     0,     0,
-       0,     0,     1,     2,     3,     4,     5,     6
+       0,     0,     0,     0,     0,     6,     0,     0,     0,     0,
+       0,     1,     2,     3,     4,     5
 };
 
 /* YYPGOTO[NTERM-NUM].  */
 static const yytype_int8 yypgoto[] =
 {
-      -3,    -3,    -2
+      -2,    -1
 };
 
 /* YYDEFGOTO[NTERM-NUM].  */
 static const yytype_int8 yydefgoto[] =
 {
-       0,     6,     7
+       0,     6
 };
 
 /* YYTABLE[YYPACT[STATE-NUM]] -- What to do in state STATE-NUM.  If
@@ -572,34 +599,34 @@ static const yytype_int8 yydefgoto[] =
    number is the opposite.  If YYTABLE_NINF, syntax error.  */
 static const yytype_int8 yytable[] =
 {
-       8,     9,    10,    11,    12,    13,    14,    15,    16,    17,
-       1,     0,     2,     3,     4,     5
+       7,     8,     9,    10,    11,     0,    12,    13,    14,    15,
+       1,     2,     3,     4,     5
 };
 
 static const yytype_int8 yycheck[] =
 {
-       2,     3,     4,     5,     0,     4,     8,     9,    10,    11,
-       3,    -1,     5,     6,     7,     8
+       1,     2,     3,     4,     0,    -1,     7,     8,     9,    10,
+       3,     4,     5,     6,     7
 };
 
 /* YYSTOS[STATE-NUM] -- The symbol kind of the accessing symbol of
    state STATE-NUM.  */
 static const yytype_int8 yystos[] =
 {
-       0,     3,     5,     6,     7,     8,    10,    11,    11,    11,
-      11,    11,     0,     4,    11,    11,    11,    11
+       0,     3,     4,     5,     6,     7,     9,     9,     9,     9,
+       9,     0,     9,     9,     9,     9
 };
 
 /* YYR1[RULE-NUM] -- Symbol kind of the left-hand side of rule RULE-NUM.  */
 static const yytype_int8 yyr1[] =
 {
-       0,     9,    10,    11,    11,    11,    11,    11
+       0,     8,     9,     9,     9,     9,     9
 };
 
 /* YYR2[RULE-NUM] -- Number of symbols on the right-hand side of rule RULE-NUM.  */
 static const yytype_int8 yyr2[] =
 {
-       0,     2,     2,     3,     3,     3,     3,     1
+       0,     2,     3,     3,     3,     3,     1
 };
 
 
@@ -1062,93 +1089,64 @@ yyreduce:
   YY_REDUCE_PRINT (yyn);
   switch (yyn)
     {
-  case 2: /* S: E '\n'  */
-#line 19 "./Sty.y"
-                {
-                    printf("\nInfix Expression: %s\n", (yyvsp[-1].str));
-                    free((yyvsp[-1].str));  // Free dynamically allocated memory
-                }
-#line 1072 "Sty.tab.c"
+  case 2: /* expression: PLUS expression expression  */
+#line 48 "Sty.y"
+                               { 
+        String right = pop();
+        String left = pop();
+        String result;
+        snprintf(result.str, MAX, "(%s + %s)", left.str, right.str);
+        push(result);
+    }
+#line 1102 "Sty.tab.c"
     break;
 
-  case 3: /* E: '+' E E  */
-#line 25 "./Sty.y"
-                {
-                    char *res = malloc(strlen((yyvsp[-1].str)) + strlen((yyvsp[0].str)) + 6);
-                    if (!res) {
-                        yyerror("Memory allocation failed");
-                        YYABORT;
-                    }
-                    sprintf(res, "(%s + %s)", (yyvsp[-1].str), (yyvsp[0].str));
-                    free((yyvsp[-1].str));
-                    free((yyvsp[0].str));
-                    (yyval.str) = res;
-                }
-#line 1088 "Sty.tab.c"
+  case 3: /* expression: MINUS expression expression  */
+#line 55 "Sty.y"
+                                { 
+        String right = pop();
+        String left = pop();
+        String result;
+        snprintf(result.str, MAX, "(%s - %s)", left.str, right.str);
+        push(result);
+    }
+#line 1114 "Sty.tab.c"
     break;
 
-  case 4: /* E: '-' E E  */
-#line 36 "./Sty.y"
-                {
-                    char *res = malloc(strlen((yyvsp[-1].str)) + strlen((yyvsp[0].str)) + 6);
-                    if (!res) {
-                        yyerror("Memory allocation failed");
-                        YYABORT;
-                    }
-                    sprintf(res, "(%s - %s)", (yyvsp[-1].str), (yyvsp[0].str));
-                    free((yyvsp[-1].str));
-                    free((yyvsp[0].str));
-                    (yyval.str) = res;
-                }
-#line 1104 "Sty.tab.c"
+  case 4: /* expression: MULT expression expression  */
+#line 62 "Sty.y"
+                               { 
+        String right = pop();
+        String left = pop();
+        String result;
+        snprintf(result.str, MAX, "(%s * %s)", left.str, right.str);
+        push(result);
+    }
+#line 1126 "Sty.tab.c"
     break;
 
-  case 5: /* E: '*' E E  */
-#line 47 "./Sty.y"
-                {
-                    char *res = malloc(strlen((yyvsp[-1].str)) + strlen((yyvsp[0].str)) + 6);
-                    if (!res) {
-                        yyerror("Memory allocation failed");
-                        YYABORT;
-                    }
-                    sprintf(res, "(%s * %s)", (yyvsp[-1].str), (yyvsp[0].str));
-                    free((yyvsp[-1].str));
-                    free((yyvsp[0].str));
-                    (yyval.str) = res;
-                }
-#line 1120 "Sty.tab.c"
+  case 5: /* expression: DIV expression expression  */
+#line 69 "Sty.y"
+                              { 
+        String right = pop();
+        String left = pop();
+        String result;
+        snprintf(result.str, MAX, "(%s / %s)", left.str, right.str);
+        push(result);
+    }
+#line 1138 "Sty.tab.c"
     break;
 
-  case 6: /* E: '/' E E  */
-#line 58 "./Sty.y"
-                {
-                    char *res = malloc(strlen((yyvsp[-1].str)) + strlen((yyvsp[0].str)) + 6);
-                    if (!res) {
-                        yyerror("Memory allocation failed");
-                        YYABORT;
-                    }
-                    sprintf(res, "(%s / %s)", (yyvsp[-1].str), (yyvsp[0].str));
-                    free((yyvsp[-1].str));
-                    free((yyvsp[0].str));
-                    (yyval.str) = res;
-                }
-#line 1136 "Sty.tab.c"
-    break;
-
-  case 7: /* E: NUM  */
-#line 69 "./Sty.y"
-                {
-                    (yyval.str) = strdup((yyvsp[0].str));  // Duplicate the string to allocate memory
-                    if (!(yyval.str)) {
-                        yyerror("Memory allocation failed");
-                        YYABORT;
-                    }
-                }
-#line 1148 "Sty.tab.c"
+  case 6: /* expression: OPERAND  */
+#line 76 "Sty.y"
+            { 
+        push((yyvsp[0].s));
+    }
+#line 1146 "Sty.tab.c"
     break;
 
 
-#line 1152 "Sty.tab.c"
+#line 1150 "Sty.tab.c"
 
       default: break;
     }
@@ -1341,21 +1339,20 @@ yyreturnlab:
   return yyresult;
 }
 
-#line 78 "./Sty.y"
+#line 81 "Sty.y"
 
 
-int main(void)
-{
-    printf("Enter a prefix expression to convert to infix:\n");
-    return yyparse();
+int main() {
+    printf("Enter a prefix expression: ");
+    yyparse();
+    if (top == 0) {
+        printf("Infix expression: %s\n", stack[top].str);
+    } else {
+        printf("Error in conversion.\n");
+    }
+    return 0;
 }
 
-int yywrap(void)
-{
-    return 1;
-}
-
-void yyerror(const char *s)
-{
+void yyerror(const char* s) {
     fprintf(stderr, "Error: %s\n", s);
 }

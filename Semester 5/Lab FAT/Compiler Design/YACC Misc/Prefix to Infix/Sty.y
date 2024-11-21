@@ -1,50 +1,52 @@
 %{
-    #include <stdio.h>
-    #include"Sty.tab.h"
-    void yyerror(char *);
-    int yylex(void);
-    int stack[100], top = -1;
-    void push(int);
-    int pop(void);
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+void yyerror(char *);
+int yylex(void);
+
+typedef struct {
+    char str[100];
+} YYSTYPE;
+
+#define YYSTYPE YYSTYPE
+
 %}
 
-%token NUM
+%token NUMBER
 
 %%
-S   : E '\n'    { printf("\nPostfix Expression Value: %d\n", $1); }
-E   : E '+' T   { $$ = $1 + $3; printf("+ "); }
-    | E '-' T   { $$ = $1 - $3; printf("- "); }
-    | T         { $$ = $1; }
-T   : T '*' F   { $$ = $1 * $3; printf("* "); }
-    | T '/' F   { $$ = $1 / $3; printf("/ "); }
-    | F         { $$ = $1; }
-F   : '(' E ')' { $$ = $2; }
-    | NUM       { $$ = $1; printf("%d ", $1); }
+
+input:
+    expr '\n' { printf("\nInfix Expression: %s\n", $1.str); }
+    ;
+
+expr:
+    '+' expr expr {
+        snprintf($$.str, sizeof($$.str), "(%s + %s)", $2.str, $3.str);
+    }
+    | '-' expr expr {
+        snprintf($$.str, sizeof($$.str), "(%s - %s)", $2.str, $3.str);
+    }
+    | '*' expr expr {
+        snprintf($$.str, sizeof($$.str), "(%s * %s)", $2.str, $3.str);
+    }
+    | '/' expr expr {
+        snprintf($$.str, sizeof($$.str), "(%s / %s)", $2.str, $3.str);
+    }
+    | NUMBER {
+        snprintf($$.str, sizeof($$.str), "%s", yytext);
+    }
+    ;
+
 %%
 
-void push(int num)
-{
-    stack[++top] = num;
+void yyerror(char *s) {
+    fprintf(stderr, "Error: %s\n", s);
 }
 
-int pop(void)
-{
-    return stack[top--];
-}
-
-int main(void)
-{
-    printf("Enter an infix expression to convert to postfix:\n");
+int main(void) {
+    printf("Enter a prefix expression to convert to infix:\n");
     yyparse();
     return 0;
-}
-
-int yywrap(void)
-{
-    return 1;
-}
-
-void yyerror(char *s)
-{
-    fprintf(stderr, "%s\n", s);
 }

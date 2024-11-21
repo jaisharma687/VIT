@@ -67,17 +67,15 @@
 
 
 /* First part of user prologue.  */
-#line 1 "./Sty.y"
+#line 1 "Sty.y"
 
     #include <stdio.h>
     #include"Sty.tab.h"
     void yyerror(char *);
     int yylex(void);
-    int stack[100], top = -1;
-    void push(int);
-    int pop(void);
+    
 
-#line 81 "Sty.tab.c"
+#line 79 "Sty.tab.c"
 
 # ifndef YY_CAST
 #  ifdef __cplusplus
@@ -506,8 +504,8 @@ static const yytype_int8 yytranslate[] =
 /* YYRLINE[YYN] -- Source line where rule number YYN was defined.  */
 static const yytype_int8 yyrline[] =
 {
-       0,    14,    14,    15,    16,    17,    18,    19,    20,    21,
-      22
+       0,    12,    12,    13,    14,    15,    16,    17,    18,    19,
+      20
 };
 #endif
 
@@ -1071,61 +1069,61 @@ yyreduce:
   switch (yyn)
     {
   case 2: /* S: E '\n'  */
-#line 14 "./Sty.y"
+#line 12 "Sty.y"
                 { printf("\nPostfix Expression Value: %d\n", yyvsp[-1]); }
-#line 1077 "Sty.tab.c"
+#line 1075 "Sty.tab.c"
     break;
 
   case 3: /* E: E '+' T  */
-#line 15 "./Sty.y"
+#line 13 "Sty.y"
                 { yyval = yyvsp[-2] + yyvsp[0]; printf("+ "); }
-#line 1083 "Sty.tab.c"
+#line 1081 "Sty.tab.c"
     break;
 
   case 4: /* E: E '-' T  */
-#line 16 "./Sty.y"
+#line 14 "Sty.y"
                 { yyval = yyvsp[-2] - yyvsp[0]; printf("- "); }
-#line 1089 "Sty.tab.c"
+#line 1087 "Sty.tab.c"
     break;
 
   case 5: /* E: T  */
-#line 17 "./Sty.y"
+#line 15 "Sty.y"
                 { yyval = yyvsp[0]; }
-#line 1095 "Sty.tab.c"
+#line 1093 "Sty.tab.c"
     break;
 
   case 6: /* T: T '*' F  */
-#line 18 "./Sty.y"
+#line 16 "Sty.y"
                 { yyval = yyvsp[-2] * yyvsp[0]; printf("* "); }
-#line 1101 "Sty.tab.c"
+#line 1099 "Sty.tab.c"
     break;
 
   case 7: /* T: T '/' F  */
-#line 19 "./Sty.y"
+#line 17 "Sty.y"
                 { yyval = yyvsp[-2] / yyvsp[0]; printf("/ "); }
-#line 1107 "Sty.tab.c"
+#line 1105 "Sty.tab.c"
     break;
 
   case 8: /* T: F  */
-#line 20 "./Sty.y"
+#line 18 "Sty.y"
                 { yyval = yyvsp[0]; }
-#line 1113 "Sty.tab.c"
+#line 1111 "Sty.tab.c"
     break;
 
   case 9: /* F: '(' E ')'  */
-#line 21 "./Sty.y"
+#line 19 "Sty.y"
                 { yyval = yyvsp[-1]; }
-#line 1119 "Sty.tab.c"
+#line 1117 "Sty.tab.c"
     break;
 
   case 10: /* F: NUM  */
-#line 22 "./Sty.y"
+#line 20 "Sty.y"
                 { yyval = yyvsp[0]; printf("%d ", yyvsp[0]); }
-#line 1125 "Sty.tab.c"
+#line 1123 "Sty.tab.c"
     break;
 
 
-#line 1129 "Sty.tab.c"
+#line 1127 "Sty.tab.c"
 
       default: break;
     }
@@ -1318,18 +1316,10 @@ yyreturnlab:
   return yyresult;
 }
 
-#line 23 "./Sty.y"
+#line 21 "Sty.y"
 
 
-void push(int num)
-{
-    stack[++top] = num;
-}
 
-int pop(void)
-{
-    return stack[top--];
-}
 
 int main(void)
 {

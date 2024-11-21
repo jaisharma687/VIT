@@ -3,8 +3,8 @@
 %}
 
 %%
-^[A-Z][a-zA-Z0-9_]*$    {printf("Valid\n");}
-.*                      {printf("Invalid\n");}
+^[A-Z][a-zA-Z0-9_]*$    {printf("Valid");}
+.*                      {printf("Invalid");}
 %%
 
 int main() {

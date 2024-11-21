@@ -3,9 +3,6 @@
     #include"Sty.tab.h"
     void yyerror(char *);
     int yylex(void);
-    int stack[100], top = -1;
-    void push(int);
-    int pop(void);
 %}
 
 %token NUM
@@ -21,16 +18,6 @@ T   : T '*' F   { $$ = $1 * $3; printf("* "); }
 F   : '(' E ')' { $$ = $2; }
     | NUM       { $$ = $1; printf("%d ", $1); }
 %%
-
-void push(int num)
-{
-    stack[++top] = num;
-}
-
-int pop(void)
-{
-    return stack[top--];
-}
 
 int main(void)
 {
