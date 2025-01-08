@@ -1,4 +1,6 @@
-#include<bits/stdc++.h>
+#include <iostream>
+#include <string>
+#include <cctype>
 using namespace std;
 
 string caesarEncrypt(string s,int key){
@@ -6,7 +8,7 @@ string caesarEncrypt(string s,int key){
     for(int i=0;i<s.size();i++){
         int ascii = s[i]-'a';
         int newAscii = (ascii+key)%26;
-        char newChar = newAscii+'a';
+        char newChar = newAscii+'A';
         res += newChar;
     }
     return res;
@@ -16,9 +18,9 @@ void caesarDecrypt(string s){
     for(int key=1;key<26;key++){
         string res = "";
         for(int i=0;i<s.size();i++){
-            int ascii = s[i]-'a';
+            int ascii = s[i]-'A';
             int newAscii = (ascii+key)%26;
-            char newChar = newAscii+'a';
+            char newChar = newAscii+'A';
             res += newChar;
         }
         cout<<"Key: "<<key<<" -> Decrypted Text: "<<res<<endl;

@@ -1,4 +1,6 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <string>
+#include <cctype>
 using namespace std;
 
 int modInverse(int key, int mod) {
@@ -16,9 +18,9 @@ string encrypt(string plaintext, int key) {
             char base = islower(ch) ? 'a' : 'A';
             int p = ch - base;
             int c = (p * key) % 26;
-            ciphertext += c + base;
+            ciphertext += toupper(c + base);
         } else {
-            ciphertext += ch;
+            ciphertext += toupper(ch);
         }
     }
     return ciphertext;
@@ -37,9 +39,9 @@ string decrypt(string ciphertext, int key) {
             int c = ch - base;
             int p = (c * inverseKey) % 26;
             if (p < 0) p += 26;
-            plaintext += p + base;
+            plaintext += toupper(p + base);
         } else {
-            plaintext += ch;
+            plaintext += toupper(ch);
         }
     }
     return plaintext;
@@ -48,9 +50,9 @@ string decrypt(string ciphertext, int key) {
 int main() {
     string plaintext;
     int key;
-    cout << "Enter plaintext: ";
+    cout << "Enter plaintext:"<<endl;
     cin >> plaintext;
-    cout << "Enter key: ";
+    cout << "Enter key:"<<endl;
     cin >> key;
     string ciphertext = encrypt(plaintext, key);
     cout << "Ciphertext: " << ciphertext << endl;
