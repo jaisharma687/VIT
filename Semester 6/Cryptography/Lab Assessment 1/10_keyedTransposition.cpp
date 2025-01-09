@@ -1,7 +1,4 @@
-#include <iostream>
-#include <string>
-#include <vector>
-#include <cctype>
+#include<bits/stdc++.h>
 using namespace std;
 
 string removeSpaces(string str) {

@@ -1,8 +1,4 @@
-#include <iostream>
-#include <vector>
-#include <string>
-#include <unordered_set>
-#include <algorithm>
+#include<bits/stdc++.h>
 using namespace std;
 
 vector<vector<char>> generateKeyMatrix(const string &key) {

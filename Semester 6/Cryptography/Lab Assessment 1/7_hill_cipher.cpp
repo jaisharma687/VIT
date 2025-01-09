@@ -1,8 +1,4 @@
-#include <iostream>
-#include <vector>
-#include <string>
-#include <algorithm>
-#include <numeric>
+#include<bits/stdc++.h>
 using namespace std;
 
 const int K = 26;

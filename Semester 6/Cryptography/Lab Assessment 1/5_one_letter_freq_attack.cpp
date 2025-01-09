@@ -1,8 +1,4 @@
-#include <iostream>
-#include <unordered_map>
-#include <vector>
-#include <algorithm>
-#include <string>
+#include<bits/stdc++.h>
 using namespace std;
 
 const string ENGLISH_FREQ = "ETAOINSHRDLCUMWFGYPBVKJXQZ";
